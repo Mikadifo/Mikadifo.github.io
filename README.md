@@ -1,4 +1,4 @@
-# MikadifoPortfolio
+# Mikadifo Website
 My personal website where I show my works throughout my professional career.
 
 # Contribuing
