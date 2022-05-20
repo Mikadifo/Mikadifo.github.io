@@ -1,6 +1,12 @@
 # Mikadifo Website
 My personal website where I show my works throughout my professional career.
 
+# Dev Setup
+1. Install NodeJS if you don't have it already.
+2. Install http-server globally. `npm install http-server -g`
+3. Run the server with the following command. `http-server`
+4. Go to *http://127.0.0.1:8080/* or *localhost:8080/*
+
 # Contribuing
 Everyone can freely suggest changes on the project, I'll really appreciate that.
 
