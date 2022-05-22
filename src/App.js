@@ -1,7 +1,12 @@
 import './App.css';
+import Home from './views/Home/Home';
 
-function App() {
-    return <div className="App">HELLO MIKADIFO</div>;
-}
+const App = () => {
+    return (
+        <>
+            <Home />
+        </>
+    );
+};
 
 export default App;
