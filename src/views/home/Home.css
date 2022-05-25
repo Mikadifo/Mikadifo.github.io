@@ -1,5 +1,14 @@
-.test {
+.home-container {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(255, 0, 0, 0.5);
+  font: #262730;
+  background-color: #ebebeb;
+}
+
+.img-back {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #6e7e85;
 }
