@@ -1,10 +1,12 @@
 import './App.css';
-import Home from './views/Home/Home';
+import Home from './views/home/Home';
+import Experience from './views/experience/Experience';
 
 const App = () => {
     return (
         <>
             <Home />
+            <Experience />
         </>
     );
 };
