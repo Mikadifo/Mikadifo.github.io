@@ -16,7 +16,7 @@ const Home = ({ setShowHomeBack }) => {
                 I'm Michael Padilla
             </h1>
             <h3 className="animate__animated animate__slideInLeft">
-                Sowftware Developer
+                Software Developer
             </h3>
             <a href="#description" className="btn btn-outline-dark" ref={ref}>
                 More about me
