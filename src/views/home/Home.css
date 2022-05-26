@@ -1,0 +1,14 @@
+.home-container {
+  width: 100vw;
+  height: 100vh;
+  font: #262730;
+  background-color: #ebebeb;
+}
+
+.img-back {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #6e7e85;
+}
