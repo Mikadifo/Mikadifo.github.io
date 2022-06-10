@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import './Home.css';
 import useIntersection from './../../hooks/useIntersection';
+import portrait from './../../img/face-img.png';
 
 const Home = ({ setShowHomeBack }) => {
     const ref = useRef();
@@ -11,17 +12,35 @@ const Home = ({ setShowHomeBack }) => {
 
     return (
         <div id="home" className="home-container">
-            <h1 className="animate__animated animate__fadeInDown">Hello,</h1>
-            <h1 className="ms-5 animate__animated animate__fadeInDown">
-                I'm Michael Padilla
-            </h1>
-            <h3 className="animate__animated animate__slideInLeft">
-                Software Developer
-            </h3>
-            <a href="#description" className="btn btn-outline-dark" ref={ref}>
-                More about me
-            </a>
-            <div className="img-back" />
+            <div className="hstack p-5 stack-container" ref={ref}>
+                <div className="vstack gap-5 d-flex align-items-center justify-content-center">
+                    <div className="text-center presentation-title">
+                        <h1 className="animate__animated animate__fadeInDown greeting-title">
+                            HEY I'M
+                        </h1>
+                        <h1 className="animate__animated animate__fadeInDown name-title">
+                            MICHAEL
+                        </h1>
+                    </div>
+                    <h3 className="animate__animated animate__slideInLeft fw-light">
+                        SOFTWARE DEVELOPER
+                    </h3>
+                    <a
+                        href="#description"
+                        className="btn btn-outline-dark about-button p-3"
+                    >
+                        MORE ABOUT ME
+                    </a>
+                </div>
+                <div className="image-stack d-flex align-items-center justify-content-center">
+                    <p className="img-back">M</p>
+                    <img
+                        src={portrait}
+                        alt="MIKADIFO"
+                        className="portrait-img animate__animated animate__zoomIn"
+                    />
+                </div>
+            </div>
         </div>
     );
 };
