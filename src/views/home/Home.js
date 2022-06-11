@@ -13,7 +13,7 @@ const Home = ({ setShowHomeBack }) => {
     return (
         <div id="home" className="home-container">
             <div className="hstack p-5 stack-container" ref={ref}>
-                <div className="vstack gap-5 d-flex align-items-center justify-content-center">
+                <div className="vstack gap-5 align-items-center justify-content-center">
                     <div className="text-center presentation-title">
                         <h1 className="animate__animated animate__fadeInDown greeting-title">
                             HEY I'M
