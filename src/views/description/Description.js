@@ -33,8 +33,8 @@ const Description = () => {
                     </div>
                 </div>
             </div>
-            <Experience />
             <Skills />
+            <Experience />
         </div>
     );
 };

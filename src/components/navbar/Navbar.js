@@ -24,10 +24,10 @@ const Navbar = () => {
                 >
                     <div className="navbar-nav ms-auto nav-items">
                         <a className="nav-link" href="#description">
-                            Home
+                            About Me
                         </a>
                         <a className="nav-link" href="#skills">
-                            About Me
+                            Skills
                         </a>
                         <a className="nav-link" href="#experience">
                             Experience
