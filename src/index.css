@@ -2,3 +2,9 @@ body {
   padding: 0;
   margin: 0;
 }
+
+html {
+  --color-gray: #dbdbdb;
+  --color-cyan: #3a9cba;
+  --color-orange: #f08d2b;
+}

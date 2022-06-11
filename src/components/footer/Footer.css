@@ -1,0 +1,20 @@
+.footer-container {
+  border-top: 0.3rem solid var(--color-cyan);
+}
+
+.copyright-text {
+  background: var(--color-orange);
+}
+
+.copyright-text a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.copyright-text a:hover {
+  text-decoration: underline;
+}
+
+.foot-icons {
+  background: var(--color-gray);
+}

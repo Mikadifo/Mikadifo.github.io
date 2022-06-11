@@ -1,14 +1,48 @@
 .home-container {
   width: 100vw;
   height: 100vh;
-  font: #262730;
-  background-color: #ebebeb;
+  background: var(--color-gray);
+}
+
+.image-stack {
+  width: 50%;
 }
 
 .img-back {
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
-  display: inline-block;
-  background-color: #6e7e85;
+  color: var(--color-cyan);
+  font-weight: bolder;
+  font-size: 35rem;
+}
+
+.portrait-img {
+  position: absolute;
+  width: 30rem;
+  height: 30rem;
+}
+
+.greeting-title {
+  color: var(--color-cyan);
+}
+
+.name-title {
+  color: var(--color-orange);
+}
+
+.about-button {
+  background: var(--color-orange);
+  width: auto;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.stack-container {
+  height: 100vh;
+}
+
+.presentation-title h1 {
+  font-size: 4rem;
+  word-spacing: 1.2rem;
+  font-weight: bold;
 }

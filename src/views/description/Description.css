@@ -1,5 +1,27 @@
-#description {
+.description-container {
   width: 100vw;
   height: 100vh;
-  background-color: yellow;
+  background: var(--color-gray);
+}
+
+.img-back-letter {
+  color: var(--color-cyan);
+  font-weight: bolder;
+  font-size: 27rem;
+}
+
+.portrait-img-front {
+  position: absolute;
+  width: 22rem;
+  height: 22rem;
+}
+
+.info-stack {
+  width: 50%;
+  text-align: justify;
+  padding-right: 10rem;
+}
+
+.info-stack p {
+  font-size: 1.5rem;
 }
