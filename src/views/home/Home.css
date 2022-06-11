@@ -1,7 +1,6 @@
 .home-container {
   width: 100vw;
   height: 100vh;
-  font: #262730;
   background: var(--color-gray);
 }
 

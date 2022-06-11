@@ -1,0 +1,17 @@
+.navbar {
+  background: var(--color-gray) !important;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-brand,
+.nav-items a {
+  font-weight: bolder;
+  color: black;
+}
+
+.nav-items a {
+  font-size: 1.1rem;
+}
