@@ -1,18 +1,10 @@
-import { useEffect, useRef } from 'react';
 import './Home.css';
-import useIntersection from './../../hooks/useIntersection';
 import portrait from './../../img/face-img.png';
 
-const Home = ({ setShowHomeBack }) => {
-    const ref = useRef();
-    const inViewport = useIntersection(ref);
-    useEffect(() => {
-        setShowHomeBack(!inViewport);
-    });
-
+const Home = () => {
     return (
         <div id="home" className="home-container">
-            <div className="hstack p-5 stack-container" ref={ref}>
+            <div className="hstack p-5 stack-container">
                 <div className="vstack gap-5 align-items-center justify-content-center">
                     <div className="text-center presentation-title">
                         <h1 className="animate__animated animate__fadeInDown greeting-title">
