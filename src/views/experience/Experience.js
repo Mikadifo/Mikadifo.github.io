@@ -44,7 +44,7 @@ const educationExperience = [
         dateStart: 'May 2019',
         dateEnd: 'October 2021',
         description:
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+            "At Instituto Superior Tecnologico del Azuay I've learned to develop software from its basics up to complex web applicaitons, testing, web services, databases and team and customer communication.",
     },
 ];
 
