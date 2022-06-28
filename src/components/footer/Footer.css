@@ -1,5 +1,6 @@
 .footer-container {
   border-top: 0.3rem solid var(--color-cyan);
+  width: 100vw;
 }
 
 .copyright-text {
