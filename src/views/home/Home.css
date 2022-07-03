@@ -4,10 +4,6 @@
   background: var(--color-gray);
 }
 
-.image-stack {
-  width: 50%;
-}
-
 .img-back {
   color: var(--color-cyan);
   font-weight: bolder;
