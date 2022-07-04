@@ -2,10 +2,10 @@ import './ExperienceCard.css';
 
 const ExperienceCard = ({ experienceInfo, isLeftAligned }) => {
     return (
-        <div className="hstack p-5">
+        <div className="row p-5 pb-0 pt-0">
             {isLeftAligned ? (
                 <>
-                    <div className="container">
+                    <div className="container col col-lg-6">
                         <div className="d-flex align-items-center justify-content-center">
                             <img
                                 className="exp-img rounded"
@@ -14,17 +14,25 @@ const ExperienceCard = ({ experienceInfo, isLeftAligned }) => {
                             />
                         </div>
                     </div>
-                    <div className="container">
-                        <h3>
-                            {experienceInfo.title} -{' '}
-                            {experienceInfo.institution}
-                        </h3>
-                        <p className="date-label">
-                            <i>
-                                {experienceInfo.dateStart} -{' '}
-                                {experienceInfo.dateEnd}
-                            </i>
-                        </p>
+                    <div className="container col col-lg-6 d-flex align-items-center justify-content-center">
+                        <div className="container">
+                            <div className="row">
+                                <h3>
+                                    {experienceInfo.title} -{' '}
+                                    {experienceInfo.institution}
+                                </h3>
+                            </div>
+                            <div className="row">
+                                <p className="date-label">
+                                    <i>
+                                        {experienceInfo.dateStart} -{' '}
+                                        {experienceInfo.dateEnd}
+                                    </i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="container p-5">
                         {experienceInfo.description
                             .split('\n')
                             .map((paragraph, index) => (
@@ -39,17 +47,34 @@ const ExperienceCard = ({ experienceInfo, isLeftAligned }) => {
                 </>
             ) : (
                 <>
-                    <div className="container">
-                        <h3>
-                            {experienceInfo.title} -{' '}
-                            {experienceInfo.institution}
-                        </h3>
-                        <p className="date-label">
-                            <i>
-                                {experienceInfo.dateStart} -{' '}
-                                {experienceInfo.dateEnd}
-                            </i>
-                        </p>
+                    <div className="container col col-lg-6 d-flex align-items-center justify-content-center">
+                        <div className="container">
+                            <div className="row">
+                                <h3>
+                                    {experienceInfo.title} -{' '}
+                                    {experienceInfo.institution}
+                                </h3>
+                            </div>
+                            <div className="row">
+                                <p className="date-label">
+                                    <i>
+                                        {experienceInfo.dateStart} -{' '}
+                                        {experienceInfo.dateEnd}
+                                    </i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="container col col-lg-6">
+                        <div className="d-flex align-items-center justify-content-center">
+                            <img
+                                className="exp-img rounded"
+                                src={experienceInfo.imgUrl}
+                                alt={experienceInfo.title}
+                            />
+                        </div>
+                    </div>
+                    <div className="container p-5">
                         {experienceInfo.description
                             .split('\n')
                             .map((paragraph, index) => (
@@ -60,15 +85,6 @@ const ExperienceCard = ({ experienceInfo, isLeftAligned }) => {
                                     {paragraph}
                                 </p>
                             ))}
-                    </div>
-                    <div className="container">
-                        <div className="d-flex align-items-center justify-content-center">
-                            <img
-                                className="exp-img rounded"
-                                src={experienceInfo.imgUrl}
-                                alt={experienceInfo.title}
-                            />
-                        </div>
                     </div>
                 </>
             )}
