@@ -1,6 +1,6 @@
 .description-container {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   background: var(--color-gray);
 }
 
@@ -17,11 +17,9 @@
 }
 
 .info-stack {
-  width: 50%;
   text-align: justify;
-  padding-right: 10rem;
 }
 
 .info-stack p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
