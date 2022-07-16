@@ -1,6 +1,7 @@
 .navbar {
   background: var(--color-gray) !important;
   border-bottom: 0.3rem solid var(--color-cyan);
+  width: 100vw;
 }
 
 .navbar-brand {
