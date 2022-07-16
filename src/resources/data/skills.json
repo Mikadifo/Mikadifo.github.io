@@ -1,0 +1,50 @@
+[
+    {
+        "id": "sk_re",
+        "title": "ReactJS",
+        "time": "1 year",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png?20220125121207"
+    },
+    {
+        "id": "sk_ja",
+        "title": "Java",
+        "time": "2 year",
+        "img": "https://cdn-icons-png.flaticon.com/512/226/226777.png"
+    },
+    {
+        "id": "sk_js",
+        "title": "Javascript",
+        "time": "1 year",
+        "img": "https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png"
+    },
+    {
+        "id": "sk_android",
+        "title": "Android Development",
+        "time": "1 year",
+        "img": "https://cdn-icons-png.flaticon.com/512/226/226770.png"
+    },
+    {
+        "id": "sk_IOS",
+        "title": "IOS Development",
+        "time": "1 year",
+        "img": "https://icon-library.com/images/ios-icon-png/ios-icon-png-2.jpg"
+    },
+    {
+        "id": "sk_Sp",
+        "title": "SpringBoot",
+        "time": "1 year",
+        "img": "https://miro.medium.com/max/856/1*O68LbDvD5Dcsnez73M7v4Q.png"
+    },
+    {
+        "id": "sk_MDB",
+        "title": "MongoDB",
+        "time": "1 year",
+        "img": "https://cdn.iconscout.com/icon/free/png-256/mongodb-3521676-2945120.png"
+    },
+    {
+        "id": "sk_Sql",
+        "title": "SQL",
+        "time": "1 year",
+        "img": "https://cdn-icons-png.flaticon.com/512/29/29594.png"
+    }
+]
