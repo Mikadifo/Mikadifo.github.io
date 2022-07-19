@@ -8,3 +8,14 @@ html {
   --color-cyan: #3a9cba;
   --color-orange: #f08d2b;
 }
+
+@font-face {
+  font-family: Central_W01_Light;
+  src: url(./resources/fonts/Central_W01_Light.ttf);
+}
+
+@font-face {
+  font-family: REBELTON_Medium;
+  src: url(./resources/fonts/REBELTON_Medium.ttf);
+}
+/*font-family: REBELTON_Medium;*/

@@ -3,3 +3,7 @@
   height: auto;
   background-color: var(--color-gray);
 }
+
+.skills-title {
+  font-family: REBELTON_Medium;
+}

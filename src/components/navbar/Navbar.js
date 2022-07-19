@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg bg-light sticky-top ps-5 pe-5">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#home">
+                <a className="navbar-brand brand-title" href="#home">
                     MIKADIFO
                 </a>
                 <button

@@ -2,3 +2,8 @@
   width: 100vw;
   background-color: var(--color-gray);
 }
+
+.education-title,
+.experience-title {
+  font-family: REBELTON_Medium;
+}

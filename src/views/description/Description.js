@@ -20,7 +20,7 @@ const Description = () => {
                     </div>
                     <div className="col col-md-6 col-12 d-flex align-items-center justify-content-center info-stack">
                         <div className="container">
-                            <h1 className="mb-3">About Me</h1>
+                            <h1 className="mb-3 about-title">About Me</h1>
                             <p>
                                 I am a passionate software developer with
                                 experience working on web services, web
