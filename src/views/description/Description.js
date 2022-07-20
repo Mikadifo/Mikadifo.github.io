@@ -10,7 +10,7 @@ const Description = () => {
             <Navbar />
             <div className="description-container">
                 <div className="row p-5">
-                    <div className="col col-md-6 col-12 image-stack d-flex align-items-center justify-content-center">
+                    <div className="col col-md-4 col-12 image-stack d-flex align-items-center justify-content-center">
                         <p className="img-back-letter">M</p>
                         <img
                             src={portrait}
@@ -18,15 +18,15 @@ const Description = () => {
                             className="portrait-img-front animate__animated animate__zoomIn"
                         />
                     </div>
-                    <div className="col col-md-6 col-12 d-flex align-items-center justify-content-center info-stack">
-                        <div className="container">
+                    <div className="col col-md-8 col-12 d-flex align-items-center justify-content-center info-stack">
+                        <div className="container about-container md-me-5">
                             <h1 className="mb-3 about-title">About Me</h1>
-                            <p>
+                            <p className="me-3">
                                 I am a passionate software developer with
                                 experience working on web services, web
                                 applications and mobile apps.
                             </p>
-                            <p>
+                            <p className="me-3">
                                 Also, I'm interested in contribuing to open
                                 source projects from different developers and
                                 non-profit organizations.

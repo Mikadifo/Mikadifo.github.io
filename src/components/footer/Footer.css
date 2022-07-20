@@ -5,11 +5,13 @@
 
 .copyright-text {
   background: var(--color-orange);
+  font-family: Central_W_Light;
 }
 
 .copyright-text a {
   text-decoration: none;
-  font-weight: bold;
+  font-weight: bolder;
+  font-family: REBELTON_Medium;
 }
 
 .copyright-text a:hover {

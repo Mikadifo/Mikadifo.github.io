@@ -5,7 +5,7 @@ const ExperienceCard = ({ experienceInfo, isLeftAligned }) => {
         <div className="row p-5 pb-0 pt-0">
             {isLeftAligned ? (
                 <>
-                    <div className="container col col-lg-6">
+                    <div className="container col col-lg-4">
                         <div className="d-flex align-items-center justify-content-center">
                             <img
                                 className="exp-img rounded"
@@ -14,10 +14,10 @@ const ExperienceCard = ({ experienceInfo, isLeftAligned }) => {
                             />
                         </div>
                     </div>
-                    <div className="container col col-lg-6 d-flex align-items-center justify-content-center">
+                    <div className="container col col-lg-8 d-flex align-items-center justify-content-center">
                         <div className="container">
                             <div className="row">
-                                <h3>
+                                <h3 className="card-title">
                                     {experienceInfo.title} -{' '}
                                     {experienceInfo.institution}
                                 </h3>
@@ -47,10 +47,10 @@ const ExperienceCard = ({ experienceInfo, isLeftAligned }) => {
                 </>
             ) : (
                 <>
-                    <div className="container col col-lg-6 d-flex align-items-center justify-content-center">
+                    <div className="container col col-lg-8 d-flex align-items-center justify-content-center">
                         <div className="container">
                             <div className="row">
-                                <h3>
+                                <h3 className="card-title">
                                     {experienceInfo.title} -{' '}
                                     {experienceInfo.institution}
                                 </h3>
@@ -65,7 +65,7 @@ const ExperienceCard = ({ experienceInfo, isLeftAligned }) => {
                             </div>
                         </div>
                     </div>
-                    <div className="container col col-lg-6">
+                    <div className="container col col-lg-4">
                         <div className="d-flex align-items-center justify-content-center">
                             <img
                                 className="exp-img rounded"

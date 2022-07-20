@@ -10,12 +10,13 @@
 
 .navbar-brand,
 .nav-items a {
+  font-family: REBELTON_Medium;
   font-weight: bolder;
   color: black;
 }
 
 .nav-items a {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .brand-title {

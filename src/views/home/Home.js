@@ -15,7 +15,7 @@ const Home = () => {
                                 MICHAEL
                             </h1>
                         </div>
-                        <h3 className="row d-flex align-items-center justify-content-center animate__animated animate__slideInLeft fw-light mt-3">
+                        <h3 className="row d-flex align-items-center justify-content-center animate__animated animate__slideInLeft fw-light mt-3 rol-subtitle">
                             SOFTWARE DEVELOPER
                         </h3>
                         <div className="d-flex align-items-center justify-content-center">

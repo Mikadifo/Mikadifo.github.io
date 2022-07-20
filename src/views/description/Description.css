@@ -21,9 +21,13 @@
 }
 
 .info-stack p {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 .about-title {
   font-family: REBELTON_Medium;
+}
+
+.about-container p {
+  font-family: Central_W_Light;
 }
