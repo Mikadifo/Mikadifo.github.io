@@ -10,7 +10,9 @@ const Experience = () => {
     return (
         <>
             <div id="experience">
-                <h1 className="text-center pt-5 pb-5">Education</h1>
+                <h1 className="text-center pt-5 pb-5 education-title">
+                    Education
+                </h1>
                 <div className="row align-items-center justify-content-center">
                     {educationExperience.map((item) => {
                         leftAligned = !leftAligned;
@@ -23,7 +25,9 @@ const Experience = () => {
                         );
                     })}
                 </div>
-                <h1 className="text-center pt-5 pb-5">Experience</h1>
+                <h1 className="text-center pt-5 pb-5 experience-title">
+                    Experience
+                </h1>
                 <div className="row align-items-center justify-content-center">
                     {jobExperience.map((item) => {
                         leftAligned = !leftAligned;

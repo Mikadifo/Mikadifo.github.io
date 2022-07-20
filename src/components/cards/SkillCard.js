@@ -1,3 +1,5 @@
+import './SkillCard.css';
+
 const SkillCard = ({ skill }) => {
     return (
         <>
@@ -9,17 +11,15 @@ const SkillCard = ({ skill }) => {
                     <div className="col-md-4">
                         <img
                             src={skill.img}
-                            style={{ maxHeight: '8rem' }}
-                            className="img-fluid rounded-start p-2"
+                            style={{ maxHeight: '7rem' }}
+                            className="img-fluid rounded-start p-3"
                             alt={skill.title}
                         />
                     </div>
                     <div className="col-md-8">
                         <div className="card-body">
                             <h4 className="card-title">{skill.title}</h4>
-                            <p className="card-text">
-                                <b>Experience Time:</b> {skill.time}
-                            </p>
+                            <p className="card-text">{skill.time}</p>
                         </div>
                     </div>
                 </div>

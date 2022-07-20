@@ -1,5 +1,7 @@
 .date-label {
   font-size: 1.2rem;
+  font-family: Central_W_Light;
+  font-weight: bold;
 }
 
 .exp-img {
@@ -8,4 +10,9 @@
 
 .description-paragraph {
   font-size: 1.1rem;
+  font-family: Central_W_Light;
+}
+
+.card-title {
+  font-family: REBELTON_Medium;
 }
