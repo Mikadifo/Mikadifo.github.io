@@ -1,0 +1,9 @@
+#projects {
+  width: 100vw;
+  height: auto;
+  background-color: var(--color-gray);
+}
+
+.projects-title {
+  font-family: REBELTON_Medium;
+}

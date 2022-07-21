@@ -1,6 +1,7 @@
 import Navbar from '../../components/navbar/Navbar';
 import Experience from '../experience/Experience';
 import Skills from '../skills/Skills';
+import Projects from '../projects/Projects';
 import portrait from './../../img/face-img.png';
 import './Description.css';
 
@@ -36,6 +37,7 @@ const Description = () => {
                 </div>
             </div>
             <Skills />
+            <Projects />
             <Experience />
         </div>
     );
