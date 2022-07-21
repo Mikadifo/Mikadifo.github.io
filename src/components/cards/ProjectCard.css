@@ -1,0 +1,9 @@
+.btn-proj-link {
+  background: var(--color-orange);
+  color: #ffffff;
+}
+
+.btn-sourcecode {
+  background: var(--color-cyan);
+  color: #ffffff;
+}
