@@ -8,7 +8,7 @@ const SkillCard = ({ skill }) => {
                 style={{ maxWidth: 540, maxHeight: '8rem' }}
             >
                 <div className="row g-0">
-                    <div className="col-md-4">
+                    <div className="col-4">
                         <img
                             src={skill.img}
                             style={{ maxHeight: '7rem' }}
@@ -16,7 +16,7 @@ const SkillCard = ({ skill }) => {
                             alt={skill.title}
                         />
                     </div>
-                    <div className="col-md-8">
+                    <div className="col-8">
                         <div className="card-body">
                             <h4 className="card-title">{skill.title}</h4>
                             <p className="card-text">{skill.time}</p>

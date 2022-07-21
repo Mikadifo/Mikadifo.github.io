@@ -8,7 +8,10 @@ const Skills = () => {
             <h1 className="text-center pt-3 pb-5 skills-title">Skills</h1>
             <div className="row align-items-center justify-content-center">
                 {skills.map((skill) => (
-                    <div className="col col-lg-4" key={skill.id}>
+                    <div
+                        className="col col-lg-4 col-md-8 col-12"
+                        key={skill.id}
+                    >
                         <SkillCard skill={skill} />
                     </div>
                 ))}
