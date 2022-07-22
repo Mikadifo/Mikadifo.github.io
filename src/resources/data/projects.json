@@ -1,0 +1,42 @@
+[
+    {
+        "id": "pr_certificage",
+        "title": "CERTIFICAGE",
+        "description": "This project helps you to save all your certificates in the cloud, also you have the option to generate a sharing link.",
+        "link": "https://certificage.mikadifo.com/",
+        "sourceCode": "https://github.com/Mikadifo/Certificage",
+        "img": "https://certificage.mikadifo.com/static/media/logo.32ab6d21c45e784aeb58ce6aa2c6773a.svg"
+    },
+    {
+        "id": "pr_zenplet",
+        "title": "ZenPlet",
+        "description": "ZenPlet helps to have your pet information in one site, also provides an option to find your pet in case of lost.",
+        "link": "",
+        "sourceCode": "https://github.com/Mikadifo/ZenPlet-web-client",
+        "img": "https://lh5.googleusercontent.com/dbAL7SxRWg3eOzzHutYXhyrdfm-g1B9ZYTlwW3aV8wVKyvpwXMe1CB3I4Lya7e8w4XMGSlwcuNQpOtpNUbkJH1xMgdgLCYVhYKvFYqeCt1UUpsweqYht3lZaiXOFuUadfDQDhvEw-GJc8X526Wrf"
+    },
+    {
+        "id": "pr_dfm",
+        "title": "DON'T FORGET ME",
+        "description": "A mobile app that helps you to remeber your things when you're leaving, sending you a notification in your custom schedule.",
+        "link": "",
+        "sourceCode": "https://github.com/Mikadifo/DontForgetMeApp",
+        "img": "https://user-images.githubusercontent.com/51935560/180326585-9fbdf5f0-7e4b-47a7-8f1d-d0f07619de90.jpeg"
+    },
+    {
+        "id": "pr_cetad",
+        "title": "CENTERAVID",
+        "description": "Landing page for CENTERAVID, a drugs an alcohol rehabilitation center in Ecuador, showing its information and images of the clinic.",
+        "link": "",
+        "sourceCode": "",
+        "img": "https://user-images.githubusercontent.com/51935560/180333280-9dd77ae5-2a41-40ec-a453-fb6c26d60ff0.png"
+    },
+    {
+        "id": "pr_gacu",
+        "title": "GACU",
+        "description": "This project was created to promote the turism in Cuenca, Ecuador, using images and trivias.",
+        "link": "",
+        "sourceCode": "https://github.com/Mikadifo/GACU",
+        "img": "https://user-images.githubusercontent.com/51935560/180329533-2ec87409-57b7-451f-8a24-71b691d171aa.png"
+    }
+]

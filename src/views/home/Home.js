@@ -4,7 +4,7 @@ import './Home.css';
 const Home = () => {
     return (
         <div id="home" className="home-container">
-            <div className="row  p-5 stack-container">
+            <div className="row p-5 stack-container">
                 <div className="col col-lg-6 col-sm-12 d-flex align-items-center vh-100">
                     <div className="container">
                         <div className="row text-center presentation-title">
@@ -28,7 +28,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col col-lg-6 col-sm-12 d-none d-lg-flex align-items-center justify-content-center">
+                <div className="col col-lg-6 col-sm-12 d-none d-lg-flex align-items-center justify-content-center vh-100">
                     <p className="img-back">M</p>
                     <img
                         src={portrait}

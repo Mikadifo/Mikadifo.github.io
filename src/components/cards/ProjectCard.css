@@ -1,0 +1,20 @@
+.btn-proj-link {
+  background: var(--color-orange);
+  color: #ffffff;
+}
+
+.btn-sourcecode {
+  background: var(--color-cyan);
+  color: #ffffff;
+}
+
+.disabled-btn {
+  cursor: not-allowed;
+  background: var(--color-gray);
+  color: #000000;
+  border: #000000;
+}
+
+.disabled-btn:hover {
+  background: var(--color-gray);
+}
