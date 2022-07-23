@@ -2,9 +2,16 @@ import './Navbar.css';
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg bg-light sticky-top ps-5 pe-5">
+        <nav
+            className="navbar navbar-expand-lg bg-light sticky-top ps-5 pe-5"
+            data-testid="navbar"
+        >
             <div className="container-fluid">
-                <a className="navbar-brand brand-title" href="#home">
+                <a
+                    className="navbar-brand brand-title"
+                    href="#home"
+                    data-testid="nav-brand"
+                >
                     MIKADIFO
                 </a>
                 <button
@@ -23,16 +30,32 @@ const Navbar = () => {
                     id="navbarNavAltMarkup"
                 >
                     <div className="navbar-nav ms-auto nav-items">
-                        <a className="nav-link" href="#description">
+                        <a
+                            className="nav-link"
+                            href="#description"
+                            data-testid="nav-item-about"
+                        >
                             About Me
                         </a>
-                        <a className="nav-link" href="#skills">
+                        <a
+                            className="nav-link"
+                            href="#skills"
+                            data-testid="nav-item-skills"
+                        >
                             Skills
                         </a>
-                        <a className="nav-link" href="#projects">
+                        <a
+                            className="nav-link"
+                            href="#projects"
+                            data-testid="nav-item-pro"
+                        >
                             Projects
                         </a>
-                        <a className="nav-link" href="#experience">
+                        <a
+                            className="nav-link"
+                            href="#experience"
+                            data-testid="nav-item-exp"
+                        >
                             Experience
                         </a>
                     </div>
