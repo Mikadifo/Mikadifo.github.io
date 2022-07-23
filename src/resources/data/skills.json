@@ -19,19 +19,19 @@
     },
     {
         "id": "sk_android",
-        "title": "Android Development",
+        "title": "Android",
         "time": "1.5 year",
         "img": "https://cdn-icons-png.flaticon.com/512/226/226770.png"
     },
     {
         "id": "sk_IOS",
-        "title": "IOS Development",
+        "title": "IOS",
         "time": "5 months",
         "img": "https://icon-library.com/images/ios-icon-png/ios-icon-png-2.jpg"
     },
     {
         "id": "sk_Sp",
-        "title": "SpringBoot",
+        "title": "Spring",
         "time": "2 years",
         "img": "https://miro.medium.com/max/856/1*O68LbDvD5Dcsnez73M7v4Q.png"
     },
