@@ -2,25 +2,11 @@ import './ProjectCard.css';
 
 const ProjectCard = ({ project }) => {
     return (
-        <div
-            className="card mt-5"
-            style={{
-                width: '25rem',
-                maxWidth: '25rem',
-                maxHeight: '40rem',
-                height: '40rem',
-            }}
-        >
+        <div className="card mt-5 card-project">
             <img
                 src={project.img}
-                className="card-img-top p-4"
+                className="card-img-top p-4 card-img-project"
                 alt={project.title}
-                style={{
-                    maxWidth: '25rem',
-                    width: '25rem',
-                    maxHeight: '18rem',
-                    height: 'auto',
-                }}
             />
             <div className="card-body">
                 <h5 className="card-title">{project.title}</h5>

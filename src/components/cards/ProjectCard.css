@@ -18,3 +18,15 @@
 .disabled-btn:hover {
   background: var(--color-gray);
 }
+
+.card-img-project {
+  max-width: 25rem;
+  max-height: 18rem;
+  height: auto;
+}
+
+.card-project {
+  max-width: 25rem;
+  max-height: 47rem;
+  height: 47rem;
+}
