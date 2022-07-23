@@ -6,10 +6,10 @@ const Skills = () => {
     return (
         <div id="skills" className="p-5">
             <h1 className="text-center pt-3 pb-5 skills-title">Skills</h1>
-            <div className="row align-items-center justify-content-center">
+            <div className="row d-flex align-items-center justify-content-center">
                 {skills.map((skill) => (
                     <div
-                        className="col col-lg-4 col-md-8 col-12"
+                        className="col col-lg-4 col-md-8 col-sm-8 col-12"
                         key={skill.id}
                     >
                         <SkillCard skill={skill} />
