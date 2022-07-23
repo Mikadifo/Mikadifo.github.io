@@ -9,7 +9,7 @@ const Projects = () => {
             <div className="row align-items-center justify-content-center">
                 {projects.map((project) => (
                     <div
-                        className="col col-lg-6 col-xl-4 col-md-8 col-12"
+                        className="col col-lg-6 col-xl-4 col-md-6 col-12"
                         key={project.id}
                     >
                         <ProjectCard project={project} />
