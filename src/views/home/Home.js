@@ -3,7 +3,7 @@ import './Home.css';
 
 const Home = () => {
     return (
-        <div id="home" className="home-container">
+        <div id="home" className="home-container" data-testid="home">
             <div className="row p-5 stack-container">
                 <div className="col col-lg-6 col-sm-12 d-flex align-items-center vh-100">
                     <div className="container">
@@ -22,6 +22,7 @@ const Home = () => {
                             <a
                                 href="#description"
                                 className="row  btn btn-outline-dark about-button p-3 mt-5"
+                                data-testid="about-button"
                             >
                                 MORE ABOUT ME
                             </a>
@@ -34,6 +35,7 @@ const Home = () => {
                         src={portrait}
                         alt="MIKADIFO"
                         className="portrait-img animate__animated animate__zoomIn"
+                        data-testid="home-img"
                     />
                 </div>
             </div>
