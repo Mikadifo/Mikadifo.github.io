@@ -2,7 +2,7 @@ import './ExperienceCard.css';
 
 const ExperienceCard = ({ experienceInfo, isLeftAligned }) => {
     return (
-        <div className="row p-5 pb-0 pt-0">
+        <div className="row p-5 pb-0 pt-0" data-testid={experienceInfo.id}>
             {isLeftAligned ? (
                 <>
                     <div className="container col col-lg-4">

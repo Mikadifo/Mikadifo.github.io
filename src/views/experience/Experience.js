@@ -9,9 +9,9 @@ const Experience = () => {
 
     return (
         <>
-            <div id="experience">
+            <div id="experience" data-testid="experience">
                 <h1 className="text-center pt-5 pb-5 education-title">
-                    Education
+                    EDUCATION
                 </h1>
                 <div className="row align-items-center justify-content-center">
                     {educationExperience.map((item) => {
@@ -26,7 +26,7 @@ const Experience = () => {
                     })}
                 </div>
                 <h1 className="text-center pt-5 pb-5 experience-title">
-                    Experience
+                    EXPERIENCE
                 </h1>
                 <div className="row align-items-center justify-content-center">
                     {jobExperience.map((item) => {
