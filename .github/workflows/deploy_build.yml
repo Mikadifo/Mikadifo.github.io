@@ -1,16 +1,15 @@
 name: Deploy-Build-React
 
 on:
-  pull_request:
-    types:
-      - closed
   push:
+  pull_request:
     branches:
       - master
+    types: [closed]
 
 jobs:
   deploy:
-    if: github.event.pull_request.merged == true
+    if: github.event.pull_request.merged == true || github.event == 'push'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -25,7 +24,7 @@ jobs:
           CI=false npm run build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/master' }}
+        if: ${{ github.ref == 'refs/heads/master' && github.event.pull_request.merged }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
