@@ -2,12 +2,15 @@ name: Deploy-Build-React
 
 on:
   pull_request:
+    types:
+      - closed
   push:
     branches:
       - master
 
 jobs:
   deploy:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     permissions:
       contents: write
