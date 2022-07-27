@@ -62,7 +62,7 @@ const Navbar = () => {
                             className="nav-link"
                             href="https://blog.mikadifo.com"
                             target="_blank"
-                            data-testid="nav-item-exp"
+                            data-testid="nav-item-blog"
                         >
                             Blog
                         </a>
