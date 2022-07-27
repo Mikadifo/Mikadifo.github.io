@@ -18,6 +18,7 @@ test('navbar render options and brand', () => {
     expect(navbar).toHaveTextContent('Skills');
     expect(navbar).toHaveTextContent('Projects');
     expect(navbar).toHaveTextContent('Experience');
+    expect(navbar).toHaveTextContent('Blog');
 });
 
 test('Links are working', () => {
@@ -26,10 +27,12 @@ test('Links are working', () => {
     const navSkills = screen.getByTestId('nav-item-skills');
     const navProjects = screen.getByTestId('nav-item-pro');
     const navExperience = screen.getByTestId('nav-item-exp');
+    const navBlog = screen.getByTestId('nav-item-blog');
 
     expect(navBrand).toHaveAttribute('href', '#home');
     expect(navAbout).toHaveAttribute('href', '#description');
     expect(navSkills).toHaveAttribute('href', '#skills');
     expect(navProjects).toHaveAttribute('href', '#projects');
     expect(navExperience).toHaveAttribute('href', '#experience');
+    expect(navBlog).toHaveAttribute('href', 'https://blog.mikadifo.com');
 });

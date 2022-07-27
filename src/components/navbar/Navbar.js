@@ -58,6 +58,14 @@ const Navbar = () => {
                         >
                             Experience
                         </a>
+                        <a
+                            className="nav-link"
+                            href="https://blog.mikadifo.com"
+                            target="_blank"
+                            data-testid="nav-item-blog"
+                        >
+                            Blog
+                        </a>
                     </div>
                 </div>
             </div>
