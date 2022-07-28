@@ -22,3 +22,8 @@
 .brand-title {
   font-family: REBELTON_Medium;
 }
+
+.current-item {
+  border-bottom: 3px solid black;
+  padding-bottom: 1px;
+}
