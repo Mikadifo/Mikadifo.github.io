@@ -1,6 +1,9 @@
+import { useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
+    const { pathname } = useLocation();
+
     return (
         <nav
             className="navbar navbar-expand-lg bg-light sticky-top ps-5 pe-5"
@@ -31,28 +34,36 @@ const Navbar = () => {
                 >
                     <div className="navbar-nav ms-auto nav-items">
                         <a
-                            className="nav-link"
+                            className={`nav-link ${
+                                pathname === 'description' && 'current-item'
+                            }`}
                             href="#description"
                             data-testid="nav-item-about"
                         >
                             About Me
                         </a>
                         <a
-                            className="nav-link"
+                            className={`nav-link ${
+                                pathname === 'skills' && 'current-item'
+                            }`}
                             href="#skills"
                             data-testid="nav-item-skills"
                         >
                             Skills
                         </a>
                         <a
-                            className="nav-link"
+                            className={`nav-link ${
+                                pathname === 'projects' && 'current-item'
+                            }`}
                             href="#projects"
                             data-testid="nav-item-pro"
                         >
                             Projects
                         </a>
                         <a
-                            className="nav-link"
+                            className={`nav-link ${
+                                pathname === 'experience' && 'current-item'
+                            }`}
                             href="#experience"
                             data-testid="nav-item-exp"
                         >
