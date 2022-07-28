@@ -23,4 +23,3 @@ jobs:
           npm ci
           else
           npm i
-          CI=false npm run build
