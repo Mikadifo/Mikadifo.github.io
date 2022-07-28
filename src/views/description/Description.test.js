@@ -1,4 +1,5 @@
 import { render, screen, cleanup } from '@testing-library/react';
+import { HashRouter } from 'react-router-dom';
 import Description from './Description';
 import {
     descriptionParagraph1,
@@ -6,7 +7,11 @@ import {
 } from '../../constants/texts';
 
 beforeEach(() => {
-    render(<Description />);
+    render(
+        <HashRouter>
+            <Description />
+        </HashRouter>,
+    );
 });
 
 afterEach(() => {

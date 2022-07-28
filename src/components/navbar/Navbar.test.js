@@ -1,8 +1,13 @@
 import { render, screen, cleanup } from '@testing-library/react';
+import { HashRouter } from 'react-router-dom';
 import Navbar from './Navbar';
 
 beforeEach(() => {
-    render(<Navbar />);
+    render(
+        <HashRouter>
+            <Navbar />
+        </HashRouter>,
+    );
 });
 
 afterEach(() => {
