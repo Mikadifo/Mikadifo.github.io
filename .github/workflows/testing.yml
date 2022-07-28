@@ -17,5 +17,10 @@ jobs:
 
       - name: Test
         run: |
+          if [ -e yarn.lock ]; then
+          yarn install --frozen-lockfile
+          elif [ -e package-lock.json ]; then
           npm ci
-          CI=false npm run test
+          else
+          npm i
+          CI=false npm run build
