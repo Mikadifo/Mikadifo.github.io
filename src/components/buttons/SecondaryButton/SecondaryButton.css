@@ -1,5 +1,5 @@
 .secondary-btn {
-  background-color: var(--color-white);
+  background-color: rgb(var(--color-white));
   font-family: Nunito, sans-serif;
   font-size: 15px;
   font-weight: bold;
@@ -11,4 +11,15 @@
 
 .sec-btn-icon {
   font-size: 12px;
+  padding-left: 8px;
+}
+
+.sec-btn-hover {
+  background-color: rgb(var(--color-black));
+  color: rgb(var(--color-white));
+}
+
+.sec-btn-active {
+  background-color: rgba(var(--color-black), 0.8);
+  color: rgb(var(--color-white));
 }

@@ -1,16 +1,14 @@
 import { useState } from 'react';
-import './SecondaryButton.css';
+import './PrimaryButton.css';
 
-const SecondaryButton = ({ text, iconClass, hoverIconClass }) => {
+const PrimaryButton = ({ text, iconClass, hoverIconClass }) => {
     const [hover, setHover] = useState(false);
     const [active, setActive] = useState(false);
 
     return (
         <>
             <button
-                className={`secondary-btn ${active && 'sec-btn-active'} ${
-                    hover && 'sec-btn-hover'
-                }`}
+                className={`primary-btn ${active && 'pri-btn-active'}`}
                 onMouseEnter={() => setHover(true)}
                 onMouseLeave={() => setHover(false)}
                 onMouseDown={() => setActive(true)}
@@ -24,11 +22,11 @@ const SecondaryButton = ({ text, iconClass, hoverIconClass }) => {
                 <i
                     className={`${
                         hover ? hoverIconClass : iconClass
-                    } sec-btn-icon`}
+                    } pri-btn-icon`}
                 />
             </button>
         </>
     );
 };
 
-export default SecondaryButton;
+export default PrimaryButton;

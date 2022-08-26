@@ -6,19 +6,25 @@ body {
 
 html {
   --color-gray: #dbdbdb;
-  --color-cyan: #3a9cba;
-  --color-orange: #f08d2b;
 
-  --color-primary: #3d8fb1;
-  --color-secondary: #374ebd;
+  --color-secondary: 55, 78, 189;
   --color-brand-gradient: linear-gradient(0.25turn, #3d8fb1, #374ebd);
-  --color-white: #ebf2f4;
+  --color-white: 235, 242, 244;
   --color-black: 37, 42, 44;
+  --h-color: rgb(var(--color-black));
+
+  --h-font: Nunito, sans-serif;
 
   --paragraph-size: 21px;
   --paragraph-height: 30px;
   --paragraph-font: NunitoSans-Regular, sans-serif;
-  --paragraph-color: rgb(var(--color-black), 0.75);
+  --paragraph-color: rgba(var(--color-black), 0.75);
+
+  --h4-size: 42px;
+  --h4-height: 50px;
+
+  --h6-size: 21px;
+  --h6-height: 27px;
 }
 
 @font-face {

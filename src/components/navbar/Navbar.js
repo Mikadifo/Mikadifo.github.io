@@ -71,7 +71,13 @@ const Navbar = () => {
                     </nav>
                 </div>
                 <div className="col my-auto text-end">
-                    <SecondaryButton text="Email me" iconClass="bi-send-fill" />
+                    <a href="mailto:mikadifopadillaheredia@gmail.com">
+                        <SecondaryButton
+                            text="Email me"
+                            iconClass="bi-send-fill"
+                            hoverIconClass="bi-send"
+                        />
+                    </a>
                 </div>
             </div>
         </div>

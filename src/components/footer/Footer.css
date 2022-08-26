@@ -1,3 +1,27 @@
+.footer-action {
+  width: 100vw;
+  padding: 0 256px 0 256px;
+  margin-top: 256px;
+}
+
+.contact-info p {
+  margin: 0;
+}
+
+.contact-title {
+  font-family: var(--h-font);
+  color: var(--h-color);
+  font-size: var(--h4-size);
+  font-weight: bold;
+  margin-bottom: 16px !important;
+}
+
+.contact-paragraph {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color);
+  font-size: var(--paragraph-size);
+}
+
 .footer-container {
   border-top: 1px solid rgba(var(--color-black), 0.5);
   width: 100vw;
