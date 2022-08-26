@@ -7,14 +7,14 @@
 }
 
 .nav-brand {
-  color: var(--color-black);
+  color: rgb(var(--color-black));
   font-family: Nunito_Black, sans-serif;
   font-size: 40px;
   text-decoration: none;
 }
 
 .nav-brand:hover {
-  color: var(--color-black);
+  color: rgba(var(--color-black), 0.8);
 }
 
 .navbar {
@@ -22,8 +22,16 @@
 }
 
 .navbar a {
-  color: var(--color-black);
+  color: rgb(var(--color-black));
   font-weight: bold;
   font-size: 15px;
   font-family: Nunito, sans-serif;
+}
+
+.navbar a:hover {
+  color: rgba(var(--color-black), 0.5);
+}
+
+.navbar a:active {
+  color: rgba(var(--color-black), 0.4);
 }
