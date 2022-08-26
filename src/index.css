@@ -13,7 +13,7 @@ html {
   --color-secondary: #374ebd;
   --color-brand-gradient: linear-gradient(0.25turn, #3d8fb1, #374ebd);
   --color-white: #ebf2f4;
-  --color-black: #252a2c;
+  --color-black: 37, 42, 44;
 }
 
 @font-face {
@@ -29,6 +29,11 @@ html {
 @font-face {
   font-family: Nunito;
   src: url(./resources/fonts/Nunito.ttf);
+}
+
+@font-face {
+  font-family: Nunito_Black;
+  src: url(./resources/fonts/Nunito-Black.ttf);
 }
 
 @font-face {

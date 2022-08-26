@@ -1,4 +1,3 @@
-import Navbar from '../../components/navbar/Navbar';
 import Experience from '../experience/Experience';
 import Skills from '../skills/Skills';
 import Projects from '../projects/Projects';
@@ -13,7 +12,6 @@ const Description = () => {
     return (
         <>
             <div id="description">
-                <Navbar />
                 <div
                     className="description-container"
                     data-testid="description"

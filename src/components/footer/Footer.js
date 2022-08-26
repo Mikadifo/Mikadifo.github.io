@@ -15,6 +15,7 @@ const Footer = () => {
                             role="button"
                             data-mdb-ripple-color="dark"
                             target="_blank"
+                            rel="noreferer"
                             data-testid="footer-tw-icon"
                         >
                             <i className="fab fa-twitter"></i>
@@ -25,6 +26,7 @@ const Footer = () => {
                             role="button"
                             data-mdb-ripple-color="dark"
                             target="_blank"
+                            rel="noreferer"
                             data-testid="footer-ig-icon"
                         >
                             <i className="fab fa-instagram"></i>
@@ -35,6 +37,7 @@ const Footer = () => {
                             role="button"
                             data-mdb-ripple-color="dark"
                             target="_blank"
+                            rel="noreferer"
                             data-testid="footer-ln-icon"
                         >
                             <i className="fab fa-linkedin"></i>
@@ -45,6 +48,7 @@ const Footer = () => {
                             role="button"
                             data-mdb-ripple-color="dark"
                             target="_blank"
+                            rel="noreferer"
                             data-testid="footer-gh-icon"
                         >
                             <i className="fab fa-github"></i>
@@ -65,6 +69,7 @@ const Footer = () => {
                         className="text-dark"
                         href="https://www.instagram.com/foraneoblack"
                         target="_blank"
+                        rel="noreferer"
                         data-testid="copy-david"
                     >
                         ForaneoBlack

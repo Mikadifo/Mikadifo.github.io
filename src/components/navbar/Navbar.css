@@ -1,29 +1,17 @@
-.navbar {
-  background: var(--color-gray) !important;
-  border-bottom: 0.3rem solid var(--color-cyan);
+.nav-container {
+  border-bottom: 1px solid rgba(var(--color-black), 0.5);
   width: 100vw;
+  height: 108px;
+  padding: 0;
 }
 
-.navbar-brand {
-  font-size: 1.5rem;
+.nav-container .nav-items {
+  width: 100vw;
+  padding: 0 64px 0 64px;
 }
 
-.navbar-brand,
-.nav-items a {
-  font-family: REBELTON_Medium;
-  font-weight: bolder;
-  color: black;
-}
-
-.nav-items a {
-  font-size: 1rem;
-}
-
-.brand-title {
-  font-family: REBELTON_Medium;
-}
-
-.current-item {
-  border-bottom: 3px solid black;
-  padding-bottom: 1px;
+.nav-brand {
+  color: var(--color-black);
+  font-family: Nunito_Black, sans-serif;
+  font-size: 40px;
 }
