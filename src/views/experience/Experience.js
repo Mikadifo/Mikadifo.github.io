@@ -41,7 +41,6 @@ const Experience = () => {
                     })}
                 </div>
             </div>
-            <Footer />
         </>
     );
 };

@@ -35,9 +35,6 @@ const Description = () => {
                         </div>
                     </div>
                 </div>
-                <Skills />
-                <Projects />
-                <Experience />
             </div>
         </>
     );

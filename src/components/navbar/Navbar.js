@@ -3,14 +3,17 @@ import './Navbar.css';
 
 const Navbar = () => {
     return (
-        <div className="container-fluid nav-container" data-testid="navbar">
+        <div
+            className="container-fluid nav-container nav-frame"
+            data-testid="navbar"
+        >
             <div className="row h-100">
                 <div className="col my-auto nav-brand">M</div>
                 <div className="col-8 my-auto text-center mx-auto ms-auto">
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <div class="container-fluid">
+                    <nav className="navbar navbar-expand-lg navbar-light">
+                        <div className="container-fluid">
                             <button
-                                class="navbar-toggler"
+                                className="navbar-toggler"
                                 type="button"
                                 data-bs-toggle="collapse"
                                 data-bs-target="#navbarNavAltMarkup"
@@ -18,27 +21,38 @@ const Navbar = () => {
                                 aria-expanded="false"
                                 aria-label="Toggle navigation"
                             >
-                                <span class="navbar-toggler-icon"></span>
+                                <span className="navbar-toggler-icon"></span>
                             </button>
                             <div
-                                class="collapse navbar-collapse"
+                                className="collapse navbar-collapse"
                                 id="navbarNavAltMarkup"
                             >
-                                <div class="navbar-nav mx-auto">
+                                <div className="navbar-nav mx-auto">
                                     <a
-                                        class="nav-link pe-3"
+                                        className="nav-link pe-3"
                                         aria-current="page"
-                                        href="#"
+                                        href="#description"
                                     >
                                         About me
                                     </a>
-                                    <a class="nav-link ps-3 pe-3" href="#">
+                                    <a
+                                        className="nav-link ps-3 pe-3"
+                                        href="#projects"
+                                    >
                                         Projects
                                     </a>
-                                    <a class="nav-link ps-3 pe-3" href="#">
+                                    <a
+                                        className="nav-link ps-3 pe-3"
+                                        href="#experience"
+                                    >
                                         Experience
                                     </a>
-                                    <a class="nav-link ps-3" href="#">
+                                    <a
+                                        className="nav-link ps-3"
+                                        href="https://blog.mikadifo.com/"
+                                        target="_blank"
+                                        rel="noreferer"
+                                    >
                                         Blog
                                     </a>
                                 </div>
