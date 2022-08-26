@@ -1,0 +1,14 @@
+.secondary-btn {
+  background-color: var(--color-white);
+  font-family: Nunito, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 100px;
+  border: 4px solid rgb(var(--color-black));
+  color: rgb(var(--color-black));
+}
+
+.sec-btn-icon {
+  font-size: 12px;
+}
