@@ -13,6 +13,10 @@
   text-decoration: none;
 }
 
+.nav-brand:hover {
+  color: var(--color-black);
+}
+
 .navbar {
   padding: 0;
 }
