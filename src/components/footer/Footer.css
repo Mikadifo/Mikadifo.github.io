@@ -1,23 +1,18 @@
 .footer-container {
-  border-top: 0.3rem solid var(--color-cyan);
+  border-top: 1px solid rgba(var(--color-black), 0.5);
   width: 100vw;
+  height: 108px;
+  padding: 0 64px 0 64px;
+  margin-top: 256px;
 }
 
 .copyright-text {
-  background: var(--color-orange);
-  font-family: Central_W_Light;
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color);
+  font-size: var(--paragraph-size);
 }
 
-.copyright-text a {
-  text-decoration: none;
-  font-weight: bolder;
-  font-family: REBELTON_Medium;
-}
-
-.copyright-text a:hover {
-  text-decoration: underline;
-}
-
-.foot-icons {
-  background: var(--color-gray);
+.footer-icons a {
+  color: rgb(var(--color-black));
+  font-size: 32px;
 }

@@ -14,6 +14,11 @@ html {
   --color-brand-gradient: linear-gradient(0.25turn, #3d8fb1, #374ebd);
   --color-white: #ebf2f4;
   --color-black: 37, 42, 44;
+
+  --paragraph-size: 21px;
+  --paragraph-height: 30px;
+  --paragraph-font: NunitoSans-Regular, sans-serif;
+  --paragraph-color: rgb(var(--color-black), 0.75);
 }
 
 @font-face {
