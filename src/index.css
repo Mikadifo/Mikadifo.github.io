@@ -8,6 +8,12 @@ html {
   --color-gray: #dbdbdb;
   --color-cyan: #3a9cba;
   --color-orange: #f08d2b;
+
+  --color-primary: #3d8fb1;
+  --color-secondary: #374ebd;
+  --color-brand-gradient: linear-gradient(0.25turn, #3d8fb1, #374ebd);
+  --color-white: #ebf2f4;
+  --color-black: #252a2c;
 }
 
 @font-face {
@@ -18,4 +24,24 @@ html {
 @font-face {
   font-family: REBELTON_Medium;
   src: url(./resources/fonts/REBELTON_Medium.ttf);
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url(./resources/fonts/Nunito.ttf);
+}
+
+@font-face {
+  font-family: NunitoSans_Regular;
+  src: url(./resources/fonts/NunitoSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: NunitoSans_Light;
+  src: url(./resources/fonts/NunitoSans-Light.ttf);
+}
+
+@font-face {
+  font-family: NunitoSans_Bold;
+  src: url(./resources/fonts/NunitoSans-Bold.ttf);
 }
