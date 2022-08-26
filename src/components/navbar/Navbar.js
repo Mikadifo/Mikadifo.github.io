@@ -8,7 +8,13 @@ const Navbar = () => {
             data-testid="navbar"
         >
             <div className="row h-100">
-                <div className="col my-auto nav-brand">M</div>
+                <a
+                    className="col my-auto nav-brand"
+                    data-testid="nav-brand"
+                    href="#home"
+                >
+                    M
+                </a>
                 <div className="col-8 my-auto text-center mx-auto ms-auto">
                     <nav className="navbar navbar-expand-lg navbar-light">
                         <div className="container-fluid">
@@ -32,26 +38,30 @@ const Navbar = () => {
                                         className="nav-link pe-3"
                                         aria-current="page"
                                         href="#description"
+                                        data-testid="nav-item-about"
                                     >
-                                        About me
+                                        About Me
                                     </a>
                                     <a
                                         className="nav-link ps-3 pe-3"
                                         href="#projects"
+                                        data-testid="nav-item-pro"
                                     >
                                         Projects
                                     </a>
                                     <a
                                         className="nav-link ps-3 pe-3"
                                         href="#experience"
+                                        data-testid="nav-item-exp"
                                     >
                                         Experience
                                     </a>
                                     <a
                                         className="nav-link ps-3"
-                                        href="https://blog.mikadifo.com/"
+                                        href="https://blog.mikadifo.com"
                                         target="_blank"
                                         rel="noreferer"
+                                        data-testid="nav-item-blog"
                                     >
                                         Blog
                                     </a>
