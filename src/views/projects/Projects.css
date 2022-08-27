@@ -1,9 +1,30 @@
 #projects {
-  width: 100vw;
-  height: auto;
-  background-color: var(--color-gray);
+  margin-bottom: 384px;
+}
+
+.project-bg {
+  background-color: rgba(255, 0, 0, 0.5);
+  width: 100%;
+}
+
+.project-container {
+  background-color: white;
+  padding: 32px 68px 0px 68px;
+  margin: 0px 256px;
+  border-radius: 16px;
+  width: 100%;
+  position: relative;
+  top: 128px;
 }
 
 .projects-title {
-  font-family: REBELTON_Medium;
+  padding-bottom: 80px;
+  font-size: var(--h3-size);
+  color: var(--h-color);
+  font-family: var(--h-font);
+  font-weight: bold;
+}
+
+.slider-controls {
+  padding-top: 80px;
 }
