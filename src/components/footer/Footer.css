@@ -39,4 +39,14 @@
 .footer-icons a {
   color: rgb(var(--color-black));
   font-size: 32px;
+  padding: 0;
+  border: none;
+}
+
+.footer-icons a:hover {
+  color: rgb(var(--color-secondary));
+}
+
+.footer-icons a:active {
+  color: rgba(var(--color-secondary), 0.5);
 }

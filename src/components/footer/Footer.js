@@ -33,7 +33,7 @@ const Footer = () => {
                     </div>
                     <div className="col-6 my-auto text-end footer-icons">
                         <a
-                            className="btn btn-link btn-floating btn-lg m-1"
+                            className="btn btn-link btn-floating btn-lg me-3"
                             href="https://github.com/Mikadifo"
                             role="button"
                             data-mdb-ripple-color="dark"
@@ -44,7 +44,7 @@ const Footer = () => {
                             <i className="fab fa-github" />
                         </a>
                         <a
-                            className="btn btn-link btn-floating btn-lg m-1"
+                            className="btn btn-link btn-floating btn-lg ms-3 me-3"
                             href="https://www.linkedin.com/in/mikadifo"
                             role="button"
                             data-mdb-ripple-color="dark"
@@ -55,7 +55,7 @@ const Footer = () => {
                             <i className="fab fa-linkedin" />
                         </a>
                         <a
-                            className="btn btn-link btn-floating btn-lg m-1"
+                            className="btn btn-link btn-floating btn-lg ms-3"
                             href="https://twitter.com/Mikadifo2"
                             role="button"
                             data-mdb-ripple-color="dark"
