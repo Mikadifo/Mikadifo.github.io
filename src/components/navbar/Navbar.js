@@ -3,10 +3,7 @@ import './Navbar.css';
 
 const Navbar = () => {
     return (
-        <div
-            className="container-fluid nav-container nav-frame"
-            data-testid="navbar"
-        >
+        <div className="container-fluid nav-container" data-testid="navbar">
             <div className="row h-100">
                 <a
                     className="col my-auto nav-brand"
