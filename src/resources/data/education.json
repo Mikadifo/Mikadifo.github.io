@@ -2,7 +2,7 @@
     {
         "id": "esl-hunter",
         "imgUrl": "https://www.hunter.cuny.edu/ieli/overrides/hunter.publictheme.refresh.simple/department-logo-static/IELI-Logo-v2.jpg/image",
-        "title": "ESL",
+        "title": "English as Second Language",
         "institution": "Hunter College",
         "dateStart": "March 2022",
         "dateEnd": "Now"
@@ -11,7 +11,7 @@
         "id": "tecazuay",
         "imgUrl": "https://scontent-lga3-1.xx.fbcdn.net/v/t1.18169-9/23244390_154661861945235_6005544922762324835_n.png?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=PNZz0HVyOw0AX_zR-bD&_nc_ht=scontent-lga3-1.xx&oh=00_AT_xhzXEtaZYnGvZO0xaM8gYBezpY2jrq_zsuroGuRWbUA&oe=62E13B98",
         "title": "Software Developtment",
-        "institution": "Tecazuay",
+        "institution": "Tecnológico del Azuay",
         "dateStart": "May 2019",
         "dateEnd": "October 2021"
     }

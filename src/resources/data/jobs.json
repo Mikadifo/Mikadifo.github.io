@@ -1,17 +1,9 @@
 [
     {
-        "id": "open-source",
-        "imgUrl": "https://cdn.iowacomputergurus.com/blog/another-genius-move-from-microsoft-acquires-github-for-7-5-billion-in-stock.png",
-        "title": "Open Source Colaborator",
-        "institution": "GitHub",
-        "dateStart": "March 2020",
-        "dateEnd": "Now"
-    },
-    {
         "id": "libelula",
         "imgUrl": "https://www.libelulasoft.com/img/1.png",
-        "title": "Software Developer",
-        "institution": "LibelulaSoft",
+        "title": "Fullstack Software Developer",
+        "institution": "LibélulaSoft",
         "dateStart": "July 2021",
         "dateEnd": "January 2022"
     }
