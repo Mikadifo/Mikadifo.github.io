@@ -1,6 +1,5 @@
 .nav-container {
   border-bottom: 1px solid rgba(var(--color-black), 0.5);
-  width: 100vw;
   height: 108px;
   padding: 0 64px 0 64px;
   margin-bottom: 256px;

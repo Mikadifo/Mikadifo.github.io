@@ -1,33 +1,31 @@
 .description-container {
-  width: 100vw;
-  height: auto;
-  background: var(--color-gray);
+  padding: 256px 256px;
 }
 
-.img-back-letter {
-  color: var(--color-cyan);
-  font-weight: bolder;
-  font-size: 27rem;
-}
-
-.portrait-img-front {
-  position: absolute;
-  width: 22rem;
-  height: 22rem;
-}
-
-.info-stack {
-  text-align: justify;
-}
-
-.info-stack p {
-  font-size: 1.5rem;
+.about-separator {
+  border-left: 4px solid rgba(var(--color-black), 0.5);
+  border-radius: 8px;
+  width: 4px;
+  height: 300px;
+  transform: rotate(30deg);
 }
 
 .about-title {
-  font-family: REBELTON_Medium;
+  color: var(--h-color);
+  font-family: var(--h-font);
+  font-size: var(--h3-size);
+  font-weight: bold;
+  line-height: var(--h3-height);
+  padding: 0;
+  margin: 0;
 }
 
 .about-container p {
-  font-family: Central_W_Light;
+  text-align: justify;
+  font-size: var(--paragraph-size);
+  font-family: var(--paragraph-font);
+  line-height: var(--paragraph-height);
+  color: var(--paragraph-color);
+  padding: 0;
+  margin: 0;
 }
