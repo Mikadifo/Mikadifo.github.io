@@ -7,7 +7,7 @@ const ExperienceCard = ({ experienceInfo }) => {
                 <div className="row justify-content-center text-center">
                     <img
                         className="exp-img"
-                        src="https://pbs.twimg.com/profile_images/1410588604435472385/FvHaNhiF_400x400.jpg"
+                        src={experienceInfo.imgUrl}
                         alt={experienceInfo.title}
                     />
                     <div className="row">
