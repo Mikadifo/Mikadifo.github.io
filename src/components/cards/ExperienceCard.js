@@ -2,7 +2,10 @@ import './ExperienceCard.css';
 
 const ExperienceCard = ({ experienceInfo }) => {
     return (
-        <div className="row experience-container">
+        <div
+            className="row experience-container"
+            data-testid={experienceInfo.id}
+        >
             <div className="container col-4">
                 <div className="row justify-content-center text-center">
                     <img

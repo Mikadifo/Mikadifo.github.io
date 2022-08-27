@@ -22,9 +22,6 @@ test('education render cards from json', () => {
         expect(cardRendered).toHaveTextContent(education.institution);
         expect(cardRendered).toHaveTextContent(education.dateStart);
         expect(cardRendered).toHaveTextContent(education.dateEnd);
-        expect(cardRendered).toHaveTextContent(
-            education.description.replace(/(\r\n|\n|\r)/gm, ''),
-        );
         expect(cardRendered.querySelector('img')).toHaveAttribute(
             'src',
             education.img,
@@ -43,9 +40,6 @@ test('job render cards from json', () => {
         expect(cardRendered).toHaveTextContent(job.institution);
         expect(cardRendered).toHaveTextContent(job.dateStart);
         expect(cardRendered).toHaveTextContent(job.dateEnd);
-        expect(cardRendered).toHaveTextContent(
-            job.description.replace(/(\r\n|\n|\r)/gm, ''),
-        );
         expect(cardRendered.querySelector('img')).toHaveAttribute(
             'src',
             job.img,
