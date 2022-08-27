@@ -1,0 +1,23 @@
+.borderless-btn {
+  background: transparent;
+  color: var(--h-color);
+  font-family: Nunito, sans-serif;
+  font-size: var(--h6-size);
+  font-weight: bold;
+  border: none;
+  padding: 0;
+}
+
+.bls-btn-icon {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.bls-btn-hover {
+  opacity: 0.75;
+  border-bottom: 1px solid rgba(var(--color-black), 0.75);
+}
+.bls-btn-active {
+  color: rgba(var(--color-secondary), 0.75);
+  border-bottom: 1px solid rgba(var(--color-secondary), 0.75);
+}

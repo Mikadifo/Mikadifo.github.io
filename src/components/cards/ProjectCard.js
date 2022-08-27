@@ -1,3 +1,4 @@
+import BorderlessButton from './../buttons/BorderlessButton/BorderlessButton';
 import './ProjectCard.css';
 
 const ProjectCard = ({ project }) => {
@@ -18,10 +19,18 @@ const ProjectCard = ({ project }) => {
                     </p>
                     <div className="row">
                         <div className="col-6">
-                            <button>btn1</button>
+                            <BorderlessButton
+                                text={'Website'}
+                                iconClass={'bi bi-display'}
+                                hoverIconClass={'bi bi-display-fill'}
+                            />
                         </div>
                         <div className="col-6">
-                            <button>btn2</button>
+                            <BorderlessButton
+                                text={'Source Code'}
+                                iconClass={'bi bi-code'}
+                                hoverIconClass={'bi bi-code-slash'}
+                            />
                         </div>
                     </div>
                 </div>
@@ -29,32 +38,5 @@ const ProjectCard = ({ project }) => {
         </div>
     );
 };
-
-//return (
-//<div className="card card-project">
-//<div className="card-body">
-//<h5 className="card-title">{project.title}</h5>
-//<p className="card-text">{project.description}</p>
-//</div>
-//<a
-//href={project.link ? project.link : null}
-//className={`btn btn-proj-link ${
-//!project.link && 'disabled-btn'
-//}`}
-//target="_blank"
-//>
-//Website
-//</a>
-//<a
-//href={project.sourceCode ? project.sourceCode : null}
-//className={`btn btn-sourcecode ${
-//!project.sourceCode && 'disabled-btn'
-//}`}
-//target="_blank"
-//>
-//Source Code
-//</a>
-//</div>
-//);
 
 export default ProjectCard;
