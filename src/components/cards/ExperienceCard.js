@@ -1,93 +1,36 @@
 import './ExperienceCard.css';
 
-const ExperienceCard = ({ experienceInfo, isLeftAligned }) => {
+const ExperienceCard = ({ experienceInfo }) => {
     return (
-        <div className="row p-5 pb-0 pt-0" data-testid={experienceInfo.id}>
-            {isLeftAligned ? (
-                <>
-                    <div className="container col col-lg-4">
-                        <div className="d-flex align-items-center justify-content-center">
-                            <img
-                                className="exp-img rounded"
-                                src={experienceInfo.imgUrl}
-                                alt={experienceInfo.title}
-                            />
-                        </div>
+        <div className="row experience-container">
+            <div className="container col-4">
+                <div className="row justify-content-center text-center">
+                    <img
+                        className="exp-img"
+                        src="https://pbs.twimg.com/profile_images/1410588604435472385/FvHaNhiF_400x400.jpg"
+                        alt={experienceInfo.title}
+                    />
+                    <div className="row">
+                        <p className="date-label">
+                            {experienceInfo.dateStart} -{' '}
+                            {experienceInfo.dateEnd}
+                        </p>
                     </div>
-                    <div className="container col col-lg-8 d-flex align-items-center justify-content-center">
-                        <div className="container">
-                            <div className="row">
-                                <h3 className="card-title">
-                                    {experienceInfo.title} -{' '}
-                                    {experienceInfo.institution}
-                                </h3>
-                            </div>
-                            <div className="row">
-                                <p className="date-label">
-                                    <i>
-                                        {experienceInfo.dateStart} -{' '}
-                                        {experienceInfo.dateEnd}
-                                    </i>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="container p-5">
-                        {experienceInfo.description
-                            .split('\n')
-                            .map((paragraph, index) => (
-                                <p
-                                    key={index}
-                                    className="description-paragraph"
-                                >
-                                    {paragraph}
-                                </p>
-                            ))}
-                    </div>
-                </>
-            ) : (
-                <>
-                    <div className="container col col-lg-8 d-flex align-items-center justify-content-center">
-                        <div className="container">
-                            <div className="row">
-                                <h3 className="card-title">
-                                    {experienceInfo.title} -{' '}
-                                    {experienceInfo.institution}
-                                </h3>
-                            </div>
-                            <div className="row">
-                                <p className="date-label">
-                                    <i>
-                                        {experienceInfo.dateStart} -{' '}
-                                        {experienceInfo.dateEnd}
-                                    </i>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="container col col-lg-4">
-                        <div className="d-flex align-items-center justify-content-center">
-                            <img
-                                className="exp-img rounded"
-                                src={experienceInfo.imgUrl}
-                                alt={experienceInfo.title}
-                            />
-                        </div>
-                    </div>
-                    <div className="container p-5">
-                        {experienceInfo.description
-                            .split('\n')
-                            .map((paragraph, index) => (
-                                <p
-                                    key={index}
-                                    className="description-paragraph"
-                                >
-                                    {paragraph}
-                                </p>
-                            ))}
-                    </div>
-                </>
-            )}
+                </div>
+            </div>
+            <div className="container col-4 justify-content-center d-flex">
+                <div className="separator" />
+            </div>
+            <div className="container col-4 d-flex align-items-center justify-content-center">
+                <div className="row">
+                    <h3 className="card-title text-center">
+                        {experienceInfo.institution}
+                    </h3>
+                    <p className="card-area text-center">
+                        {experienceInfo.title}
+                    </p>
+                </div>
+            </div>
         </div>
     );
 };

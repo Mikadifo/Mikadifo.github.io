@@ -5,8 +5,7 @@
         "title": "ESL",
         "institution": "Hunter College",
         "dateStart": "March 2022",
-        "dateEnd": "Now",
-        "description": "English as Second Language: A great english course offered by Hunte College in New York City, I've learning the following skills:\n▪ Oral Skills: Where I'm learning to communicate and express my thoughts in English.\n▪ Writing Skills: Here I'm learning to write academic essays, paragraphs and summarizing. \n▪ Reading Skills: Skills to fully understand articles, news and different academic texts. \n▪ Grammar Skills: The perfect class to study complex rules of the language."
+        "dateEnd": "Now"
     },
     {
         "id": "tecazuay",
@@ -14,7 +13,6 @@
         "title": "Software Developtment",
         "institution": "Tecazuay",
         "dateStart": "May 2019",
-        "dateEnd": "October 2021",
-        "description": "At Instituto Superior Tecnologico del Azuay I've learned to develop software from its basics up to complex web applicaitons, testing, web services, databases and team and customer communication."
+        "dateEnd": "October 2021"
     }
 ]
