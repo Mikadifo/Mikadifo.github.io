@@ -5,6 +5,7 @@
   font-size: var(--h6-size);
   font-weight: bold;
   border: none;
+  border-bottom: 1px solid transparent;
   padding: 0;
 }
 
@@ -17,7 +18,13 @@
   opacity: 0.75;
   border-bottom: 1px solid rgba(var(--color-black), 0.75);
 }
+
 .bls-btn-active {
   color: rgba(var(--color-secondary), 0.75);
   border-bottom: 1px solid rgba(var(--color-secondary), 0.75);
+}
+.bls-btn-disabled {
+  color: rgb(var(--color-disabled));
+  border-bottom: 1px solid transparent;
+  cursor: not-allowed !important;
 }

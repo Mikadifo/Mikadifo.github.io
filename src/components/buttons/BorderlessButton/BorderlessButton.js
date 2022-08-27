@@ -1,15 +1,15 @@
 import { useState } from 'react';
 import './BorderlessButton.css';
 
-const BorderlessButton = ({ text, iconClass, hoverIconClass }) => {
+const BorderlessButton = ({ text, iconClass, hoverIconClass, disabled }) => {
     const [hover, setHover] = useState(false);
     const [active, setActive] = useState(false);
 
     return (
         <button
             className={`borderless-btn ${active && 'bls-btn-active'} ${
-                hover && 'bls-btn-hover'
-            }`}
+                hover & !disabled && 'bls-btn-hover'
+            } ${disabled && 'bls-btn-disabled'}`}
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
             onMouseDown={() => setActive(true)}
@@ -20,7 +20,9 @@ const BorderlessButton = ({ text, iconClass, hoverIconClass }) => {
             }}
         >
             <i
-                className={`${hover ? hoverIconClass : iconClass} bls-btn-icon`}
+                className={`${
+                    hover && !disabled ? hoverIconClass : iconClass
+                } bls-btn-icon`}
             />
             {text}
         </button>

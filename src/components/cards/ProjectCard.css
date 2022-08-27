@@ -18,12 +18,6 @@
   color: var(--paragraph-color);
 }
 
-.btn-proj-link {
-}
-
-.btn-sourcecode {
-}
-
 .card-img-project {
-  width: 352px;
+  width: 100%;
 }

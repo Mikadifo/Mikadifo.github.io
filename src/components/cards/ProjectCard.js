@@ -12,25 +12,43 @@ const ProjectCard = ({ project }) => {
                         alt={project.title}
                     />
                 </div>
-                <div className="col-8 project-description-container">
-                    <p className="card-text">
+                <div className="col-8 project-description-container d-flex flex-column">
+                    <p className="card-text mb-auto">
                         <b>{project.title}: </b>
                         {project.description}
                     </p>
-                    <div className="row">
+                    <div className="row text-center">
                         <div className="col-6">
-                            <BorderlessButton
-                                text={'Website'}
-                                iconClass={'bi bi-display'}
-                                hoverIconClass={'bi bi-display-fill'}
-                            />
+                            <a
+                                href={project.link ? project.link : null}
+                                target="_blank"
+                                rel="noreferer"
+                            >
+                                <BorderlessButton
+                                    text={'Website'}
+                                    iconClass={'bi bi-display'}
+                                    hoverIconClass={'bi bi-display-fill'}
+                                    disabled={!project.link}
+                                />
+                            </a>
                         </div>
                         <div className="col-6">
-                            <BorderlessButton
-                                text={'Source Code'}
-                                iconClass={'bi bi-code'}
-                                hoverIconClass={'bi bi-code-slash'}
-                            />
+                            <a
+                                href={
+                                    project.sourceCode
+                                        ? project.sourceCode
+                                        : null
+                                }
+                                target="_blank"
+                                rel="noreferer"
+                            >
+                                <BorderlessButton
+                                    text={'Source Code'}
+                                    iconClass={'bi bi-code'}
+                                    hoverIconClass={'bi bi-code-slash'}
+                                    disabled={!project.link}
+                                />
+                            </a>
                         </div>
                     </div>
                 </div>

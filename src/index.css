@@ -9,6 +9,7 @@ html {
   --color-brand-gradient: linear-gradient(0.25turn, #3d8fb1, #374ebd);
   --color-white: 235, 242, 244;
   --color-black: 37, 42, 44;
+  --color-disabled: 95, 116, 125;
   --h-color: rgb(37, 42, 44);
 
   --h-font: Nunito, sans-serif;
