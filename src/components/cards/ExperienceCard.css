@@ -1,6 +1,6 @@
 .experience-container {
   margin: 128px 0 0 0;
-  padding: 0 256px;
+  padding: 0;
 }
 
 .date-label {
@@ -36,6 +36,7 @@
   font-size: var(--h4-size);
   font-family: var(--h-font);
   color: var(--h-color);
+  line-height: var(--h4-height);
   font-weight: bold;
   padding: 0;
   padding-bottom: 32px;
@@ -44,6 +45,7 @@
 .card-area {
   font-family: var(--h5-font);
   font-size: var(--h5-size);
+  line-height: var(--h5-height);
   color: rgba(var(--color-black), 0.75);
   padding: 0;
   margin: 0;

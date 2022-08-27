@@ -1,9 +1,21 @@
 #experience {
   width: 100vw;
-  background-color: var(--color-gray);
+  margin-top: 256px;
+  padding: 0px 256px 0px 256px;
 }
 
 .education-title,
 .experience-title {
-  font-family: REBELTON_Medium;
+  font-size: var(--h3-size);
+  color: var(--h-color);
+  font-family: var(--h-font);
+  font-weight: bold;
+}
+
+.education-title {
+  margin: 0;
+}
+
+.experience-title {
+  margin-top: 128px;
 }
