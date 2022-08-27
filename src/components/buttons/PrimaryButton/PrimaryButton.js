@@ -8,6 +8,7 @@ const PrimaryButton = ({ text, iconClass, hoverIconClass }) => {
     return (
         <>
             <button
+                key="unique"
                 className={`primary-btn ${active && 'pri-btn-active'}`}
                 onMouseEnter={() => setHover(true)}
                 onMouseLeave={() => setHover(false)}

@@ -3,7 +3,7 @@
   border-bottom: 1px solid rgba(var(--color-black), 0.5);
   height: 108px;
   padding: 0 64px 0 64px;
-  margin-bottom: 256px;
+  margin: 0;
   position: fixed;
   top: 0;
   z-index: 99;
