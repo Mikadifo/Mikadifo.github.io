@@ -1,13 +1,13 @@
 .home-container {
   margin-top: 128px;
-  padding: 0px 256px;
+  padding: 0 64px;
 }
 
 .portrait-img {
   background-color: rgba(var(--color-white), 0.5);
   border-radius: 40px;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
 }
 
 .greeting-title {
@@ -33,4 +33,15 @@
   text-align: center;
   color: var(--h-color);
   margin-bottom: 68px;
+}
+
+@media (min-width: 1500px) {
+  .home-container {
+    padding: 0 256px;
+  }
+
+  .portrait-img {
+    width: 500px;
+    height: 500px;
+  }
 }
