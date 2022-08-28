@@ -6,8 +6,8 @@
 .portrait-img {
   background-color: rgba(var(--color-white), 0.5);
   border-radius: 40px;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
 }
 
 .greeting-title {
@@ -33,6 +33,13 @@
   text-align: center;
   color: var(--h-color);
   margin-bottom: 68px;
+}
+
+@media (min-width: 992px) {
+  .portrait-img {
+    width: 400px;
+    height: 400px;
+  }
 }
 
 @media (min-width: 1500px) {
