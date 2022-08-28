@@ -6,7 +6,8 @@
         "link": "https://certificage.mikadifo.com/",
         "sourceCode": "https://github.com/Mikadifo/Certificage",
         "img": "https://certificage.mikadifo.com/static/media/logo.32ab6d21c45e784aeb58ce6aa2c6773a.svg",
-        "tools": "ReactJS / Firebase / Javascript"
+        "tools": "ReactJS / Firebase / Javascript",
+        "colors": ["3E6EBF", "EED99A"]
     },
     {
         "id": "pr_zenplet",

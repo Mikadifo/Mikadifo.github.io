@@ -9,7 +9,12 @@ const Projects = () => {
 
     return (
         <div id="projects" data-testid="projects">
-            <div className="project-bg justify-content-center d-flex">
+            <div
+                className="project-bg justify-content-center d-flex"
+                style={{
+                    backgroundImage: `linear-gradient(0.25turn, #${projects[currentProject].colors[0]}, #${projects[currentProject].colors[1]})`,
+                }}
+            >
                 <div className="project-container">
                     <h1 className="text-center projects-title">My Work</h1>
                     <ProjectCard project={projects[currentProject]} />
