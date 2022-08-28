@@ -4,7 +4,7 @@ import './Footer.css';
 const Footer = () => {
     return (
         <>
-            <div className="row footer-action h-100">
+            <div className="row footer-action">
                 <div className="col-8 contact-info">
                     <p className="contact-title">
                         I’m willing to collaborate with you.
