@@ -15,8 +15,9 @@
         "description": "ZenPlet helps to have your pet information in one site, also provides an option to find your pet in case of lost.",
         "link": "",
         "sourceCode": "https://github.com/Mikadifo/ZenPlet-web-client",
-        "img": "https://lh5.googleusercontent.com/dbAL7SxRWg3eOzzHutYXhyrdfm-g1B9ZYTlwW3aV8wVKyvpwXMe1CB3I4Lya7e8w4XMGSlwcuNQpOtpNUbkJH1xMgdgLCYVhYKvFYqeCt1UUpsweqYht3lZaiXOFuUadfDQDhvEw-GJc8X526Wrf",
-        "tools": "Java / SQL / Javascript / Angular"
+        "img": "https://user-images.githubusercontent.com/51935560/187054728-191cfd1e-59a4-42d0-974b-175920d2bc8e.png",
+        "tools": "Java / SQL / Javascript / Angular",
+        "colors": ["E8D840", "A91521"]
     },
     {
         "id": "pr_dfm",
@@ -25,7 +26,8 @@
         "link": "",
         "sourceCode": "https://github.com/Mikadifo/DontForgetMeApp",
         "img": "https://user-images.githubusercontent.com/51935560/180326585-9fbdf5f0-7e4b-47a7-8f1d-d0f07619de90.jpeg",
-        "tools": "Swift / SwiftUI / Xcode"
+        "tools": "Swift / SwiftUI / Xcode",
+        "colors": ["353535", "FE8D1A"]
     },
     {
         "id": "pr_cetad",
@@ -34,7 +36,8 @@
         "link": "",
         "sourceCode": "",
         "img": "https://user-images.githubusercontent.com/51935560/180333280-9dd77ae5-2a41-40ec-a453-fb6c26d60ff0.png",
-        "tools": "React / Javascript / JSON"
+        "tools": "React / Javascript / JSON",
+        "colors": ["D4A838", "534CC2"]
     },
     {
         "id": "pr_gacu",
@@ -43,6 +46,7 @@
         "link": "",
         "sourceCode": "https://github.com/Mikadifo/GACU",
         "img": "https://user-images.githubusercontent.com/51935560/180329533-2ec87409-57b7-451f-8a24-71b691d171aa.png",
-        "tools": "Java / JavaFX / SQL"
+        "tools": "Java / JavaFX / SQL",
+        "colors": ["F10000", "F8C500"]
     }
 ]
