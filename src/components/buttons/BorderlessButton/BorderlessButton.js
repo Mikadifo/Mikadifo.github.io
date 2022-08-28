@@ -7,6 +7,7 @@ const BorderlessButton = ({
     hoverIconClass,
     disabled,
     iconToEnd,
+    action,
 }) => {
     const [hover, setHover] = useState(false);
     const [active, setActive] = useState(false);
@@ -24,6 +25,7 @@ const BorderlessButton = ({
                 setActive(false);
                 setHover(false);
             }}
+            onClick={action}
         >
             {iconToEnd ? (
                 <>

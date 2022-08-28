@@ -48,7 +48,7 @@ const ProjectCard = ({ project }) => {
                                     text={'Source Code'}
                                     iconClass={'bi bi-code'}
                                     hoverIconClass={'bi bi-code-slash'}
-                                    disabled={!project.link}
+                                    disabled={!project.sourceCode}
                                 />
                             </a>
                         </div>

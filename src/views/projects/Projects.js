@@ -24,6 +24,10 @@ const Projects = () => {
                                 text={'Previous'}
                                 iconClass={'bi bi-arrow-left-circle'}
                                 hoverIconClass={'bi bi-arrow-left-circle-fill'}
+                                action={() =>
+                                    currentProject > 0 &&
+                                    setCurrentProject(currentProject - 1)
+                                }
                                 disabled={currentProject <= 0}
                             />
                         </div>
@@ -36,7 +40,11 @@ const Projects = () => {
                                 iconClass={'bi bi-arrow-right-circle'}
                                 hoverIconClass={'bi bi-arrow-right-circle-fill'}
                                 iconToEnd={true}
-                                disabled={false}
+                                action={() =>
+                                    currentProject < projects.length - 1 &&
+                                    setCurrentProject(currentProject + 1)
+                                }
+                                disabled={currentProject >= projects.length - 1}
                             />
                         </div>
                     </div>
