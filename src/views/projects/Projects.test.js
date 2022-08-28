@@ -13,7 +13,7 @@ afterEach(() => {
 test('projects render cards from json (img, texts, links)', () => {
     const projects = screen.getByTestId('projects');
     expect(projects).toBeInTheDocument();
-    expect(projects).toHaveTextContent('PROJECTS');
+    expect(projects).toHaveTextContent('My Work');
     projectList.forEach((project) => {
         const projectRendered = screen.getByTestId(project.id);
         expect(projectRendered).toBeInTheDocument();
@@ -25,9 +25,9 @@ test('projects render cards from json (img, texts, links)', () => {
             'src',
             project.img,
         );
-        const websiteButton = projectRendered.querySelector('.btn-proj-link');
+        const websiteButton = projectRendered.querySelector('.test-proj-link');
         const sourceCodeButton =
-            projectRendered.querySelector('.btn-sourcecode');
+            projectRendered.querySelector('.test-sourcecode');
         expect(websiteButton).toHaveProperty('href', project.link);
         expect(sourceCodeButton).toHaveProperty('href', project.sourceCode);
         if (!project.link) expect(websiteButton).toHaveClass('disabled-btn');

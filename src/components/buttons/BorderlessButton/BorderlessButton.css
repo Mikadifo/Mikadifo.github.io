@@ -9,9 +9,16 @@
   padding: 0;
 }
 
+.bls-btn-left {
+  margin-right: 8px;
+}
+
+.bls-btn-right {
+  margin-left: 8px;
+}
+
 .bls-btn-icon {
   font-size: 18px;
-  margin-right: 8px;
 }
 
 .bls-btn-hover {

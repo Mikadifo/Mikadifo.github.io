@@ -1,7 +1,13 @@
 import { useState } from 'react';
 import './BorderlessButton.css';
 
-const BorderlessButton = ({ text, iconClass, hoverIconClass, disabled }) => {
+const BorderlessButton = ({
+    text,
+    iconClass,
+    hoverIconClass,
+    disabled,
+    iconToEnd,
+}) => {
     const [hover, setHover] = useState(false);
     const [active, setActive] = useState(false);
 
@@ -19,12 +25,25 @@ const BorderlessButton = ({ text, iconClass, hoverIconClass, disabled }) => {
                 setHover(false);
             }}
         >
-            <i
-                className={`${
-                    hover && !disabled ? hoverIconClass : iconClass
-                } bls-btn-icon`}
-            />
-            {text}
+            {iconToEnd ? (
+                <>
+                    {text}
+                    <i
+                        className={`${
+                            hover && !disabled ? hoverIconClass : iconClass
+                        } bls-btn-icon bls-btn-right`}
+                    />
+                </>
+            ) : (
+                <>
+                    <i
+                        className={`${
+                            hover && !disabled ? hoverIconClass : iconClass
+                        } bls-btn-icon bls-btn-left`}
+                    />
+                    {text}
+                </>
+            )}
         </button>
     );
 };

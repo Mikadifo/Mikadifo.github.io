@@ -3,7 +3,7 @@ import './ProjectCard.css';
 
 const ProjectCard = ({ project }) => {
     return (
-        <div className="card-project">
+        <div className="card-project" data-testid={project.id}>
             <div className="row">
                 <div className="col-4 p-0">
                     <img
@@ -21,6 +21,7 @@ const ProjectCard = ({ project }) => {
                         <div className="col-6">
                             <a
                                 href={project.link ? project.link : null}
+                                className="test-proj-link"
                                 target="_blank"
                                 rel="noreferer"
                             >
@@ -39,6 +40,7 @@ const ProjectCard = ({ project }) => {
                                         ? project.sourceCode
                                         : null
                                 }
+                                className="test-sourcecode"
                                 target="_blank"
                                 rel="noreferer"
                             >

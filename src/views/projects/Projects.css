@@ -28,3 +28,10 @@
 .slider-controls {
   padding-top: 80px;
 }
+
+.project-tools {
+  font-size: var(--paragraph-size);
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color);
+  line-height: var(--paragraph-height);
+}
