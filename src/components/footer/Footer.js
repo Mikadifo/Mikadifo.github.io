@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <>
             <div className="row footer-action">
-                <div className="col-8 contact-info">
+                <div className="col-lg-8 contact-info text-lg-start text-center pe-0 ps-0">
                     <p className="contact-title">
                         I’m willing to collaborate with you.
                     </p>
@@ -13,7 +13,7 @@ const Footer = () => {
                         Contact me in order to make ideas become real.
                     </p>
                 </div>
-                <div className="col-4 text-end my-auto">
+                <div className="col-lg-4 text-center text-lg-end my-auto pt-5 pt-lg-0 pe-0 ps-0">
                     <a href="mailto:mikadifopadillaheredia@gmail.com">
                         <PrimaryButton
                             text="Email me"
