@@ -20,6 +20,16 @@
   color: rgba(var(--color-black), 0.8);
 }
 
+.nav-toggler {
+  border: none;
+  background-color: transparent;
+}
+
+.nav-toggler i {
+  font-size: 40px;
+  color: rgb(var(--color-black));
+}
+
 .navbar {
   padding: 0;
 }

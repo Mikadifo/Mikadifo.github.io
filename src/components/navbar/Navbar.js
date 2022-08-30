@@ -16,7 +16,7 @@ const Navbar = () => {
                     <nav className="navbar navbar-expand-lg navbar-light">
                         <div className="container-fluid justify-content-end">
                             <button
-                                className="navbar-toggler"
+                                className="nav-toggler"
                                 type="button"
                                 data-bs-toggle="collapse"
                                 data-bs-target="#navbarNavAltMarkup"
@@ -24,7 +24,7 @@ const Navbar = () => {
                                 aria-expanded="false"
                                 aria-label="Toggle navigation"
                             >
-                                <span className="navbar-toggler-icon"></span>
+                                <i className="bi bi-list" />
                             </button>
                             <div
                                 className="collapse navbar-collapse"
