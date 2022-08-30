@@ -1,9 +1,9 @@
 .card-project {
+  padding: 16px;
   width: 100%;
   height: auto;
   border: 4px solid rgba(var(--color-black), 0.25);
   border-radius: 16px;
-  padding: 32px;
 }
 
 .proj-description-container {
@@ -20,4 +20,10 @@
 
 .card-img-project {
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .card-project {
+    padding: 32px;
+  }
 }

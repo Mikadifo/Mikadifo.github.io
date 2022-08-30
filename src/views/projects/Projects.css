@@ -8,8 +8,8 @@
 
 .project-container {
   background-color: white;
-  padding: 32px 68px 0px 68px;
-  margin: 0px 256px;
+  padding: 16px 32px 0px 32px;
+  margin: 0px 64px;
   border-radius: 16px;
   width: 100%;
   position: relative;
@@ -17,7 +17,7 @@
 }
 
 .projects-title {
-  padding-bottom: 80px;
+  padding-bottom: 32px;
   font-size: var(--h3-size);
   color: var(--h-color);
   font-family: var(--h-font);
@@ -33,4 +33,26 @@
   font-family: var(--paragraph-font);
   color: var(--paragraph-color);
   line-height: var(--paragraph-height);
+}
+
+@media (min-width: 1300px) {
+  .project-container {
+    margin: 0px 256px;
+  }
+
+  .projects-title {
+    padding-bottom: 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  .project-container {
+    padding: 32px 68px 0px 68px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .projects-title {
+    padding-bottom: 40px;
+  }
 }

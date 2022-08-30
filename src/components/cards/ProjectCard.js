@@ -5,20 +5,20 @@ const ProjectCard = ({ project }) => {
     return (
         <div className="card-project" data-testid={project.id}>
             <div className="row">
-                <div className="col-4 p-0">
+                <div className="col-md-4 p-0">
                     <img
                         src={project.img}
                         className="card-img-project"
                         alt={project.title}
                     />
                 </div>
-                <div className="col-8 project-description-container d-flex flex-column">
+                <div className="col-md-8 project-description-container d-flex flex-column">
                     <p className="card-text mb-auto">
                         <b>{project.title}: </b>
                         {project.description}
                     </p>
-                    <div className="row text-center">
-                        <div className="col-6">
+                    <div className="row text-center pt-3">
+                        <div className="col-md-6">
                             <a
                                 href={project.link ? project.link : null}
                                 className="test-proj-link"
@@ -33,7 +33,7 @@ const ProjectCard = ({ project }) => {
                                 />
                             </a>
                         </div>
-                        <div className="col-6">
+                        <div className="col-md-6">
                             <a
                                 href={
                                     project.sourceCode
