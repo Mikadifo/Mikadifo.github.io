@@ -5,7 +5,7 @@ const ProjectCard = ({ project }) => {
     return (
         <div className="card-project" data-testid={project.id}>
             <div className="row">
-                <div className="col-md-4 p-0">
+                <div className="col-md-4 p-0 text-center">
                     <img
                         src={project.img}
                         className="card-img-project"
@@ -18,7 +18,7 @@ const ProjectCard = ({ project }) => {
                         {project.description}
                     </p>
                     <div className="row text-center pt-3">
-                        <div className="col-md-6">
+                        <div className="col-md-6 pb-md-0 pb-3">
                             <a
                                 href={project.link ? project.link : null}
                                 className="test-proj-link"
