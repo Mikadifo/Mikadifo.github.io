@@ -28,10 +28,10 @@ const Footer = () => {
                 data-testid="footer"
             >
                 <div className="row h-100">
-                    <div className="col-6 my-auto text-start copyright-text">
+                    <div className="col-sm-6 my-auto text-sm-start copyright-text text-center">
                         © 2022 Mikadifo. All rights reserved.
                     </div>
-                    <div className="col-6 my-auto text-end footer-icons">
+                    <div className="col-sm-6 my-auto text-sm-end footer-icons">
                         <a
                             className="btn btn-link btn-floating btn-lg me-3"
                             href="https://github.com/Mikadifo"
