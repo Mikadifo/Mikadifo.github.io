@@ -1,7 +1,10 @@
+import { useState } from 'react';
 import SecondaryButton from '../buttons/SecondaryButton/SecondaryButton';
 import './Navbar.css';
 
 const Navbar = () => {
+    const [isTogglerActive, setTogglerActive] = useState(false);
+
     return (
         <div className="container-fluid nav-container" data-testid="navbar">
             <div className="row h-100">
@@ -16,7 +19,7 @@ const Navbar = () => {
                     <nav className="navbar navbar-expand-lg navbar-light">
                         <div className="container-fluid justify-content-end">
                             <button
-                                className="nav-toggler"
+                                className="nav-toggler navbar-toggler p-0"
                                 type="button"
                                 data-bs-toggle="collapse"
                                 data-bs-target="#navbarNavAltMarkup"
@@ -24,7 +27,16 @@ const Navbar = () => {
                                 aria-expanded="false"
                                 aria-label="Toggle navigation"
                             >
-                                <i className="bi bi-list" />
+                                <i
+                                    className={
+                                        isTogglerActive
+                                            ? 'bi bi-distribute-vertical'
+                                            : 'bi bi-list'
+                                    }
+                                    onClick={() =>
+                                        setTogglerActive(!isTogglerActive)
+                                    }
+                                />
                             </button>
                             <div
                                 className="collapse navbar-collapse"

@@ -30,6 +30,15 @@
   color: rgb(var(--color-black));
 }
 
+.nav-toggler i:hover {
+  opacity: 0.5;
+}
+
+.nav-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .navbar {
   padding: 0;
 }
