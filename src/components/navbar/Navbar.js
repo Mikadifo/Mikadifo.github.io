@@ -67,7 +67,6 @@ const Navbar = () => {
                                         href="mailto:mikadifopadillaheredia@gmail.com"
                                         target="_blank"
                                         rel="noreferer"
-                                        data-testid="nav-item-blog"
                                     >
                                         Email me
                                     </a>
