@@ -12,9 +12,9 @@ const Navbar = () => {
                 >
                     M
                 </a>
-                <div className="col-8 my-auto text-center mx-auto ms-auto">
+                <div className="col-lg-8 col-2 my-auto text-center mx-auto ms-auto order-last">
                     <nav className="navbar navbar-expand-lg navbar-light">
-                        <div className="container-fluid">
+                        <div className="container-fluid justify-content-end">
                             <button
                                 className="navbar-toggler"
                                 type="button"
@@ -62,12 +62,21 @@ const Navbar = () => {
                                     >
                                         Blog
                                     </a>
+                                    <a
+                                        className="nav-link ps-3 d-sm-none"
+                                        href="mailto:mikadifopadillaheredia@gmail.com"
+                                        target="_blank"
+                                        rel="noreferer"
+                                        data-testid="nav-item-blog"
+                                    >
+                                        Email me
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </nav>
                 </div>
-                <div className="col my-auto text-end">
+                <div className="col my-auto text-end order-lg-last d-sm-block d-none">
                     <a href="mailto:mikadifopadillaheredia@gmail.com">
                         <SecondaryButton
                             text="Email me"
