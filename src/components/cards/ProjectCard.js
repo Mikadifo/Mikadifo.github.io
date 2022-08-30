@@ -23,7 +23,7 @@ const ProjectCard = ({ project }) => {
                                 href={project.link ? project.link : null}
                                 className="test-proj-link"
                                 target="_blank"
-                                rel="noreferer"
+                                rel="noreferrer"
                             >
                                 <BorderlessButton
                                     text={'Website'}
@@ -42,7 +42,7 @@ const ProjectCard = ({ project }) => {
                                 }
                                 className="test-sourcecode"
                                 target="_blank"
-                                rel="noreferer"
+                                rel="noreferrer"
                             >
                                 <BorderlessButton
                                     text={'Source Code'}
