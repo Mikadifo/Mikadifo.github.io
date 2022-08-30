@@ -6,7 +6,11 @@ const Navbar = () => {
     const [isTogglerActive, setTogglerActive] = useState(false);
 
     return (
-        <div className="container-fluid nav-container" data-testid="navbar">
+        <div
+            className="container-fluid nav-container"
+            style={{ height: isTogglerActive ? 'auto' : '108px' }}
+            data-testid="navbar"
+        >
             <div className="row h-100">
                 <a
                     className="col my-auto nav-brand"
@@ -15,7 +19,7 @@ const Navbar = () => {
                 >
                     M
                 </a>
-                <div className="col-lg-8 col-2 my-auto text-center mx-auto ms-auto order-last">
+                <div className="col-lg-8 col-sm-2 col my-auto text-center mx-auto ms-auto order-last">
                     <nav className="navbar navbar-expand-lg navbar-light">
                         <div className="container-fluid justify-content-end">
                             <button
