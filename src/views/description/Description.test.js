@@ -18,13 +18,10 @@ afterEach(() => {
     cleanup();
 });
 
-test('description render info and img', () => {
+test('description render info', () => {
     const description = screen.getByTestId('description');
-    const descriptionImg = screen.getByTestId('description-img');
     expect(description).toBeInTheDocument();
-    expect(descriptionImg).toBeInTheDocument();
-    expect(descriptionImg).toHaveAttribute('src', 'face-img.png');
-    expect(description).toHaveTextContent('ABOUT ME');
+    expect(description).toHaveTextContent('About Me');
     expect(description).toHaveTextContent(descriptionParagraph1);
     expect(description).toHaveTextContent(descriptionParagraph2);
 });

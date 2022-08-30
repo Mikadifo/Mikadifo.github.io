@@ -1,20 +1,10 @@
 [
     {
-        "id": "open-source",
-        "imgUrl": "https://cdn.iowacomputergurus.com/blog/another-genius-move-from-microsoft-acquires-github-for-7-5-billion-in-stock.png",
-        "title": "Open Source Colaborator",
-        "institution": "GitHub",
-        "dateStart": "March 2020",
-        "dateEnd": "Now",
-        "description": "▪ FreeCodeCamp: Typographic corrections and translations of written classes into Spanish for students, using the Crowdin platform.\n▪ KE-complex_modifications: Developtment and maintenance of a keyboard modifications (Keypad as App Launcher).\n▪ Typographic and code corrections of a free bootcamp made by a Spanish youtuber (Codificandolo)."
-    },
-    {
         "id": "libelula",
-        "imgUrl": "https://www.libelulasoft.com/img/1.png",
-        "title": "Software Developer",
-        "institution": "LibelulaSoft",
+        "imgUrl": "https://pbs.twimg.com/profile_images/561565717170896896/dAc03mpC_400x400.png",
+        "title": "Fullstack Software Developer",
+        "institution": "LibélulaSoft",
         "dateStart": "July 2021",
-        "dateEnd": "January 2022",
-        "description": "▪ Fullstack developer of a scalable marketplace using ReactJS and Yii2, working as a team, managing pull requests, resolving issues, organizing tasks and delivery dates with SCRUM.\n▪ Development of a custom reporting system for the company, written in Java, which saves time for the development team when creating HTML templates.\n▪ QA testing for systems and issues reporting to the team.\n▪ Creation of documentation and manuals, both for clients and for the team."
+        "dateEnd": "January 2022"
     }
 ]

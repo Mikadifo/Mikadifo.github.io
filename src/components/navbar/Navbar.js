@@ -1,86 +1,107 @@
-import { useLocation } from 'react-router-dom';
+import { useState } from 'react';
+import SecondaryButton from '../buttons/SecondaryButton/SecondaryButton';
 import './Navbar.css';
 
 const Navbar = () => {
-    const { pathname } = useLocation();
+    const [isTogglerActive, setTogglerActive] = useState(false);
 
     return (
-        <nav
-            className="navbar navbar-expand-lg bg-light sticky-top ps-5 pe-5"
+        <div
+            className="container-fluid nav-container"
+            style={{ height: isTogglerActive ? 'auto' : '108px' }}
             data-testid="navbar"
         >
-            <div className="container-fluid">
+            <div className="row h-100">
                 <a
-                    className="navbar-brand brand-title"
-                    href="#home"
+                    className="col my-auto nav-brand"
                     data-testid="nav-brand"
+                    href="#home"
                 >
-                    MIKADIFO
+                    M
                 </a>
-                <button
-                    className="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span className="navbar-toggler-icon" />
-                </button>
-                <div
-                    className="collapse navbar-collapse"
-                    id="navbarNavAltMarkup"
-                >
-                    <div className="navbar-nav ms-auto nav-items">
-                        <a
-                            className={`nav-link ${
-                                pathname === 'description' && 'current-item'
-                            }`}
-                            href="#description"
-                            data-testid="nav-item-about"
-                        >
-                            About Me
-                        </a>
-                        <a
-                            className={`nav-link ${
-                                pathname === 'skills' && 'current-item'
-                            }`}
-                            href="#skills"
-                            data-testid="nav-item-skills"
-                        >
-                            Skills
-                        </a>
-                        <a
-                            className={`nav-link ${
-                                pathname === 'projects' && 'current-item'
-                            }`}
-                            href="#projects"
-                            data-testid="nav-item-pro"
-                        >
-                            Projects
-                        </a>
-                        <a
-                            className={`nav-link ${
-                                pathname === 'experience' && 'current-item'
-                            }`}
-                            href="#experience"
-                            data-testid="nav-item-exp"
-                        >
-                            Experience
-                        </a>
-                        <a
-                            className="nav-link"
-                            href="https://blog.mikadifo.com"
-                            target="_blank"
-                            data-testid="nav-item-blog"
-                        >
-                            Blog
-                        </a>
-                    </div>
+                <div className="col-lg-8 col-sm-2 col my-auto text-center mx-auto ms-auto order-last">
+                    <nav className="navbar navbar-expand-lg navbar-light">
+                        <div className="container-fluid justify-content-end">
+                            <button
+                                className="nav-toggler navbar-toggler p-0"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavAltMarkup"
+                                aria-controls="navbarNavAltMarkup"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation"
+                            >
+                                <i
+                                    className={
+                                        isTogglerActive
+                                            ? 'bi bi-distribute-vertical'
+                                            : 'bi bi-list'
+                                    }
+                                    onClick={() =>
+                                        setTogglerActive(!isTogglerActive)
+                                    }
+                                />
+                            </button>
+                            <div
+                                className="collapse navbar-collapse"
+                                id="navbarNavAltMarkup"
+                            >
+                                <div className="navbar-nav mx-auto">
+                                    <a
+                                        className="nav-link pe-3"
+                                        aria-current="page"
+                                        href="#description"
+                                        data-testid="nav-item-about"
+                                    >
+                                        About Me
+                                    </a>
+                                    <a
+                                        className="nav-link ps-3 pe-3"
+                                        href="#projects"
+                                        data-testid="nav-item-pro"
+                                    >
+                                        Projects
+                                    </a>
+                                    <a
+                                        className="nav-link ps-3 pe-3"
+                                        href="#experience"
+                                        data-testid="nav-item-exp"
+                                    >
+                                        Experience
+                                    </a>
+                                    <a
+                                        className="nav-link ps-3"
+                                        href="https://blog.mikadifo.com"
+                                        target="_blank"
+                                        rel="noreferer"
+                                        data-testid="nav-item-blog"
+                                    >
+                                        Blog
+                                    </a>
+                                    <a
+                                        className="nav-link ps-3 d-sm-none"
+                                        href="mailto:mikadifopadillaheredia@gmail.com"
+                                        target="_blank"
+                                        rel="noreferer"
+                                    >
+                                        Email me
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div className="col my-auto text-end order-lg-last d-sm-block d-none">
+                    <a href="mailto:mikadifopadillaheredia@gmail.com">
+                        <SecondaryButton
+                            text="Email me"
+                            iconClass="bi-send-fill"
+                            hoverIconClass="bi-send"
+                        />
+                    </a>
                 </div>
             </div>
-        </nav>
+        </div>
     );
 };
 

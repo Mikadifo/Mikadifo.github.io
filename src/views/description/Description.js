@@ -1,47 +1,30 @@
-import Navbar from '../../components/navbar/Navbar';
-import Experience from '../experience/Experience';
-import Skills from '../skills/Skills';
-import Projects from '../projects/Projects';
-import portrait from './../../img/face-img.png';
-import './Description.css';
 import {
     descriptionParagraph1,
     descriptionParagraph2,
 } from '../../constants/texts';
+import './Description.css';
 
 const Description = () => {
     return (
-        <>
-            <div id="description">
-                <Navbar />
-                <div
-                    className="description-container"
-                    data-testid="description"
-                >
-                    <div className="row p-5">
-                        <div className="col col-lg-4 col-12 image-stack d-flex align-items-center justify-content-center">
-                            <p className="img-back-letter">M</p>
-                            <img
-                                src={portrait}
-                                alt="MIKADIFO"
-                                className="portrait-img-front animate__animated animate__zoomIn"
-                                data-testid="description-img"
-                            />
-                        </div>
-                        <div className="col col-lg-8 col-12 d-flex align-items-center justify-content-center info-stack">
-                            <div className="container about-container md-me-5">
-                                <h1 className="mb-3 about-title">ABOUT ME</h1>
-                                <p className="me-3">{descriptionParagraph1}</p>
-                                <p className="me-3">{descriptionParagraph2}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <Skills />
-                <Projects />
-                <Experience />
+        <div
+            className="row description-container h-100"
+            id="description"
+            data-testid="description"
+        >
+            <div className="col-lg-4 my-auto text-center">
+                <h1 className="about-title">About Me</h1>
             </div>
-        </>
+            <div className="about-sep-container col-2 ps-0 pe-0 m-0 justify-content-center d-flex">
+                <div className="about-separator" />
+            </div>
+            <div className="col-lg-6 my-auto ps-0 m-0">
+                <div className="about-container ps-0 pe-0 m-0">
+                    <p className="me-lg-3">{descriptionParagraph1}</p>
+                    <br />
+                    <p className="me-lg-3">{descriptionParagraph2}</p>
+                </div>
+            </div>
+        </div>
     );
 };
 

@@ -1,21 +1,54 @@
+import { useState } from 'react';
+import BorderlessButton from '../../components/buttons/BorderlessButton/BorderlessButton';
 import ProjectCard from '../../components/cards/ProjectCard';
 import projects from './../../resources/data/projects.json';
 import './Projects.css';
 
 const Projects = () => {
+    const [currentProject, setCurrentProject] = useState(0);
+
     return (
-        <div id="projects" className="p-5" data-testid="projects">
-            <h1 className="text-center pt-3 pb-5 projects-title">PROJECTS</h1>
-            <div className="row align-items-center justify-content-center">
-                {projects.map((project) => (
-                    <div
-                        className="col col-lg-6 col-xl-4 col-md-6 col-12 d-flex align-items-center justify-content-center"
-                        key={project.id}
-                        data-testid={project.id}
-                    >
-                        <ProjectCard project={project} />
+        <div id="projects" data-testid="projects">
+            <div
+                className="project-bg justify-content-center d-flex"
+                style={{
+                    backgroundImage: `linear-gradient(0.25turn, #${projects[currentProject].colors[0]}, #${projects[currentProject].colors[1]})`,
+                }}
+            >
+                <div className="project-container">
+                    <h1 className="text-center projects-title">My Work</h1>
+                    <ProjectCard project={projects[currentProject]} />
+                    <div className="row slider-controls">
+                        <div className="col-4">
+                            <BorderlessButton
+                                text={'Previous'}
+                                iconClass={'bi bi-arrow-left-circle'}
+                                hoverIconClass={'bi bi-arrow-left-circle-fill'}
+                                action={() =>
+                                    currentProject > 0 &&
+                                    setCurrentProject(currentProject - 1)
+                                }
+                                disabled={currentProject <= 0}
+                            />
+                        </div>
+                        <div className="col-4 text-center p-0 my-auto project-tools">
+                            {projects[currentProject].tools}
+                        </div>
+                        <div className="col-4 text-end">
+                            <BorderlessButton
+                                text={'Next'}
+                                iconClass={'bi bi-arrow-right-circle'}
+                                hoverIconClass={'bi bi-arrow-right-circle-fill'}
+                                iconToEnd={true}
+                                action={() =>
+                                    currentProject < projects.length - 1 &&
+                                    setCurrentProject(currentProject + 1)
+                                }
+                                disabled={currentProject >= projects.length - 1}
+                            />
+                        </div>
                     </div>
-                ))}
+                </div>
             </div>
         </div>
     );

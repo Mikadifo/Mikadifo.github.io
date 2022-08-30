@@ -1,29 +1,58 @@
+.nav-container {
+  background-color: white;
+  border-bottom: 1px solid rgba(var(--color-black), 0.5);
+  padding: 0 64px 0 64px;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+.nav-brand {
+  color: rgb(var(--color-black));
+  font-family: Nunito_Black, sans-serif;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.nav-brand:hover {
+  color: rgba(var(--color-black), 0.8);
+}
+
+.nav-toggler {
+  border: none;
+  background-color: transparent;
+}
+
+.nav-toggler i {
+  font-size: 40px;
+  color: rgb(var(--color-black));
+}
+
+.nav-toggler i:hover {
+  opacity: 0.5;
+}
+
+.nav-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .navbar {
-  background: var(--color-gray) !important;
-  border-bottom: 0.3rem solid var(--color-cyan);
-  width: 100vw;
+  padding: 0;
 }
 
-.navbar-brand {
-  font-size: 1.5rem;
+.navbar a {
+  color: rgb(var(--color-black));
+  font-weight: bold;
+  font-size: 15px;
+  font-family: Nunito, sans-serif;
 }
 
-.navbar-brand,
-.nav-items a {
-  font-family: REBELTON_Medium;
-  font-weight: bolder;
-  color: black;
+.navbar a:hover {
+  color: rgba(var(--color-black), 0.5);
 }
 
-.nav-items a {
-  font-size: 1rem;
-}
-
-.brand-title {
-  font-family: REBELTON_Medium;
-}
-
-.current-item {
-  border-bottom: 3px solid black;
-  padding-bottom: 1px;
+.navbar a:active {
+  color: rgba(var(--color-black), 0.4);
 }

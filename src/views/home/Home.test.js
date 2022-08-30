@@ -15,10 +15,9 @@ test('home render info, img and button', () => {
     expect(home).toBeInTheDocument();
     expect(homeImg).toBeInTheDocument();
     expect(homeImg).toHaveAttribute('src', 'face-img.png');
-    expect(home).toHaveTextContent("HEY I'M");
-    expect(home).toHaveTextContent('MICHAEL');
-    expect(home).toHaveTextContent('SOFTWARE DEVELOPER');
-    expect(home).toHaveTextContent('MORE ABOUT ME');
+    expect(home).toHaveTextContent("Hey there, I'm Michael");
+    expect(home).toHaveTextContent('Fullstack Software Developer');
+    expect(home).toHaveTextContent('More about me');
 });
 
 test('button is working', () => {

@@ -13,25 +13,22 @@ afterEach(() => {
 test('projects render cards from json (img, texts, links)', () => {
     const projects = screen.getByTestId('projects');
     expect(projects).toBeInTheDocument();
-    expect(projects).toHaveTextContent('PROJECTS');
-    projectList.forEach((project) => {
-        const projectRendered = screen.getByTestId(project.id);
-        expect(projectRendered).toBeInTheDocument();
-        expect(projectRendered).toHaveTextContent(project.title);
-        expect(projectRendered).toHaveTextContent(project.description);
-        expect(projectRendered).toHaveTextContent('Website');
-        expect(projectRendered).toHaveTextContent('Source Code');
-        expect(projectRendered.querySelector('img')).toHaveAttribute(
-            'src',
-            project.img,
-        );
-        const websiteButton = projectRendered.querySelector('.btn-proj-link');
-        const sourceCodeButton =
-            projectRendered.querySelector('.btn-sourcecode');
-        expect(websiteButton).toHaveProperty('href', project.link);
-        expect(sourceCodeButton).toHaveProperty('href', project.sourceCode);
-        if (!project.link) expect(websiteButton).toHaveClass('disabled-btn');
-        if (!project.sourceCode)
-            expect(sourceCodeButton).toHaveClass('disabled-btn');
-    });
+    expect(projects).toHaveTextContent('My Work');
+    const projectRendered = screen.getByTestId(projectList[0].id);
+    expect(projectRendered).toBeInTheDocument();
+    expect(projectRendered).toHaveTextContent(projectList[0].title);
+    expect(projectRendered).toHaveTextContent(projectList[0].description);
+    expect(projectRendered).toHaveTextContent('Website');
+    expect(projectRendered).toHaveTextContent('Source Code');
+    expect(projectRendered.querySelector('img')).toHaveAttribute(
+        'src',
+        projectList[0].img,
+    );
+    const websiteButton = projectRendered.querySelector('.test-proj-link');
+    const sourceCodeButton = projectRendered.querySelector('.test-sourcecode');
+    expect(websiteButton).toHaveProperty('href', projectList[0].link);
+    expect(sourceCodeButton).toHaveProperty('href', projectList[0].sourceCode);
+    if (!projectList[0].link) expect(websiteButton).toHaveClass('disabled-btn');
+    if (!projectList[0].sourceCode)
+        expect(sourceCodeButton).toHaveClass('disabled-btn');
 });

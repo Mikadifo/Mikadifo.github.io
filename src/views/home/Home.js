@@ -1,43 +1,32 @@
+import PrimaryButton from './../../components/buttons/PrimaryButton/PrimaryButton';
 import portrait from './../../img/face-img.png';
 import './Home.css';
 
 const Home = () => {
     return (
-        <div id="home" className="home-container" data-testid="home">
-            <div className="row p-5 stack-container">
-                <div className="col col-lg-6 col-sm-12 d-flex align-items-center vh-100">
-                    <div className="container">
-                        <div className="row text-center presentation-title">
-                            <h1 className="animate__animated animate__fadeInDown greeting-title">
-                                HEY I'M
-                            </h1>
-                            <h1 className="animate__animated animate__fadeInDown name-title">
-                                MICHAEL
-                            </h1>
-                        </div>
-                        <h3 className="row d-flex align-items-center justify-content-center animate__animated animate__slideInLeft fw-light mt-3 rol-subtitle text-center">
-                            SOFTWARE DEVELOPER
-                        </h3>
-                        <div className="d-flex align-items-center justify-content-center">
-                            <a
-                                href="#description"
-                                className="row  btn btn-outline-dark about-button p-3 mt-5"
-                                data-testid="about-button"
-                            >
-                                MORE ABOUT ME
-                            </a>
-                        </div>
+        <div id="home" className="row home-container" data-testid="home">
+            <div className="col-xxl-7 col-lg-6 text-center ps-0 pe-0">
+                <div>
+                    <div className="greeting-title">Hey there, I'm Michael</div>
+                    <div className="rol-subtitle">
+                        Fullstack Software Developer
                     </div>
+                    <a href="#description" data-testid="about-button">
+                        <PrimaryButton
+                            text="More about me"
+                            iconClass="bi bi-caret-down-fill"
+                            hoverIconClass="bi bi-caret-down"
+                        />
+                    </a>
                 </div>
-                <div className="col col-lg-6 col-sm-12 d-none d-lg-flex align-items-center justify-content-center vh-100">
-                    <p className="img-back">M</p>
-                    <img
-                        src={portrait}
-                        alt="MIKADIFO"
-                        className="portrait-img animate__animated animate__zoomIn"
-                        data-testid="home-img"
-                    />
-                </div>
+            </div>
+            <div className="col-xxl-5 col-lg-6 order-lg-last order-first mb-lg-0 mb-5 align-items-center justify-content-center d-flex">
+                <img
+                    src={portrait}
+                    alt="MIKADIFO"
+                    className="portrait-img"
+                    data-testid="home-img"
+                />
             </div>
         </div>
     );
