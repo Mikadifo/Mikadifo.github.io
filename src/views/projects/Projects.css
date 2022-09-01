@@ -30,9 +30,9 @@
 
 .project-tools {
   font-size: var(--paragraph-size);
+  line-height: var(--paragraph-height);
   font-family: var(--paragraph-font);
   color: var(--paragraph-color);
-  line-height: var(--paragraph-height);
 }
 
 @media (min-width: 1300px) {
@@ -66,5 +66,9 @@
 @media (max-width: 1200px) {
   .projects-title {
     padding-bottom: 40px;
+  }
+  .project-tools {
+    font-size: var(--paragraph-size-tablet);
+    line-height: var(--paragraph-height-tablet);
   }
 }
