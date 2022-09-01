@@ -26,10 +26,10 @@
 }
 
 .rol-subtitle {
-  font-size: var(--h2-size);
+  font-size: var(--h2-size-tablet);
+  line-height: var(--h2-height-tablet);
   font-family: var(--h-font);
   font-weight: bold;
-  line-height: var(--h2-height);
   text-align: center;
   color: var(--h-color);
   margin-bottom: 68px;
@@ -39,6 +39,11 @@
   .greeting-title {
     font-size: var(--h3-size-phone);
     line-height: var(--h3-height-phone);
+  }
+
+  .rol-subtitle {
+    font-size: var(--h2-size-phone);
+    line-height: var(--h2-height-phone);
   }
 }
 
@@ -53,6 +58,11 @@
   .greeting-title {
     font-size: var(--h3-size);
     line-height: var(--h3-height);
+  }
+
+  .rol-subtitle {
+    font-size: var(--h2-size);
+    line-height: var(--h2-height);
   }
 }
 

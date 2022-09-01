@@ -21,6 +21,10 @@ html {
 
   --h2-size: 84px;
   --h2-height: 100px;
+  --h2-size-tablet: 72px;
+  --h2-height-tablet: 88px;
+  --h2-size-phone: 44px;
+  --h2-height-phone: 60px;
 
   --h3-size: 60px;
   --h3-height: 70px;
@@ -39,6 +43,8 @@ html {
 
   --h6-size: 21px;
   --h6-height: 27px;
+  --h6-size-tabletphone: 18px;
+  --h6-height-tabletphone: 24px;
 }
 
 @font-face {
