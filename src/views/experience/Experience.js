@@ -6,17 +6,17 @@ import './Experience.css';
 const Experience = () => {
     return (
         <div id="experience" data-testid="experience">
-            <h1 className="text-center education-title">EDUCATION</h1>
+            <h1 className="text-center experience-title">EXPERIENCE</h1>
             <div className="row align-items-center justify-content-center">
-                {educationExperience.map((item) => {
+                {jobExperience.map((item) => {
                     return (
                         <ExperienceCard key={item.id} experienceInfo={item} />
                     );
                 })}
             </div>
-            <h1 className="text-center experience-title">EXPERIENCE</h1>
+            <h1 className="text-center education-title">EDUCATION</h1>
             <div className="row align-items-center justify-content-center">
-                {jobExperience.map((item) => {
+                {educationExperience.map((item) => {
                     return (
                         <ExperienceCard key={item.id} experienceInfo={item} />
                     );
