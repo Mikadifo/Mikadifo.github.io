@@ -30,8 +30,19 @@
   color: rgba(var(--color-secondary), 0.75);
   border-bottom: 1px solid rgba(var(--color-secondary), 0.75);
 }
+
 .bls-btn-disabled {
   color: rgb(var(--color-disabled));
   border-bottom: 1px solid transparent;
   cursor: not-allowed !important;
+}
+
+@media (max-width: 1199px) {
+  .borderless-btn {
+    font-size: var(--h6-size-tabletphone);
+  }
+
+  .bls-btn-icon {
+    font-size: 16px;
+  }
 }
