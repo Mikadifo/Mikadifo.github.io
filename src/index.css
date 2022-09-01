@@ -25,6 +25,10 @@ html {
   --h3-size: 60px;
   --h3-height: 70px;
   --h3-font: Nunito_Light, sans-serif;
+  --h3-size-phone: 34px;
+  --h3-height-phone: 46px;
+  --h3-size-tablet: 50px;
+  --h3-height-tablet: 60px;
 
   --h4-size: 42px;
   --h4-height: 50px;
