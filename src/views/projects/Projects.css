@@ -17,8 +17,8 @@
 }
 
 .projects-title {
+  font-size: var(--h3-size-tablet);
   padding-bottom: 32px;
-  font-size: var(--h3-size);
   color: var(--h-color);
   font-family: var(--h-font);
   font-weight: bold;
@@ -51,7 +51,19 @@
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 991px) {
+  .projects-title {
+    font-size: var(--h3-size-phone);
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects-title {
+    font-size: var(--h3-size);
+  }
+}
+
+@media (max-width: 1200px) {
   .projects-title {
     padding-bottom: 40px;
   }
