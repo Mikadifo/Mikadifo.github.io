@@ -18,6 +18,8 @@ html {
   --paragraph-height: 30px;
   --paragraph-font: NunitoSans-Regular, sans-serif;
   --paragraph-color: rgba(37, 42, 44, 0.75);
+  --paragraph-size-tablet: 18px;
+  --paragraph-height-tablet: 28px;
 
   --h2-size: 84px;
   --h2-height: 100px;
