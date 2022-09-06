@@ -1,6 +1,6 @@
 .footer-action {
   padding: 0 64px;
-  margin-top: 256px;
+  margin-top: 168px;
 }
 
 .contact-info p {
@@ -24,11 +24,11 @@
 }
 
 .footer-container {
+  padding: 0 64px 0 64px;
+  margin-top: 168px;
   border-top: 1px solid rgba(var(--color-black), 0.5);
   width: 100vw;
   height: 108px;
-  padding: 0 64px 0 64px;
-  margin-top: 256px;
 }
 
 .copyright-text {
@@ -67,6 +67,11 @@
   .footer-icons a {
     font-size: 24px;
   }
+
+  .footer-container,
+  .footer-action {
+    margin-top: 98px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -78,6 +83,11 @@
   .contact-paragraph {
     font-size: var(--paragraph-size);
     line-height: var(--paragraph-height);
+  }
+
+  .footer-container,
+  .footer-action {
+    margin-top: 256px;
   }
 }
 
