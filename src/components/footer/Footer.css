@@ -32,14 +32,15 @@
 }
 
 .copyright-text {
+  font-size: var(--paragraph-size);
+  line-height: var(--paragraph-height);
   font-family: var(--paragraph-font);
   color: var(--paragraph-color);
-  font-size: var(--paragraph-size);
 }
 
 .footer-icons a {
-  color: rgb(var(--color-black));
   font-size: 32px;
+  color: rgb(var(--color-black));
   padding: 0;
   border: none;
 }
@@ -56,6 +57,15 @@
   .contact-title {
     font-size: var(--h4-size-phone);
     line-height: var(--h4-height-phone);
+  }
+
+  .copyright-text {
+    font-size: var(--paragraph-size-tablet);
+    line-height: var(--paragraph-height-tablet);
+  }
+
+  .footer-icons a {
+    font-size: 24px;
   }
 }
 
