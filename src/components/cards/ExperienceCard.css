@@ -4,7 +4,10 @@
 }
 
 .date-label {
-  font-size: var(--paragraph-size);
+  /*todo*/
+  font-size: var(--paragraph-size-tablet);
+  line-height: var(--paragraph-height-tablet);
+  /*todo*/
   font-family: var(--paragraph-font);
   color: var(--paragraph-color);
   margin: 0;
@@ -31,22 +34,29 @@
 }
 
 .card-title {
-  font-size: var(--h4-size);
+  font-size: var(--h4-size-tablet);
+  line-height: var(--h4-height-tablet);
   font-family: var(--h-font);
   color: var(--h-color);
-  line-height: var(--h4-height);
   font-weight: bold;
   padding: 0;
   padding-bottom: 32px;
 }
 
 .card-area {
+  font-size: var(--h5-size-tablet);
+  line-height: var(--h5-height-tablet);
   font-family: var(--h5-font);
-  font-size: var(--h5-size);
-  line-height: var(--h5-height);
   color: rgba(var(--color-black), 0.75);
   padding: 0;
   margin: 0;
+}
+
+@media (max-width: 575px) {
+  .card-title {
+    padding-top: 16px;
+    padding-bottom: 8px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -55,8 +65,30 @@
   }
 }
 
+@media (max-width: 991px) {
+  .card-title {
+    font-size: var(--h4-size-phone);
+    line-height: var(--h4-height-phone);
+  }
+
+  .card-area {
+    font-size: var(--h5-size-phone);
+    line-height: var(--h5-height-phone);
+  }
+}
+
 @media (min-width: 1200px) {
   .exp-img {
     width: 212px;
+  }
+
+  .card-title {
+    font-size: var(--h4-size);
+    line-height: var(--h4-height);
+  }
+
+  .card-area {
+    font-size: var(--h5-size);
+    line-height: var(--h5-height);
   }
 }

@@ -38,10 +38,18 @@ html {
 
   --h4-size: 42px;
   --h4-height: 50px;
+  --h4-size-tablet: 36px;
+  --h4-height-tablet: 40px;
+  --h4-size-phone: 28px;
+  --h4-height-phone: 36px;
 
   --h5-size: 30px;
   --h5-height: 40px;
   --h5-font: Nunito_Light, sans-serif;
+  --h5-size-tablet: 26px;
+  --h5-height-tablet: 34px;
+  --h5-size-phone: 22px;
+  --h5-height-phone: 30px;
 
   --h6-size: 21px;
   --h6-height: 27px;

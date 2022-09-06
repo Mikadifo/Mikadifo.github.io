@@ -6,8 +6,8 @@ const ExperienceCard = ({ experienceInfo }) => {
             className="row experience-container"
             data-testid={experienceInfo.id}
         >
-            <div className="container col-6 col-md-4">
-                <div className="row justify-content-md-center text-md-center">
+            <div className="container col-sm-6 col-md-4">
+                <div className="row justify-content-md-center text-md-center text-sm-start text-center justify-content-center justify-content-sm-start">
                     <img
                         className="exp-img"
                         src={experienceInfo.imgUrl}
@@ -24,12 +24,12 @@ const ExperienceCard = ({ experienceInfo }) => {
             <div className="container col-4 justify-content-center d-none d-md-flex">
                 <div className="separator" />
             </div>
-            <div className="container col-6 col-md-4 d-flex align-items-center">
+            <div className="container col-sm-6 col-md-4 d-flex align-items-center">
                 <div className="row">
-                    <h3 className="card-title text-md-center text-end">
+                    <h3 className="card-title text-md-center text-center text-sm-end">
                         {experienceInfo.institution}
                     </h3>
-                    <p className="card-area text-md-center text-end">
+                    <p className="card-area text-md-center text-center text-sm-end">
                         {experienceInfo.title}
                     </p>
                 </div>
