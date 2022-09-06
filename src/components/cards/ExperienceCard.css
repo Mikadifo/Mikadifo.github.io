@@ -4,10 +4,8 @@
 }
 
 .date-label {
-  /*todo*/
   font-size: var(--paragraph-size-tablet);
   line-height: var(--paragraph-height-tablet);
-  /*todo*/
   font-family: var(--paragraph-font);
   color: var(--paragraph-color);
   margin: 0;
@@ -90,5 +88,10 @@
   .card-area {
     font-size: var(--h5-size);
     line-height: var(--h5-height);
+  }
+
+  .date-label {
+    font-size: var(--paragraph-size);
+    line-height: var(--paragraph-height);
   }
 }
