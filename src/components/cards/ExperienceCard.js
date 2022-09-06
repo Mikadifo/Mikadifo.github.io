@@ -24,7 +24,7 @@ const ExperienceCard = ({ experienceInfo }) => {
             <div className="container col-4 justify-content-center d-none d-md-flex">
                 <div className="separator" />
             </div>
-            <div className="container col-sm-6 col-md-4 d-flex align-items-center">
+            <div className="container col-sm-6 col-md-4 d-sm-flex align-items-center">
                 <div className="row">
                     <h3 className="card-title text-md-center text-center text-sm-end">
                         {experienceInfo.institution}

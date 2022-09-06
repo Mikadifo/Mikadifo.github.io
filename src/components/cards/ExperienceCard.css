@@ -1,5 +1,5 @@
 .experience-container {
-  margin: 128px 0 0 0;
+  margin: 64px 0 0 0;
   padding: 0;
 }
 
@@ -55,6 +55,10 @@
     padding-top: 16px;
     padding-bottom: 8px;
   }
+
+  .experience-container {
+    margin: 32px 0 0 0;
+  }
 }
 
 @media (min-width: 768px) {
@@ -93,5 +97,9 @@
   .date-label {
     font-size: var(--paragraph-size);
     line-height: var(--paragraph-height);
+  }
+
+  .experience-container {
+    margin: 128px 0 0 0;
   }
 }
