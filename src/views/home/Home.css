@@ -14,31 +14,55 @@
   background-image: var(--color-brand-gradient);
   background-color: rgb(var(--color-secondary));
   background-size: 100%;
-  font-size: var(--h3-size);
+  font-size: var(--h3-size-tablet);
   font-family: var(--h3-font);
-  line-height: var(--h3-height);
+  line-height: var(--h3-height-tablet);
   text-align: center;
+  margin-bottom: 32px;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  margin-bottom: 32px;
 }
 
 .rol-subtitle {
-  font-size: var(--h2-size);
+  font-size: var(--h2-size-tablet);
+  line-height: var(--h2-height-tablet);
   font-family: var(--h-font);
   font-weight: bold;
-  line-height: var(--h2-height);
   text-align: center;
   color: var(--h-color);
   margin-bottom: 68px;
+}
+
+@media (max-width: 991px) {
+  .greeting-title {
+    font-size: var(--h3-size-phone);
+    line-height: var(--h3-height-phone);
+  }
+
+  .rol-subtitle {
+    font-size: var(--h2-size-phone);
+    line-height: var(--h2-height-phone);
+  }
 }
 
 @media (min-width: 992px) {
   .portrait-img {
     width: 400px;
     height: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .greeting-title {
+    font-size: var(--h3-size);
+    line-height: var(--h3-height);
+  }
+
+  .rol-subtitle {
+    font-size: var(--h2-size);
+    line-height: var(--h2-height);
   }
 }
 

@@ -2,7 +2,7 @@
   background-image: var(--color-brand-gradient);
   color: rgb(var(--color-white));
   font-family: Nunito, sans-serif;
-  font-size: var(--h6-size);
+  font-size: var(--h6-size-tabletphone);
   font-weight: bold;
   padding: 20px 40px;
   border-radius: 100px;
@@ -22,4 +22,10 @@
 
 .pri-btn-active {
   opacity: 0.8;
+}
+
+@media (min-width: 1200px) {
+  .primary-btn {
+    font-size: var(--h6-size);
+  }
 }

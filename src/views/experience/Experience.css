@@ -4,22 +4,34 @@
 
 .education-title,
 .experience-title {
-  font-size: var(--h3-size);
+  font-size: var(--h3-size-tablet);
   color: var(--h-color);
   font-family: var(--h-font);
   font-weight: bold;
 }
 
 .education-title {
-  margin: 0;
+  margin-top: 128px;
 }
 
 .experience-title {
-  margin-top: 128px;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .education-title,
+  .experience-title {
+    font-size: var(--h3-size-phone);
+  }
 }
 
 @media (min-width: 1200px) {
   #experience {
     padding: 0px 256px 0px 256px;
+  }
+
+  .education-title,
+  .experience-title {
+    font-size: var(--h3-size);
   }
 }

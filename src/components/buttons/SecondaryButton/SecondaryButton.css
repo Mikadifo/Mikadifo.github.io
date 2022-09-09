@@ -1,7 +1,7 @@
 .secondary-btn {
   background-color: rgb(var(--color-white));
   font-family: Nunito, sans-serif;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: bold;
   padding: 8px 16px;
   border-radius: 100px;
@@ -10,7 +10,7 @@
 }
 
 .sec-btn-icon {
-  font-size: 12px;
+  font-size: 10px;
   padding-left: 8px;
 }
 
@@ -22,4 +22,13 @@
 .sec-btn-active {
   background-color: rgba(var(--color-black), 0.8);
   color: rgb(var(--color-white));
+}
+
+@media (min-width: 992px) {
+  .secondary-btn {
+    font-size: 15px;
+  }
+  .sec-btn-icon {
+    font-size: 10px;
+  }
 }

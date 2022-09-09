@@ -1,12 +1,6 @@
 .footer-action {
   padding: 0 64px;
-  margin-top: 256px;
-}
-
-@media (min-width: 1500px) {
-  .footer-action {
-    padding: 0 256px;
-  }
+  margin-top: 168px;
 }
 
 .contact-info p {
@@ -14,36 +8,39 @@
 }
 
 .contact-title {
+  font-size: var(--h4-size-tablet);
+  line-height: var(--h4-height-tablet);
   font-family: var(--h-font);
   color: var(--h-color);
-  font-size: var(--h4-size);
   font-weight: bold;
   margin-bottom: 16px !important;
 }
 
 .contact-paragraph {
+  font-size: var(--paragraph-size-tablet);
+  line-height: var(--paragraph-height-tablet);
   font-family: var(--paragraph-font);
   color: var(--paragraph-color);
-  font-size: var(--paragraph-size);
 }
 
 .footer-container {
+  padding: 0 64px 0 64px;
+  margin-top: 168px;
   border-top: 1px solid rgba(var(--color-black), 0.5);
   width: 100vw;
   height: 108px;
-  padding: 0 64px 0 64px;
-  margin-top: 256px;
 }
 
 .copyright-text {
+  font-size: var(--paragraph-size);
+  line-height: var(--paragraph-height);
   font-family: var(--paragraph-font);
   color: var(--paragraph-color);
-  font-size: var(--paragraph-size);
 }
 
 .footer-icons a {
-  color: rgb(var(--color-black));
   font-size: 32px;
+  color: rgb(var(--color-black));
   padding: 0;
   border: none;
 }
@@ -54,4 +51,48 @@
 
 .footer-icons a:active {
   color: rgba(var(--color-secondary), 0.5);
+}
+
+@media (max-width: 767px) {
+  .contact-title {
+    font-size: var(--h4-size-phone);
+    line-height: var(--h4-height-phone);
+  }
+
+  .copyright-text {
+    font-size: var(--paragraph-size-tablet);
+    line-height: var(--paragraph-height-tablet);
+  }
+
+  .footer-icons a {
+    font-size: 24px;
+  }
+
+  .footer-container,
+  .footer-action {
+    margin-top: 98px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-title {
+    font-size: var(--h4-size);
+    line-height: var(--h4-height);
+  }
+
+  .contact-paragraph {
+    font-size: var(--paragraph-size);
+    line-height: var(--paragraph-height);
+  }
+
+  .footer-container,
+  .footer-action {
+    margin-top: 256px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .footer-action {
+    padding: 0 256px;
+  }
 }

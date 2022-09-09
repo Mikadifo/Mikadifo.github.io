@@ -11,10 +11,10 @@
 }
 
 .card-text {
+  font-size: var(--paragraph-size-tablet);
+  line-height: var(--paragraph-height-tablet);
   text-align: justify;
-  font-size: var(--paragraph-size);
   font-family: var(--paragraph-font);
-  line-height: var(--paragraph-height);
   color: var(--paragraph-color);
 }
 
@@ -30,5 +30,12 @@
 
   .card-img-project {
     width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-text {
+    font-size: var(--paragraph-size);
+    line-height: var(--paragraph-height);
   }
 }
