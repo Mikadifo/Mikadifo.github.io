@@ -47,6 +47,7 @@
   font-weight: bold;
   font-size: 15px;
   font-family: Nunito, sans-serif;
+  border-bottom: 1px solid transparent;
 }
 
 .navbar a:hover {
@@ -55,4 +56,8 @@
 
 .navbar a:active {
   color: rgba(var(--color-black), 0.4);
+}
+
+.active-link {
+  border-color: rgba(var(--color-black)) !important;
 }

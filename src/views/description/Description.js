@@ -1,10 +1,22 @@
+import { useEffect, useRef } from 'react';
 import {
     descriptionParagraph1,
     descriptionParagraph2,
 } from '../../constants/texts';
+import useIntersection from '../../hooks/useIntersection';
 import './Description.css';
 
-const Description = () => {
+const Description = ({ setCurrentItem }) => {
+    const ref = useRef();
+    const inViewport = useIntersection(ref);
+
+    useEffect(() => {
+        if (inViewport) {
+            window.history.replaceState(null, null, '#description');
+            setCurrentItem('#description');
+        }
+    });
+
     return (
         <div
             className="row description-container h-100"
@@ -12,7 +24,9 @@ const Description = () => {
             data-testid="description"
         >
             <div className="col-lg-4 my-auto text-center">
-                <h1 className="about-title">About Me</h1>
+                <h1 className="about-title" ref={ref}>
+                    About Me
+                </h1>
             </div>
             <div className="about-sep-container col-2 ps-0 pe-0 m-0 justify-content-center d-flex">
                 <div className="about-separator" />

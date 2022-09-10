@@ -1,11 +1,21 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import BorderlessButton from '../../components/buttons/BorderlessButton/BorderlessButton';
 import ProjectCard from '../../components/cards/ProjectCard';
+import useIntersection from '../../hooks/useIntersection';
 import projects from './../../resources/data/projects.json';
 import './Projects.css';
 
-const Projects = () => {
+const Projects = ({ setCurrentItem }) => {
     const [currentProject, setCurrentProject] = useState(0);
+    const ref = useRef();
+    const inViewport = useIntersection(ref);
+
+    useEffect(() => {
+        if (inViewport) {
+            window.history.replaceState(null, null, '#projects');
+            setCurrentItem('#projects');
+        }
+    });
 
     return (
         <div id="projects" data-testid="projects">
@@ -16,7 +26,9 @@ const Projects = () => {
                 }}
             >
                 <div className="project-container">
-                    <h1 className="text-center projects-title">My Work</h1>
+                    <h1 className="text-center projects-title" ref={ref}>
+                        My Work
+                    </h1>
                     <ProjectCard project={projects[currentProject]} />
                     <div className="row slider-controls">
                         <div className="col-sm-4 col-6">
