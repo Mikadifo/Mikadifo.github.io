@@ -1,5 +1,5 @@
 #projects {
-  margin-bottom: 384px;
+  margin-bottom: 280px;
 }
 
 .project-bg {
@@ -13,7 +13,7 @@
   border-radius: 16px;
   width: 100%;
   position: relative;
-  top: 128px;
+  top: 64px;
 }
 
 .projects-title {
@@ -36,8 +36,13 @@
 }
 
 @media (min-width: 1300px) {
+  #projects {
+    margin-bottom: 384px;
+  }
+
   .project-container {
     margin: 0px 256px;
+    top: 128px;
   }
 
   .projects-title {
@@ -48,6 +53,12 @@
 @media (min-width: 768px) {
   .project-container {
     padding: 32px 68px 0px 68px;
+  }
+}
+
+@media (max-width: 768px) {
+  #projects {
+    margin-bottom: 160px;
   }
 }
 

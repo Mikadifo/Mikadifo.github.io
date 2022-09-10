@@ -18,7 +18,7 @@ const ProjectCard = ({ project }) => {
                         {project.description}
                     </p>
                     <div className="row text-center pt-3">
-                        <div className="col-md-6 pb-md-0 pb-3">
+                        <div className="col-6 pb-md-0 pb-3">
                             <a
                                 href={project.link ? project.link : null}
                                 className="test-proj-link"
@@ -27,13 +27,14 @@ const ProjectCard = ({ project }) => {
                             >
                                 <BorderlessButton
                                     text={'Website'}
+                                    textClass={'d-none d-sm-inline'}
                                     iconClass={'bi bi-display'}
                                     hoverIconClass={'bi bi-display-fill'}
                                     disabled={!project.link}
                                 />
                             </a>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-6">
                             <a
                                 href={
                                     project.sourceCode
@@ -46,6 +47,7 @@ const ProjectCard = ({ project }) => {
                             >
                                 <BorderlessButton
                                     text={'Source Code'}
+                                    textClass={'d-none d-sm-inline'}
                                     iconClass={'bi bi-code'}
                                     hoverIconClass={'bi bi-code-slash'}
                                     disabled={!project.sourceCode}

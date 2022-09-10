@@ -19,9 +19,10 @@ const Projects = () => {
                     <h1 className="text-center projects-title">My Work</h1>
                     <ProjectCard project={projects[currentProject]} />
                     <div className="row slider-controls">
-                        <div className="col-4">
+                        <div className="col-sm-4 col-6">
                             <BorderlessButton
                                 text={'Previous'}
+                                textClass={'d-none d-sm-inline'}
                                 iconClass={'bi bi-arrow-left-circle'}
                                 hoverIconClass={'bi bi-arrow-left-circle-fill'}
                                 action={() =>
@@ -31,12 +32,13 @@ const Projects = () => {
                                 disabled={currentProject <= 0}
                             />
                         </div>
-                        <div className="col-4 text-center p-0 my-auto project-tools">
+                        <div className="col-sm-4 text-center p-0 my-auto project-tools order-last">
                             {projects[currentProject].tools}
                         </div>
-                        <div className="col-4 text-end">
+                        <div className="col-sm-4 col-6 text-end order-sm-last">
                             <BorderlessButton
                                 text={'Next'}
+                                textClass={'d-none d-sm-inline'}
                                 iconClass={'bi bi-arrow-right-circle'}
                                 hoverIconClass={'bi bi-arrow-right-circle-fill'}
                                 iconToEnd={true}

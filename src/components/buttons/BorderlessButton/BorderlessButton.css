@@ -18,7 +18,7 @@
 }
 
 .bls-btn-icon {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .bls-btn-hover {
@@ -37,12 +37,14 @@
   cursor: not-allowed !important;
 }
 
+@media (max-width: 575px) {
+  .bls-btn-icon {
+    font-size: 40px;
+  }
+}
+
 @media (max-width: 1199px) {
   .borderless-btn {
     font-size: var(--h6-size-tabletphone);
-  }
-
-  .bls-btn-icon {
-    font-size: 16px;
   }
 }

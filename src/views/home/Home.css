@@ -35,6 +35,15 @@
   margin-bottom: 68px;
 }
 
+@media (max-width: 768px) {
+  .greeting-title {
+    margin-bottom: 16px;
+  }
+  .rol-subtitle {
+    margin-bottom: 32px;
+  }
+}
+
 @media (max-width: 991px) {
   .greeting-title {
     font-size: var(--h3-size-phone);
