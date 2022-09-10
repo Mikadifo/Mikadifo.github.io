@@ -34,6 +34,12 @@
   margin: 0;
 }
 
+@media (min-width: 768px) {
+  .description-container {
+    padding: 96px 64px;
+  }
+}
+
 @media (min-width: 992px) {
   .about-separator {
     border-left: 4px solid rgba(var(--color-black), 0.5);
