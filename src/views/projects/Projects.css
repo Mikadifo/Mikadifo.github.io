@@ -13,7 +13,7 @@
   border-radius: 16px;
   width: 100%;
   position: relative;
-  top: 128px;
+  top: 64px;
 }
 
 .projects-title {
@@ -38,6 +38,7 @@
 @media (min-width: 1300px) {
   .project-container {
     margin: 0px 256px;
+    top: 128px;
   }
 
   .projects-title {
