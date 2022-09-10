@@ -3,7 +3,9 @@ import './BorderlessButton.css';
 
 const BorderlessButton = ({
     text,
+    textClass,
     iconClass,
+    iconCustomClass,
     hoverIconClass,
     disabled,
     iconToEnd,
@@ -29,9 +31,9 @@ const BorderlessButton = ({
         >
             {iconToEnd ? (
                 <>
-                    {text}
+                    <span className={textClass}>{text}</span>
                     <i
-                        className={`${
+                        className={`${iconCustomClass} ${
                             hover && !disabled ? hoverIconClass : iconClass
                         } bls-btn-icon bls-btn-right`}
                     />
@@ -39,11 +41,11 @@ const BorderlessButton = ({
             ) : (
                 <>
                     <i
-                        className={`${
+                        className={`${iconCustomClass} ${
                             hover && !disabled ? hoverIconClass : iconClass
                         } bls-btn-icon bls-btn-left`}
                     />
-                    {text}
+                    <span className={textClass}>{text}</span>
                 </>
             )}
         </button>
