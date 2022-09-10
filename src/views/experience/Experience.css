@@ -1,5 +1,5 @@
 #experience {
-  padding: 0px 64px 0px 64px;
+  padding: 0px 64px;
 }
 
 .education-title,
@@ -12,10 +12,23 @@
 
 .education-title {
   margin-top: 128px;
+  margin-top: 64px;
 }
 
 .experience-title {
   margin: 0;
+}
+
+@media (min-width: 992px) {
+  .education-title {
+    margin-top: 128px;
+  }
+}
+
+@media (max-width: 768px) {
+  .education-title {
+    margin-top: 32px;
+  }
 }
 
 @media (max-width: 991px) {
