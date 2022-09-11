@@ -3,6 +3,13 @@ import projectList from './../../resources/data/projects.json';
 import Projects from './Projects';
 
 beforeEach(() => {
+    const mockIntersectionObserver = jest.fn();
+    mockIntersectionObserver.mockReturnValue({
+        observe: () => null,
+        unobserve: () => null,
+        disconnect: () => null,
+    });
+    window.IntersectionObserver = mockIntersectionObserver;
     render(<Projects />);
 });
 

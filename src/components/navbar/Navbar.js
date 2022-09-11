@@ -2,7 +2,7 @@ import { useState } from 'react';
 import SecondaryButton from '../buttons/SecondaryButton/SecondaryButton';
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ currentItemHash }) => {
     const [isTogglerActive, setTogglerActive] = useState(false);
 
     return (
@@ -48,7 +48,10 @@ const Navbar = () => {
                             >
                                 <div className="navbar-nav mx-auto">
                                     <a
-                                        className="nav-link pe-3"
+                                        className={`nav-link pe-3 ${
+                                            currentItemHash ===
+                                                '#description' && 'active-link'
+                                        }`}
                                         aria-current="page"
                                         href="#description"
                                         data-testid="nav-item-about"
@@ -56,14 +59,20 @@ const Navbar = () => {
                                         About Me
                                     </a>
                                     <a
-                                        className="nav-link ps-3 pe-3"
+                                        className={`nav-link ps-3 pe-3 ${
+                                            currentItemHash === '#projects' &&
+                                            'active-link'
+                                        }`}
                                         href="#projects"
                                         data-testid="nav-item-pro"
                                     >
                                         Projects
                                     </a>
                                     <a
-                                        className="nav-link ps-3 pe-3"
+                                        className={`nav-link ps-3 pe-3 ${
+                                            currentItemHash === '#experience' &&
+                                            'active-link'
+                                        }`}
                                         href="#experience"
                                         data-testid="nav-item-exp"
                                     >

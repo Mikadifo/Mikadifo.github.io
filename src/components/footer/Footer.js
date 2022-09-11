@@ -1,12 +1,24 @@
+import { useEffect, useRef } from 'react';
+import useIntersection from '../../hooks/useIntersection';
 import PrimaryButton from '../buttons/PrimaryButton/PrimaryButton';
 import './Footer.css';
 
-const Footer = () => {
+const Footer = ({ setCurrentItem }) => {
+    const ref = useRef();
+    const inViewport = useIntersection(ref);
+
+    useEffect(() => {
+        if (inViewport) {
+            window.history.replaceState(null, null, '/');
+            setCurrentItem('');
+        }
+    });
+
     return (
         <>
             <div className="row footer-action">
                 <div className="col-lg-8 contact-info text-lg-start text-center pe-0 ps-0">
-                    <p className="contact-title">
+                    <p className="contact-title" ref={ref}>
                         I’m willing to collaborate with you.
                     </p>
                     <p className="contact-paragraph">

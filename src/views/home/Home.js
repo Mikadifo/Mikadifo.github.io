@@ -1,13 +1,27 @@
+import { useEffect, useRef } from 'react';
+import useIntersection from '../../hooks/useIntersection';
 import PrimaryButton from './../../components/buttons/PrimaryButton/PrimaryButton';
 import portrait from './../../img/face-img.png';
 import './Home.css';
 
-const Home = () => {
+const Home = ({ setCurrentItem }) => {
+    const ref = useRef();
+    const inViewport = useIntersection(ref);
+
+    useEffect(() => {
+        if (inViewport) {
+            window.history.replaceState(null, null, '#home');
+            setCurrentItem('#home');
+        }
+    });
+
     return (
         <div id="home" className="row home-container" data-testid="home">
             <div className="col-xxl-7 col-lg-6 text-center ps-0 pe-0">
                 <div>
-                    <div className="greeting-title">Hey there, I'm Michael</div>
+                    <div className="greeting-title" ref={ref}>
+                        Hey there, I'm Michael
+                    </div>
                     <div className="rol-subtitle">
                         Fullstack Software Developer
                     </div>
