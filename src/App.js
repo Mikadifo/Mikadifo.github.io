@@ -4,7 +4,6 @@ import Description from './views/description/Description';
 import Footer from './components/footer/Footer';
 import Experience from './views/experience/Experience';
 import Projects from './views/projects/Projects';
-import './App.css';
 import { useState } from 'react';
 
 const App = () => {
