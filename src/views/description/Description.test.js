@@ -1,5 +1,4 @@
 import { render, screen, cleanup } from '@testing-library/react';
-import { HashRouter } from 'react-router-dom';
 import Description from './Description';
 import {
     descriptionParagraph1,
@@ -7,11 +6,14 @@ import {
 } from '../../constants/texts';
 
 beforeEach(() => {
-    render(
-        <HashRouter>
-            <Description />
-        </HashRouter>,
-    );
+    const mockIntersectionObserver = jest.fn();
+    mockIntersectionObserver.mockReturnValue({
+        observe: () => null,
+        unobserve: () => null,
+        disconnect: () => null,
+    });
+    window.IntersectionObserver = mockIntersectionObserver;
+    render(<Description />);
 });
 
 afterEach(() => {

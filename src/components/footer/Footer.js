@@ -13,6 +13,7 @@ const Footer = ({ setCurrentItem }) => {
             setCurrentItem('');
         }
     });
+
     return (
         <>
             <div className="row footer-action">

@@ -2,6 +2,13 @@ import { render, screen, cleanup } from '@testing-library/react';
 import Home from './Home';
 
 beforeEach(() => {
+    const mockIntersectionObserver = jest.fn();
+    mockIntersectionObserver.mockReturnValue({
+        observe: () => null,
+        unobserve: () => null,
+        disconnect: () => null,
+    });
+    window.IntersectionObserver = mockIntersectionObserver;
     render(<Home />);
 });
 

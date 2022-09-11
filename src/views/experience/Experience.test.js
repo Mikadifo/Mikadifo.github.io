@@ -4,6 +4,13 @@ import jobExperience from './../../resources/data/jobs.json';
 import Experience from './Experience';
 
 beforeEach(() => {
+    const mockIntersectionObserver = jest.fn();
+    mockIntersectionObserver.mockReturnValue({
+        observe: () => null,
+        unobserve: () => null,
+        disconnect: () => null,
+    });
+    window.IntersectionObserver = mockIntersectionObserver;
     render(<Experience />);
 });
 
