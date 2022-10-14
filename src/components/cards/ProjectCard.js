@@ -21,9 +21,9 @@ const ProjectCard = ({ project }) => {
                         <div className="col-6 pb-md-0 pb-3">
                             <a
                                 href={project.link ? project.link : null}
-                                className="test-proj-link"
                                 target="_blank"
                                 rel="noreferrer"
+                                data-testid="proj-link"
                             >
                                 <BorderlessButton
                                     text={'Website'}
@@ -41,9 +41,9 @@ const ProjectCard = ({ project }) => {
                                         ? project.sourceCode
                                         : null
                                 }
-                                className="test-sourcecode"
                                 target="_blank"
                                 rel="noreferrer"
+                                data-testid="proj-sourcecode"
                             >
                                 <BorderlessButton
                                     text={'Source Code'}
