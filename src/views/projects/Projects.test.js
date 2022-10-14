@@ -31,11 +31,12 @@ test('projects render cards from json (img, texts, links)', () => {
         'src',
         projectList[0].img,
     );
-    const websiteButton = projectRendered.querySelector('.test-proj-link');
-    const sourceCodeButton = projectRendered.querySelector('.test-sourcecode');
+    const websiteButton = screen.getByTestId('proj-link');
+    const sourceCodeButton = screen.getByTestId('proj-sourcecode');
     expect(websiteButton).toHaveProperty('href', projectList[0].link);
     expect(sourceCodeButton).toHaveProperty('href', projectList[0].sourceCode);
-    if (!projectList[0].link) expect(websiteButton).toHaveClass('disabled-btn');
+    if (!projectList[0].link)
+        expect(websiteButton.firstChild).toHaveClass('bls-bls-disabled');
     if (!projectList[0].sourceCode)
-        expect(sourceCodeButton).toHaveClass('disabled-btn');
+        expect(sourceCodeButton.firstChild).toHaveClass('bls-btn-disabled');
 });

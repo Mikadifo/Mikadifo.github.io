@@ -1,5 +1,15 @@
 [
     {
+        "id": "pr_centeravid",
+        "title": "CENTERAVID",
+        "description": "Landing page for an alcohol rehabilitation clinic in Ecuador.",
+        "link": "https://centeravid.com/",
+        "sourceCode": "",
+        "img": "https://user-images.githubusercontent.com/51935560/195912865-3b03c599-81dd-484e-90d7-0879b35cbf31.png",
+        "tools": "ReactJS / Firebase / Javascript",
+        "colors": ["2E77D0", "3E5C7F"]
+    },
+    {
         "id": "pr_certificage",
         "title": "CERTIFICAGE",
         "description": "This project helps you to save all your certificates in the cloud, also you have the option to generate a sharing link.",
@@ -28,16 +38,6 @@
         "img": "https://user-images.githubusercontent.com/51935560/180326585-9fbdf5f0-7e4b-47a7-8f1d-d0f07619de90.jpeg",
         "tools": "Swift / SwiftUI / Xcode",
         "colors": ["353535", "FE8D1A"]
-    },
-    {
-        "id": "pr_cetad",
-        "title": "CENTERAVID",
-        "description": "Landing page for CENTERAVID, a drugs an alcohol rehabilitation center in Ecuador, showing its information and images of the clinic.",
-        "link": "",
-        "sourceCode": "",
-        "img": "https://user-images.githubusercontent.com/51935560/180333280-9dd77ae5-2a41-40ec-a453-fb6c26d60ff0.png",
-        "tools": "React / Javascript / JSON",
-        "colors": ["D4A838", "534CC2"]
     },
     {
         "id": "pr_gacu",
