@@ -5,43 +5,58 @@ import './Navbar.css';
 const Navbar = ({ currentItemHash }) => {
     const [isTogglerActive, setTogglerActive] = useState(false);
 
+    const navbarToggler = () => {
+        return (
+            <button
+                className="nav-toggler navbar-toggler p-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <i
+                    className={
+                        isTogglerActive
+                            ? 'bi bi-distribute-vertical'
+                            : 'bi bi-list'
+                    }
+                    onClick={() => setTogglerActive(!isTogglerActive)}
+                />
+            </button>
+        );
+    };
+
     return (
         <div
             className="container-fluid nav-container"
-            style={{ height: isTogglerActive ? 'auto' : '108px' }}
+            style={{ height: isTogglerActive ? '100vh' : '108px' }}
             data-testid="navbar"
         >
             <div className="row h-100">
                 <a
-                    className="col my-auto nav-brand"
+                    className={`col my-auto nav-brand ${
+                        isTogglerActive && 'col-6'
+                    }`}
                     data-testid="nav-brand"
                     href="#home"
                 >
                     M
                 </a>
-                <div className="col-lg-8 col-sm-2 col my-auto text-center mx-auto ms-auto order-last">
+                {isTogglerActive && (
+                    <div className="col-6 my-auto justify-content-end d-flex">
+                        {navbarToggler()}
+                    </div>
+                )}
+                <div
+                    className={`col-lg-8 col-sm-2 col my-auto text-center mx-auto ms-auto order-last ${
+                        isTogglerActive && 'h-75'
+                    }`}
+                >
                     <nav className="navbar navbar-expand-lg navbar-light">
                         <div className="container-fluid justify-content-end">
-                            <button
-                                className="nav-toggler navbar-toggler p-0"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#navbarNavAltMarkup"
-                                aria-controls="navbarNavAltMarkup"
-                                aria-expanded="false"
-                                aria-label="Toggle navigation"
-                            >
-                                <i
-                                    className={
-                                        isTogglerActive
-                                            ? 'bi bi-distribute-vertical'
-                                            : 'bi bi-list'
-                                    }
-                                    onClick={() =>
-                                        setTogglerActive(!isTogglerActive)
-                                    }
-                                />
-                            </button>
+                            {!isTogglerActive && navbarToggler()}
                             <div
                                 className="collapse navbar-collapse"
                                 id="navbarNavAltMarkup"
@@ -88,7 +103,9 @@ const Navbar = ({ currentItemHash }) => {
                                         Blog
                                     </a>
                                     <a
-                                        className="nav-link ps-3 d-sm-none"
+                                        className={`nav-link ps-3 d-s-none ${
+                                            !isTogglerActive && 'd-sm-none'
+                                        }`}
                                         href="mailto:mikadifopadillaheredia@gmail.com"
                                         target="_blank"
                                         rel="noreferer"
@@ -100,7 +117,11 @@ const Navbar = ({ currentItemHash }) => {
                         </div>
                     </nav>
                 </div>
-                <div className="col my-auto text-end order-lg-last d-sm-block d-none">
+                <div
+                    className={`col my-auto text-end order-lg-last d-none ${
+                        isTogglerActive ? 'd-none' : 'd-sm-block'
+                    }`}
+                >
                     <a href="mailto:mikadifopadillaheredia@gmail.com">
                         <SecondaryButton
                             text="Email me"
