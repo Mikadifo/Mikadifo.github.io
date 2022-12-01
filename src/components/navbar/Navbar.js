@@ -97,7 +97,7 @@ const Navbar = ({ currentItemHash }) => {
                                         className="nav-link ps-3"
                                         href="https://blog.mikadifo.com"
                                         target="_blank"
-                                        rel="noreferer"
+                                        rel="noreferrer"
                                         data-testid="nav-item-blog"
                                     >
                                         Blog
@@ -108,7 +108,7 @@ const Navbar = ({ currentItemHash }) => {
                                         }`}
                                         href="mailto:mikadifopadillaheredia@gmail.com"
                                         target="_blank"
-                                        rel="noreferer"
+                                        rel="noreferrer"
                                     >
                                         Email me
                                     </a>
