@@ -16,22 +16,24 @@ const Experience = ({ setCurrentItem }) => {
         }
     });
 
+    const renderList = (list) => {
+        return (
+            <div className="row align-items-center justify-content-center">
+                {list.map((item) => (
+                    <ExperienceCard key={item.id} experienceInfo={item} />
+                ))}
+            </div>
+        );
+    };
+
     return (
         <div id="experience" data-testid="experience">
             <h1 className="text-center experience-title" ref={ref}>
                 EXPERIENCE
             </h1>
-            <div className="row align-items-center justify-content-center">
-                {jobExperience.map((item) => (
-                    <ExperienceCard key={item.id} experienceInfo={item} />
-                ))}
-            </div>
+            {renderList(jobExperience)}
             <h1 className="text-center education-title">EDUCATION</h1>
-            <div className="row align-items-center justify-content-center">
-                {educationExperience.map((item) => (
-                    <ExperienceCard key={item.id} experienceInfo={item} />
-                ))}
-            </div>
+            {renderList(educationExperience)}
         </div>
     );
 };
