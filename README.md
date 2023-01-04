@@ -3,6 +3,8 @@ My personal website where I show my works throughout my professional career.
 
 # Available Scripts (dev branch)
 
+Do not use **yarn** instead of **npm** in the project.
+
 In the project directory, you can run:
 
 ## `npm start`
