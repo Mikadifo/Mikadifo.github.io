@@ -1,5 +1,13 @@
 [
     {
+        "id": "hunter-college",
+        "imgUrl": "https://pbs.twimg.com/profile_images/1410588604435472385/FvHaNhiF_400x400.jpg",
+        "title": "Computer Science",
+        "institution": "Hunter College",
+        "dateStart": "January 2022",
+        "dateEnd": "Now"
+    },
+    {
         "id": "esl-hunter",
         "imgUrl": "https://pbs.twimg.com/profile_images/1410588604435472385/FvHaNhiF_400x400.jpg",
         "title": "English as Second Language",
