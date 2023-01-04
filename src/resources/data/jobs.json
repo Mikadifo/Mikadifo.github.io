@@ -6,5 +6,13 @@
         "institution": "LibélulaSoft",
         "dateStart": "July 2021",
         "dateEnd": "January 2022"
+    },
+    {
+        "id": "freelance",
+        "imgUrl": "https://avatars.githubusercontent.com/u/51935560?s=250v=4",
+        "title": "Software Developer",
+        "institution": "Freelancer",
+        "dateStart": "2020",
+        "dateEnd": "Now"
     }
 ]
