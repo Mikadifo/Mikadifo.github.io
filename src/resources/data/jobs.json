@@ -1,18 +1,18 @@
 [
     {
-        "id": "libelula",
-        "imgUrl": "https://pbs.twimg.com/profile_images/561565717170896896/dAc03mpC_400x400.png",
-        "title": "Fullstack Software Developer",
-        "institution": "LibélulaSoft",
-        "dateStart": "July 2021",
-        "dateEnd": "January 2022"
-    },
-    {
         "id": "freelance",
         "imgUrl": "https://avatars.githubusercontent.com/u/51935560?s=250v=4",
         "title": "Software Developer",
         "institution": "Freelancer",
         "dateStart": "2020",
         "dateEnd": "Now"
+    },
+    {
+        "id": "libelula",
+        "imgUrl": "https://pbs.twimg.com/profile_images/561565717170896896/dAc03mpC_400x400.png",
+        "title": "Fullstack Software Developer",
+        "institution": "LibélulaSoft",
+        "dateStart": "July 2021",
+        "dateEnd": "January 2022"
     }
 ]
