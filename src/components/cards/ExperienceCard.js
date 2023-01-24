@@ -27,7 +27,18 @@ const ExperienceCard = ({ experienceInfo }) => {
             <div className="container col-sm-6 col-md-4 d-sm-flex align-items-center">
                 <div className="row">
                     <h3 className="card-title text-md-center text-center text-sm-end">
-                        {experienceInfo.institution}
+                        {experienceInfo.link ? (
+                            <a
+                                href={experienceInfo.link}
+                                className={'card-link'}
+                                rel="noreferrer"
+                                target="_blank"
+                            >
+                                {experienceInfo.institution}
+                            </a>
+                        ) : (
+                            experienceInfo.institution
+                        )}
                     </h3>
                     <p className="card-area text-md-center text-center text-sm-end">
                         {experienceInfo.title}
