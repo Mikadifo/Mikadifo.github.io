@@ -21,14 +21,15 @@
 
 .exp-img {
   width: 140px;
+  height: auto;
   border-radius: 28px;
   margin-bottom: 16px;
-  filter: drop-shadow(0px 4px 80px rgba(37, 42, 44, 0.07))
-    drop-shadow(0px 1.6711px 33.4221px rgba(37, 42, 44, 0.0503198))
-    drop-shadow(0px 0.893452px 17.869px rgba(37, 42, 44, 0.0417275))
-    drop-shadow(0px 0.500862px 10.0172px rgba(37, 42, 44, 0.035))
-    drop-shadow(0px 0.266004px 5.32008px rgba(37, 42, 44, 0.0282725))
-    drop-shadow(0px 0.11069px 2.21381px rgba(37, 42, 44, 0.0196802));
+  box-shadow: 0px 4px 80px rgba(37, 42, 44, 0.07),
+    0px 1.6711px 33.4221px rgba(37, 42, 44, 0.0503198),
+    0px 0.893452px 17.869px rgba(37, 42, 44, 0.0417275),
+    0px 0.500862px 10.0172px rgba(37, 42, 44, 0.035),
+    0px 0.266004px 5.32008px rgba(37, 42, 44, 0.0282725),
+    0px 0.11069px 2.21381px rgba(37, 42, 44, 0.0196802);
 }
 
 .card-link {

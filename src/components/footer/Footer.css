@@ -1,6 +1,6 @@
 .footer-action {
   padding: 0 64px;
-  margin-top: 168px;
+  margin: 168px 0 0 0;
 }
 
 .contact-info p {
@@ -25,7 +25,7 @@
 
 .footer-container {
   padding: 0 64px 0 64px;
-  margin-top: 168px;
+  margin: 168px 0 0 0;
   border-top: 1px solid rgba(var(--color-black), 0.5);
   width: 100vw;
   height: 108px;
@@ -70,7 +70,7 @@
 
   .footer-container,
   .footer-action {
-    margin-top: 98px;
+    margin: 98px 0 0 0;
   }
 }
 
@@ -87,7 +87,7 @@
 
   .footer-container,
   .footer-action {
-    margin-top: 256px;
+    margin: 256px 0 0 0;
   }
 }
 
