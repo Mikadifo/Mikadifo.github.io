@@ -39,7 +39,7 @@ const Footer = ({ setCurrentItem }) => {
                 className="text-center footer-container"
                 data-testid="footer"
             >
-                <div className="row h-100">
+                <div className="row h-100 m-0">
                     <div className="col-sm-6 my-auto text-sm-start copyright-text text-center">
                         © 2022 Mikadifo. All rights reserved.
                     </div>
