@@ -50,7 +50,7 @@ const Footer = ({ setCurrentItem }) => {
                             role="button"
                             data-mdb-ripple-color="dark"
                             target="_blank"
-                            rel="noreferer"
+                            rel="noreferrer"
                             data-testid="footer-gh-icon"
                         >
                             <i className="fab fa-github" />
@@ -61,7 +61,7 @@ const Footer = ({ setCurrentItem }) => {
                             role="button"
                             data-mdb-ripple-color="dark"
                             target="_blank"
-                            rel="noreferer"
+                            rel="noreferrer"
                             data-testid="footer-ln-icon"
                         >
                             <i className="fab fa-linkedin" />
@@ -72,7 +72,7 @@ const Footer = ({ setCurrentItem }) => {
                             role="button"
                             data-mdb-ripple-color="dark"
                             target="_blank"
-                            rel="noreferer"
+                            rel="noreferrer"
                             data-testid="footer-tw-icon"
                         >
                             <i className="fab fa-twitter" />
