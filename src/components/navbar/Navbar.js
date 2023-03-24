@@ -63,7 +63,7 @@ const Navbar = ({ currentItemHash }) => {
                             >
                                 <div className="navbar-nav mx-auto">
                                     <a
-                                        className={`nav-link pe-3 ${
+                                        className={`nav-link pe-lg-3 ${
                                             currentItemHash ===
                                                 '#description' && 'active-link'
                                         }`}
@@ -74,7 +74,7 @@ const Navbar = ({ currentItemHash }) => {
                                         About Me
                                     </a>
                                     <a
-                                        className={`nav-link ps-3 pe-3 ${
+                                        className={`nav-link ps-lg-3 pe-lg-3 ${
                                             currentItemHash === '#projects' &&
                                             'active-link'
                                         }`}
@@ -84,7 +84,7 @@ const Navbar = ({ currentItemHash }) => {
                                         Projects
                                     </a>
                                     <a
-                                        className={`nav-link ps-3 pe-3 ${
+                                        className={`nav-link ps-lg-3 pe-lg-3 ${
                                             currentItemHash === '#experience' &&
                                             'active-link'
                                         }`}
@@ -94,7 +94,7 @@ const Navbar = ({ currentItemHash }) => {
                                         Experience
                                     </a>
                                     <a
-                                        className="nav-link ps-3"
+                                        className="nav-link ps-lg-3"
                                         href="https://blog.mikadifo.com"
                                         target="_blank"
                                         rel="noreferrer"
@@ -103,7 +103,7 @@ const Navbar = ({ currentItemHash }) => {
                                         Blog
                                     </a>
                                     <a
-                                        className={`nav-link ps-3 d-s-none ${
+                                        className={`nav-link ps-lg-3 d-s-none ${
                                             !isTogglerActive && 'd-sm-none'
                                         }`}
                                         href="mailto:mikadifopadillaheredia@gmail.com"
