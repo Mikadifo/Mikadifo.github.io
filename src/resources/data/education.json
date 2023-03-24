@@ -1,7 +1,7 @@
 [
     {
         "id": "hunter-college",
-        "imgUrl": "https://pbs.twimg.com/profile_images/1410588604435472385/FvHaNhiF_400x400.jpg",
+        "imgUrl": "https://avatars.githubusercontent.com/u/51935560?s=250v=4",
         "title": "Computer Science",
         "link": "https://hunter.cuny.edu/",
         "institution": "Hunter College",
@@ -9,8 +9,17 @@
         "dateEnd": "Now"
     },
     {
+        "id": "cybs-codepath",
+        "imgUrl": "https://avatars.githubusercontent.com/u/51935560?s=250v=4",
+        "link": "https://www.codepath.org/courses/cybersecurity",
+        "title": "Introducction to Cybersecurity",
+        "institution": "Codepath",
+        "dateStart": "February 2022",
+        "dateEnd": "April 2022"
+    },
+    {
         "id": "esl-hunter",
-        "imgUrl": "https://pbs.twimg.com/profile_images/1410588604435472385/FvHaNhiF_400x400.jpg",
+        "imgUrl": "https://avatars.githubusercontent.com/u/51935560?s=250v=4",
         "link": "https://www.hunter.cuny.edu/ieli/",
         "title": "English as Second Language",
         "institution": "Hunter College",
@@ -19,7 +28,7 @@
     },
     {
         "id": "tecazuay",
-        "imgUrl": "https://eduv.tecazuay.edu.ec/pluginfile.php/1/theme_academi/logo/1671035251/LOGO%20CUADRADO_SIN%20FONDO.png",
+        "imgUrl": "https://avatars.githubusercontent.com/u/51935560?s=250v=4",
         "_comment": "Try taking img urls form twitter, since they are easily resizable",
         "link": "https://www.tecazuay.edu.ec/main/index.php",
         "title": "Software Developtment",
