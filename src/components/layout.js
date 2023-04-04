@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
                     <li>
                         <button
                             title="Toggle theme"
-                            className="flex self-center"
+                            className="flex self-center hover:opacity-80"
                             onClick={() => setDarkMode(!darkMode)}
                         >
                             {darkMode ? <FaSun /> : <FaMoon />}
@@ -35,6 +35,8 @@ const Layout = ({ children }) => {
                     <li>
                         <a
                             href="https://github.com/mikadifo"
+                            className="hover:opacity-80"
+                            title="Go to my github profile"
                             target="_blank"
                             rel="noreferrer"
                         >
@@ -44,6 +46,8 @@ const Layout = ({ children }) => {
                     <li>
                         <a
                             href="https://www.linkedin.com/in/mikadifo"
+                            className="hover:opacity-80"
+                            title="Go to my linkedin profile"
                             target="_blank"
                             rel="noreferrer"
                         >
