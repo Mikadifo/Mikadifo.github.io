@@ -1,11 +1,12 @@
 import * as React from 'react';
+import CallToAction from '../components/callToAction';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
 
 const IndexPage = () => {
     return (
         <Layout>
-            <h1>Hey, I'm Mikadifo</h1>
+            <CallToAction />
         </Layout>
     );
 };

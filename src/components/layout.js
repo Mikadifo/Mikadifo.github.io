@@ -22,14 +22,18 @@ const Layout = ({ children }) => {
                     alt="Logo full"
                     className="w-[248] h-12 hidden sm:block"
                 />
-                <ul className="flex space-x-4 text-2xl lg:text-3xl 2xl:text-4xl items-center">
+                <ul className="flex space-x-4 items-center">
                     <li>
                         <button
                             title="Toggle theme"
                             className="flex self-center hover:opacity-80"
                             onClick={() => setDarkMode(!darkMode)}
                         >
-                            {darkMode ? <FaSun /> : <FaMoon />}
+                            {darkMode ? (
+                                <FaSun size={32} />
+                            ) : (
+                                <FaMoon size={32} />
+                            )}
                         </button>
                     </li>
                     <li>
@@ -40,7 +44,7 @@ const Layout = ({ children }) => {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <BsGithub />
+                            <BsGithub size={32} />
                         </a>
                     </li>
                     <li>
@@ -51,7 +55,7 @@ const Layout = ({ children }) => {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <BsLinkedin />
+                            <BsLinkedin size={32} />
                         </a>
                     </li>
                 </ul>
