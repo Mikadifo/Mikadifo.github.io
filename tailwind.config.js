@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ['./src/pages/*.js', './src/components/*.js'],
+    content: [
+        './src/pages/*.js',
+        './src/components/*.js',
+        './src/components/curves/*.js',
+    ],
     darkMode: 'class',
     theme: {
         fontSize: {
@@ -12,6 +16,7 @@ module.exports = {
             'h3-lg': ['60px', '70px'],
             'h6-md': ['18px', '24px'],
             'h6-lg': ['21px', '27px'],
+            p: ['21px', '30px'],
         },
         boxShadow: {
             dark: [

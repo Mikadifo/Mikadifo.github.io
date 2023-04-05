@@ -3,7 +3,7 @@ import Button from './button';
 
 const CallToAction = () => {
     return (
-        <div className="grid place-content-center text-blue-dark dark:text-white font-kufam px-16 mt-14 lg:mt-28 xl:mt-32">
+        <div className="grid place-content-center text-blue-dark dark:text-white font-kufam px-16 my-14 lg:my-28 xl:my-32">
             <h3 className="text-center text-h3-sm lg:text-h3-md xl:text-h3-lg mb-4">
                 Hey, I'm Mikadifo
             </h3>
