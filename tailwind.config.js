@@ -13,7 +13,7 @@ module.exports = {
             'h6-md': ['18px', '24px'],
             'h6-lg': ['21px', '27px'],
         },
-        dropShadow: {
+        boxShadow: {
             dark: [
                 '0px 100px 80px rgba(245, 246, 255, 0.07)',
                 '0px 41.7776px 33.4221px rgba(245, 246, 255, 0.0503198)',
