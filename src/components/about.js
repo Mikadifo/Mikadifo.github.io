@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import CurveBottom from './curves/curveBottom';
 import CurvesTop from './curves/curvesTop';
 

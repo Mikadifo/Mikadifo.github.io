@@ -1,27 +1,79 @@
-import * as React from 'react';
-import Arrow from './arrow';
+import { graphql, useStaticQuery } from 'gatsby';
+import React, { useEffect, useState } from 'react';
 import ProjectCard from './projectCard';
+import arrow from './../images/arrow.svg';
 
 const Projects = () => {
+    const { allProjectsJson } = useStaticQuery(graphql`
+        query ProjectsQuery {
+            allProjectsJson {
+                edges {
+                    node {
+                        id
+                        name
+                        description
+                        source
+                        URL
+                    }
+                }
+                totalCount
+            }
+        }
+    `);
+
+    const [currentProject, setCurrentProject] = useState(0);
+
+    const setPrevious = () => {
+        if (currentProject > 0) return setCurrentProject(currentProject - 1);
+        setCurrentProject(allProjectsJson.totalCount - 1);
+    };
+
+    const setNext = () => {
+        if (currentProject < allProjectsJson.totalCount - 1)
+            return setCurrentProject(currentProject + 1);
+        setCurrentProject(0);
+    };
+
     return (
         <div className="text-blue-dark dark:text-white mt-10">
             <h3 className="text-center text-h3-sm lg:text-h3-md xl:text-h3-lg mb-4 font-kufam">
                 Projects
             </h3>
-            <div className="grid grid-cols-6">
-                <button className="flex justify-center items-center">
-                    <Arrow left={true} />
+            <div className="grid grid-cols-6 place-items-center">
+                <button type="button" onClick={setPrevious}>
+                    <img src={arrow} alt="See previous project" />
                 </button>
                 <div className="col-span-4">
-                    <ProjectCard />
+                    <ProjectCard
+                        project={allProjectsJson.edges[currentProject].node}
+                    />
                     <div className="mt-2 flex place-content-center">
-                        <span className="bg-blue-dark dark:bg-white opacity-50 w-9 h-6 rounded-bl-lg" />
-                        <span className="bg-blue-dark dark:bg-white opacity-25 w-9 h-6 border-[1px] border-solid border-l-white border-r-white dark:border-l-blue-dark dark:border-r-blue-dark" />
-                        <span className="bg-blue-dark dark:bg-white opacity-25 w-9 h-6 rounded-tr-lg" />
+                        {allProjectsJson.edges.map(({ node }, i) => (
+                            <button
+                                type="button"
+                                key={node.id}
+                                onClick={() => setCurrentProject(i)}
+                                className={`${
+                                    i <= 0
+                                        ? 'rounded-bl-lg'
+                                        : i >= allProjectsJson.totalCount - 1
+                                        ? 'rounded-tr-lg'
+                                        : 'border-[1px] border-solid border-l-white border-r-white dark:border-l-blue-dark dark:border-r-blue-dark'
+                                } bg-blue-dark dark:bg-white w-9 h-6 ${
+                                    i === currentProject
+                                        ? 'opacity-50'
+                                        : 'opacity-25'
+                                }`}
+                            />
+                        ))}
                     </div>
                 </div>
-                <button className="flex justify-center items-center">
-                    <Arrow />
+                <button type="button" onClick={setNext}>
+                    <img
+                        src={arrow}
+                        alt="See next project"
+                        className="rotate-180"
+                    />
                 </button>
             </div>
         </div>

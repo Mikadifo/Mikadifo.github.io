@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { FaSun, FaMoon } from 'react-icons/fa';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import useDarkMode from '../hooks/useDarkMode';
