@@ -10,7 +10,7 @@ const Tag = ({ left, data }) => {
 
     return (
         <div
-            className={`flex items-center duration-700 ${
+            className={`flex items-center duration-700 text-white ${
                 left ? '' : 'justify-end'
             }`}
         >
@@ -18,7 +18,7 @@ const Tag = ({ left, data }) => {
                 href={data.link}
                 target="_blank"
                 rel="noreferrer"
-                className={`from-blue-dark to-secondary py-4 md:py-8 lg:py-12 ${positionClasses()}`}
+                className={`from-secondary/60 dark:from-blue-dark to-secondary dark:to-secondary py-4 md:py-8 lg:py-12 min-w-[20rem] lg:min-w-[30rem] xl:min-w-[41rem] ${positionClasses()}`}
             >
                 <h4 className="font-kufam text-h4-sm lg:text-h4-md xl:text-h4-lg">
                     {data.institution}
