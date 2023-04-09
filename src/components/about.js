@@ -6,7 +6,7 @@ const About = () => {
     return (
         <>
             <CurvesTop />
-            <div className="grid place-content-center text-white bg-secondary px-16 mt-[calc(3.5rem+8.9rem)] lg:mt-[calc(7rem+8.9rem)] xl:mt-[calc(8rem+8.9rem)] pt-8 lg:pt-16 xl:pt-20 pb-14 lg:pb-20 xl:pb-24">
+            <div className="grid place-content-center text-white bg-secondary px-16 pt-8 lg:pt-16 xl:pt-20 pb-14 lg:pb-20 xl:pb-24">
                 <h3 className="text-center text-h3-sm lg:text-h3-md xl:text-h3-lg mb-4 lg:mb-8 font-kufam font-bold">
                     About me
                 </h3>
