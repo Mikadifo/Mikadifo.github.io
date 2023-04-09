@@ -21,6 +21,8 @@ const Projects = () => {
         }
     `);
 
+    const DEFAULT_CONTROL_STYLE =
+        'border-[1px] border-solid border-l-white border-r-white dark:border-l-blue-dark dark:border-r-blue-dark';
     const [currentProject, setCurrentProject] = useState(0);
 
     const setPrevious = () => {
@@ -40,7 +42,11 @@ const Projects = () => {
                 Projects
             </h3>
             <div className="grid grid-cols-6 place-items-center">
-                <button type="button" onClick={setPrevious}>
+                <button
+                    type="button"
+                    onClick={setPrevious}
+                    className="hover:opacity-75"
+                >
                     <img src={arrow} alt="See previous project" />
                 </button>
                 <div className="col-span-4">
@@ -59,7 +65,7 @@ const Projects = () => {
                                         ? 'rounded-bl-lg'
                                         : i >= allProjectsJson.totalCount - 1
                                         ? 'rounded-tr-lg'
-                                        : 'border-[1px] border-solid border-l-white border-r-white dark:border-l-blue-dark dark:border-r-blue-dark'
+                                        : DEFAULT_CONTROL_STYLE
                                 } bg-blue-dark dark:bg-white w-9 h-6 ${
                                     i === currentProject
                                         ? 'opacity-50'
@@ -69,7 +75,11 @@ const Projects = () => {
                         ))}
                     </div>
                 </div>
-                <button type="button" onClick={setNext}>
+                <button
+                    type="button"
+                    onClick={setNext}
+                    className="hover:opacity-75"
+                >
                     <img
                         src={arrow}
                         alt="See next project"
