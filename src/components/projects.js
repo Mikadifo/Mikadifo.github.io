@@ -1,5 +1,5 @@
 import { graphql, useStaticQuery } from 'gatsby';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import ProjectCard from './projectCard';
 import arrow from './../images/arrow.svg';
 
@@ -36,7 +36,7 @@ const Projects = () => {
 
     return (
         <div className="text-blue-dark dark:text-white mt-10">
-            <h3 className="text-center text-h3-sm lg:text-h3-md xl:text-h3-lg mb-4 font-kufam">
+            <h3 className="text-center text-h3-sm lg:text-h3-md xl:text-h3-lg mb-4 lg:mb-8 font-kufam font-bold">
                 Projects
             </h3>
             <div className="grid grid-cols-6 place-items-center">
@@ -53,6 +53,7 @@ const Projects = () => {
                                 type="button"
                                 key={node.id}
                                 onClick={() => setCurrentProject(i)}
+                                aria-label={`Go to project ${i}`}
                                 className={`${
                                     i <= 0
                                         ? 'rounded-bl-lg'
