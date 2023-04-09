@@ -5,7 +5,7 @@ import Tag from './tag';
 const Education = () => {
     const { allEducationJson } = useStaticQuery(graphql`
         query EducationQuery {
-            allEducationJson {
+            allEducationJson(sort: { date: DESC }) {
                 edges {
                     node {
                         id
