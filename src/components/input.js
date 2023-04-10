@@ -2,7 +2,7 @@ import React from 'react';
 
 const Input = ({ label, type, id }) => {
     const INPUT_STYLES =
-        'w-full h-full bg-white dark:bg-blue-dark rounded-bl-lg rounded-tr-lg py-2 px-4 text-blue-dark dark:text-white text-opacity-75 dark:text-opacity-75 font-normal resize-none focus:outline-none focus:border-white focus:ring-4';
+        'w-full h-full bg-white dark:bg-blue-dark rounded-bl-lg rounded-tr-lg py-2 px-4 text-blue-dark dark:text-white text-opacity-75 dark:text-opacity-75 font-normal resize-none focus:outline-none focus:ring-4';
 
     return (
         <label htmlFor={id} className="text-h6-md lg:text-h6-lg font-bold">

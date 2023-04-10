@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
 
     return (
         <div className="bg-white dark:bg-blue-dark">
-            <nav className="bg-white/80 dark:bg-blue-dark/80 text-blue-dark dark:text-white px-16 py-3 flex justify-between sticky top-0 z-50 backdrop-blur-sm">
+            <nav className="bg-white/80 dark:bg-blue-dark/80 text-blue-dark dark:text-white px-16 py-3 flex justify-between sticky top-0 z-40 backdrop-blur-sm">
                 <img
                     src={icon}
                     alt="Logo icon"
