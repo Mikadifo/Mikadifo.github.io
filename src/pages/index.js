@@ -1,10 +1,11 @@
-import * as React from 'react';
+import React from 'react';
 import About from '../components/about';
 import CallToAction from '../components/callToAction';
 import Education from '../components/education';
 import Experience from '../components/experience';
 import Layout from '../components/layout';
 import Projects from '../components/projects';
+import Reviews from '../components/reviews';
 import Seo from '../components/seo';
 
 const IndexPage = () => {
@@ -15,6 +16,7 @@ const IndexPage = () => {
             <Projects />
             <Experience />
             <Education />
+            <Reviews />
         </Layout>
     );
 };
