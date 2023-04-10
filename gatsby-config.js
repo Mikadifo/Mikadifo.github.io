@@ -20,5 +20,15 @@ module.exports = {
         },
         'gatsby-transformer-sharp',
         'gatsby-transformer-json',
+        {
+            resolve: 'gatsby-plugin-manifest',
+            options: {
+                name: `Mikadifo`,
+                short_name: `Mika`,
+                start_url: `/`,
+                display: `minimal-ui`,
+                icon: `src/images/favicon.png`,
+            },
+        },
     ],
 };
