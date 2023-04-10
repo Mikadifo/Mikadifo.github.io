@@ -4,6 +4,7 @@ import CallToAction from '../components/callToAction';
 import Contact from '../components/contact';
 import Education from '../components/education';
 import Experience from '../components/experience';
+import Footer from '../components/footer';
 import Layout from '../components/layout';
 import Projects from '../components/projects';
 import Reviews from '../components/reviews';
@@ -19,6 +20,7 @@ const IndexPage = () => {
             <Education />
             <Reviews />
             <Contact />
+            <Footer />
         </Layout>
     );
 };
