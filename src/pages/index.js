@@ -1,6 +1,7 @@
 import React from 'react';
 import About from '../components/about';
 import CallToAction from '../components/callToAction';
+import Contact from '../components/contact';
 import Education from '../components/education';
 import Experience from '../components/experience';
 import Layout from '../components/layout';
@@ -17,6 +18,7 @@ const IndexPage = () => {
             <Experience />
             <Education />
             <Reviews />
+            <Contact />
         </Layout>
     );
 };
