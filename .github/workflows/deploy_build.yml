@@ -1,27 +1,16 @@
-name: Deploy-Build-React
+name: Gatsby Publish
 
 on:
-  push:
-    branches:
-      - master
+    push:
+        branches:
+            - master
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-      - name: Build
-        run: |
-          npm ci
-          CI=false npm run build
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/master' }}
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: enriikke/gatsby-gh-pages-action@v2.2.0
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  deploy-branch: gh-pages
