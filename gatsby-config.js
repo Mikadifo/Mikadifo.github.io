@@ -4,12 +4,12 @@
 module.exports = {
     siteMetadata: {
         title: `Mikadifo`,
+        description: `This is Mikadifo's personal portfolio`,
+        image: `src/images/icon.svg`,
         siteUrl: `https://www.mikadifo.com`,
     },
     plugins: [
         'gatsby-plugin-postcss',
-        'gatsby-plugin-image',
-        'gatsby-plugin-sharp',
         {
             resolve: 'gatsby-source-filesystem',
             options: {
@@ -18,7 +18,6 @@ module.exports = {
                 ignore: [`**/\.*`],
             },
         },
-        'gatsby-transformer-sharp',
         'gatsby-transformer-json',
         {
             resolve: 'gatsby-plugin-manifest',
