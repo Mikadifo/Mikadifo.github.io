@@ -12,6 +12,17 @@ const ReviewCard = ({ review }) => {
                         {review.text}
                     </p>
                 </div>
+                <div className="flex mt-5 justify-end">
+                    <a
+                        href={review.URL}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-h6-md
+                    lg:text-h6-lg font-bold hover:underline underline-offset-4"
+                    >
+                        See website
+                    </a>
+                </div>
             </div>
         </div>
     );
