@@ -19,8 +19,18 @@ const ProjectCard = ({ project }) => {
                             {description}
                         </p>
                     ))}
+                    <p className="mt-3 text-p font-league-spartan">
+                        Technologies used:{' '}
+                        <span className="opacity-75">
+                            {project.technologies.join(' | ')}
+                        </span>
+                    </p>
                 </div>
-                <div className="flex justify-between mt-5">
+                <div
+                    className={`flex mt-5 ${
+                        project.source ? 'justify-between' : 'justify-end'
+                    }`}
+                >
                     <a
                         href={project.source}
                         target="_blank"

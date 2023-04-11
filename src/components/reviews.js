@@ -10,6 +10,7 @@ const Reviews = () => {
                 edges {
                     node {
                         id
+                        URL
                         name
                         text
                     }

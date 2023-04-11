@@ -11,6 +11,7 @@ const Projects = () => {
                     node {
                         id
                         name
+                        technologies
                         description
                         source
                         URL
