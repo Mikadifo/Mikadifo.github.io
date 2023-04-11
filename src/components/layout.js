@@ -12,16 +12,18 @@ const Layout = ({ children }) => {
     return (
         <div className="bg-white dark:bg-blue-dark">
             <nav className="bg-white/80 dark:bg-blue-dark/80 text-blue-dark dark:text-white px-16 py-3 flex justify-between sticky top-0 z-40 backdrop-blur-sm">
-                <img
-                    src={icon}
-                    alt="Logo icon"
-                    className="w-12 h-8 sm:hidden"
-                />
-                <img
-                    src={darkMode ? logoLight : logoDark}
-                    alt="Logo full"
-                    className="w-[248] h-12 hidden sm:block"
-                />
+                <a href="#home">
+                    <img
+                        src={icon}
+                        alt="Logo icon"
+                        className="w-12 h-8 sm:hidden"
+                    />
+                    <img
+                        src={darkMode ? logoLight : logoDark}
+                        alt="Logo full"
+                        className="w-[248] h-12 hidden sm:block"
+                    />
+                </a>
                 <ul className="flex space-x-4 items-center">
                     <li>
                         <button
