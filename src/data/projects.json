@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Marcfashion",
+        "description": "Marcfashion is an Ecuadorian tailor shop that jumped into the technology world.\nWith their new landing page they are finally able to expand their goals and improve their business.",
+        "URL": "https://www.marc-fashion.com/"
+    },
+    {
+        "name": "Centeravid",
+        "description": "Centeravid is clinic that helps adult and young men with addiction problems.\nThey’ve expanded their help to more people thanks to a new landing page.",
+        "URL": "https://centeravid.com/"
+    },
+    {
+        "name": "Certificage",
+        "description": "This project helps you to save all your certificates in the cloud, also you have the option to generate a sharing link.",
+        "source": "https://github.com/mikadifo/certificage",
+        "URL": "https://certificage.mikadifo.com/"
+    }
+]

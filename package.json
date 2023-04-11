@@ -1,43 +1,33 @@
 {
-    "name": "mikadifo.github.io",
-    "homepage": "https://mikadifo.com/",
+    "name": "mikadifo",
     "version": "0.1.0",
     "private": true,
-    "dependencies": {
-        "@emotion/react": "^11.9.0",
-        "@emotion/styled": "^11.8.1",
-        "@mui/material": "^5.8.0",
-        "@testing-library/jest-dom": "^5.16.4",
-        "@testing-library/react": "^13.2.0",
-        "@testing-library/user-event": "^13.5.0",
-        "react": "^18.1.0",
-        "react-dom": "^18.1.0",
-        "react-scripts": "5.0.1",
-        "web-vitals": "^2.1.4"
-    },
+    "description": "mikadifo",
+    "author": "Mikadifo",
+    "keywords": [
+        "gatsby"
+    ],
     "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject",
-        "deploy": "gh-pages -d build"
+        "develop": "gatsby develop",
+        "develop:h": "gatsby develop -H 0.0.0.0",
+        "start": "gatsby develop",
+        "build": "gatsby build",
+        "serve": "gatsby serve",
+        "clean": "gatsby clean"
     },
-    "eslintConfig": {
-        "extends": [
-            "react-app",
-            "react-app/jest"
-        ]
+    "dependencies": {
+        "gatsby": "^5.8.1",
+        "gatsby-plugin-manifest": "^5.8.0",
+        "gatsby-source-filesystem": "^5.8.0",
+        "gatsby-transformer-json": "^5.8.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-icons": "^4.8.0"
     },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
+    "devDependencies": {
+        "autoprefixer": "^10.4.14",
+        "gatsby-plugin-postcss": "^6.8.0",
+        "postcss": "^8.4.21",
+        "tailwindcss": "^3.3.1"
     }
 }
