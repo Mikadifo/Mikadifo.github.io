@@ -14,3 +14,6 @@ jobs:
               with:
                   access-token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
                   deploy-branch: gh-pages
+              env:
+                  GATSBY_API_URL: ${{ secrets.GATSBY_API_URL }}
+                  GATSBY_API_KEY: ${{ secrets.GATSBY_API_KEY }}
