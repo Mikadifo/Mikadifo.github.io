@@ -18,7 +18,7 @@ const Contact = () => {
         )
             return setFormStatus('empty');
 
-        fetch(process.env.API_URL + process.env.API_KEY, {
+        fetch(process.env.GATSBY_API_URL + process.env.GATSBY_API_KEY, {
             method: 'POST',
             body: new FormData(form),
             headers: {
