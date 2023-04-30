@@ -12,6 +12,7 @@ const Reviews = () => {
                         id
                         URL
                         name
+                        role
                         text
                     }
                 }
