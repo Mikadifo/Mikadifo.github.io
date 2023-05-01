@@ -20,22 +20,25 @@
         "deploy": "gatsby build && gh-pages -d public"
     },
     "dependencies": {
-        "babel-jest": "^29.5.0",
-        "babel-preset-gatsby": "^3.9.0",
         "gatsby": "^5.8.1",
         "gatsby-plugin-manifest": "^5.8.0",
         "gatsby-source-filesystem": "^5.8.0",
         "gatsby-transformer-json": "^5.8.0",
-        "identity-obj-proxy": "^3.0.0",
-        "jest": "^29.5.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-icons": "^4.8.0"
     },
     "devDependencies": {
+        "@testing-library/jest-dom": "^5.16.5",
+        "@testing-library/react": "^14.0.0",
         "autoprefixer": "^10.4.14",
+        "babel-jest": "^29.5.0",
+        "babel-preset-gatsby": "^3.9.0",
         "gatsby-plugin-postcss": "^6.8.0",
         "gh-pages": "^5.0.0",
+        "identity-obj-proxy": "^3.0.0",
+        "jest": "^29.5.0",
+        "jest-environment-jsdom": "^29.5.0",
         "postcss": "^8.4.21",
         "tailwindcss": "^3.3.1"
     }
