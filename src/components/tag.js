@@ -10,7 +10,7 @@ const Tag = ({ left, data }) => {
 
     return (
         <div
-            className={`flex items-center duration-700 text-white ${
+            className={`flex items-center duration-700 text-white tag-container ${
                 left ? '' : 'justify-end'
             }`}
         >
@@ -28,13 +28,13 @@ const Tag = ({ left, data }) => {
                     {data.date}
                 </p>
             </a>
-            <div
+            <p
                 className={`hidden md:block ${
                     left ? 'md:mr-32 xl:mr-64' : 'md:ml-32 xl:ml-64'
-                } text-p opacity-75 font-league-spartan`}
+                } text-p opacity-75 font-league-spartan tag-description`}
             >
                 {data.description}
-            </div>
+            </p>
         </div>
     );
 };

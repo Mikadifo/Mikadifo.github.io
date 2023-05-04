@@ -1,4 +1,3 @@
-//import * as React from 'react';
 import React from 'react';
 import * as Gatsby from 'gatsby';
 import { cleanup, render } from '@testing-library/react';
