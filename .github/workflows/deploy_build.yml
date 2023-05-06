@@ -4,9 +4,12 @@ on:
     push:
         branches:
             - master
+        paths-ignore:
+            - 'src/components/__tests__/**'
 
 jobs:
     build:
+        if: "!contains(github.event.commits[0].message, '[skip deploy]')"
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
