@@ -4,37 +4,48 @@ import { cleanup, render } from '@testing-library/react';
 
 const useStaticQuery = jest.spyOn(Gatsby, `useStaticQuery`);
 const mockUseStaticQuery = {
-    allExperienceJson: {
+    allEducationJson: {
         edges: [
             {
                 node: {
-                    id: 'cccf3d8a-ad71-58c2-91a7-beb1f59eb74e',
-                    institution: 'Freelancer',
-                    role: 'Front End Developer',
-                    date: '2022 - Now',
+                    id: 'c6c09079-ca5c-5681-adb4-664b0365d50d',
+                    institution: 'Hunter College',
+                    role: 'Computer Science',
+                    date: '2023 - Now',
                     description:
-                        "As a freelancer I've been learning how to manage deadlines and how to communicate with clients. This is a great opportunity to explore a lot of new ideas from different people, and see how their projects come to light.",
-                    link: 'https://www.linkedin.com/in/mikadifo/',
+                        "Even though it's my first year at Hunter College, I've learn a lot. I'm exploring different topics and fields, knowing more about different cultures and their languages. I can't wait to see all the new knowledge and experience I will get at Hunter.",
+                    link: 'https://hunter.cuny.edu/',
                 },
             },
             {
                 node: {
-                    id: '680bfc72-b14a-5b03-bd09-d17a59337f21',
-                    institution: 'LibélulaSoft',
-                    role: 'Full Stack Developer',
-                    date: '2021 - 2022',
+                    id: 'b8c01b02-fa60-5424-88ab-a7bac5c8e013',
+                    institution: 'Codepath',
+                    role: 'Cybersecurity',
+                    date: '2023 - Now',
                     description:
-                        "Working on LibelulaSoft has been one of the best experiences and opportunities I ever had. Here I've learned to work on teams and to manage tasks and the time I spend on them. It also was a great moment to make new friends and have fun.",
-                    link: 'https://www.libelulasoft.com/',
+                        "Codepath cybersecurity course is only 10 sessions long, but enough to get plenty of new knowledge for your professional career. On top of that, I've learned to use Linux and other tools, as well as connect with people all over the world.",
+                    link: 'https://www.codepath.org/',
+                },
+            },
+            {
+                node: {
+                    id: '4068a3b6-a0dd-53cf-b850-454a59219218',
+                    institution: 'TecAzuay',
+                    role: 'Software Development',
+                    date: '2019 - 2021',
+                    description:
+                        "TecAzuay was one of my first approaches to technology, it's like my home and will always be thankful for that. Here I have learned the basics of programming, which later on helped me improve my skills. I also made good friends that supported me all this time.",
+                    link: 'https://www.tecazuay.edu.ec/',
                 },
             },
         ],
     },
 };
 
-import Experience from '../experience';
+import Education from '../education';
 
-describe('Experience', () => {
+describe('Education', () => {
     beforeEach(() => {
         useStaticQuery.mockImplementation(() => mockUseStaticQuery);
     });
@@ -45,15 +56,15 @@ describe('Experience', () => {
     });
 
     it('renders correctly', () => {
-        const experience = render(<Experience />).container;
-        expect(experience).toBeInTheDocument();
-        expect(experience).toHaveTextContent('Where I’ve worked');
+        const education = render(<Education />).container;
+        expect(education).toBeInTheDocument();
+        expect(education).toHaveTextContent('Where I’ve studied');
     });
 
     it('renders every tag correctly', () => {
-        const experience = render(<Experience />).container;
-        const tags = experience.getElementsByClassName('tag-container');
-        const testNodes = mockUseStaticQuery.allExperienceJson.edges;
+        const education = render(<Education />).container;
+        const tags = education.getElementsByClassName('tag-container');
+        const testNodes = mockUseStaticQuery.allEducationJson.edges;
         testNodes.forEach(({ node }, i) => {
             const left = i % 2 === 0;
             const link = tags[i].getElementsByTagName('a')[0];
