@@ -5,7 +5,10 @@
     "description": "mikadifo",
     "author": "Mikadifo",
     "keywords": [
-        "gatsby"
+        "gatsby",
+        "mikadifo",
+        "web developer",
+        "freelance"
     ],
     "scripts": {
         "develop": "gatsby develop",
