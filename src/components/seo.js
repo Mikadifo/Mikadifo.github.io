@@ -6,6 +6,7 @@ const Seo = () => {
 
     return (
         <>
+            <html lang="en" />
             <title>Mikadifo</title>
             <meta name="description" content={seo.description} />
             <meta
