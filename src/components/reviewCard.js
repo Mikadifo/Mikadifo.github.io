@@ -8,9 +8,9 @@ const ReviewCard = ({ review }) => {
                     <h4 className="text-h4-sm lg:text-h4-md xl:text-h4-lg font-kufam mb-1 lg:mb-2 xl:mb-4">
                         {review.name}
                     </h4>
-                    <h6 className="text-h6-md lg:text-h6-lg font-kufam mb-4 lg:mb-6 xl:mb-8 opacity-75 font-bold">
+                    <h5 className="text-h6-md lg:text-h6-lg font-kufam mb-4 lg:mb-6 xl:mb-8 opacity-75 font-bold">
                         {review.role}
-                    </h6>
+                    </h5>
                     <p className="text-p font-league-spartan opacity-75">
                         {review.text}
                     </p>
