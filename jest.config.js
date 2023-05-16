@@ -8,7 +8,12 @@ module.exports = {
         '\\.svg': `<rootDir>/__mocks__/svgTransform.js`,
         '.+\\.(jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': `<rootDir>/__mocks__/file-mocks.js`,
     },
-    testPathIgnorePatterns: [`node_modules`, `\\.cache`, `<rootDir>.*/public`],
+    testPathIgnorePatterns: [
+        `node_modules`,
+        `\\.cache`,
+        `<rootDir>.*/public`,
+        `<rootDir>.*/cypress`,
+    ],
     transformIgnorePatterns: [
         `node_modules/(?!(gatsby|gatsby-script|gatsby-link)/)`,
     ],

@@ -1,0 +1,28 @@
+name: Testing E2E
+
+on:
+    pull_request:
+    push:
+        branches:
+            - dev
+            - master
+
+jobs:
+    e2e:
+        if: "!contains(github.event.commits[0].message, '[skip e2e]')"
+        name: Test code base
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v3
+
+            - name: Set up Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 18
+                  cache: 'npm'
+
+            - name: Install dependencies & Test
+              run: |
+                  npm ci
+                  CI=false npm run test:e2e:ci

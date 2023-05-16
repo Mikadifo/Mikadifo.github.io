@@ -27,8 +27,8 @@ This is my personal website.
 -   ReactJS
 -   Gatsby
 -   TailwindCSS
-    <!--- Cypress-->
-    <!--- Jest-->
+-   Cypress
+-   Jest
 
 # Available Scripts
 
@@ -36,7 +36,7 @@ Do not use **yarn**. Only **npm** so the project works propertly. The project wa
 
 In the project directory, you can run:
 
-## `npm run develop` or `gatsby develop`
+## `npm run develop` or `gatsby develop` or `npm run start`
 
 Runs the app in the development mode.\
 Open [http://localhost:8000](http://localhost:8000) to view it in your browser.
@@ -54,10 +54,21 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.\
 It might take a little longer to load for the first time on mobile.
 
-<!--## `npm test`-->
+## `npm run test` or `npm run test:watch`
 
-<!--Launches the test runner in the interactive watch mode.\-->
-<!--See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.-->
+This project uses jest for unit testing, this command runs all the tests in the project. To see in the interactive watch mode use `npm run test:watch`.
+
+See the section about [unit testing](https://www.gatsbyjs.com/docs/how-to/testing/unit-testing/) for more information.
+
+### `npm run test:coverage`
+
+Use this command to see the coverage of the tests written in this project.
+
+## `npm run test:e2e`
+
+This starts the localhost server and open cypress for testing end-to-end, then you can select the specs you want to test. To use this tests with continous-integration, use the following command `npm run test:e2e:ci`.
+
+See this section about [E2E Testing](https://www.gatsbyjs.com/docs/how-to/testing/end-to-end-testing/) for more information about e2e testing with Gatsby.
 
 ## `npm run build` or `gatsby build`
 
