@@ -132,8 +132,7 @@ Everyone can freely suggest changes on the project to improve it or fix bugs and
 
 # Future
 
--   Write e2e tests using cypress to ensure accesibility and proper visualization for any device.
--   Write unit tests for main components and pages using jest.
+-   Write unit tests for main components and pages using jest (Partially completed, use coverage command to see the percentage covered).
 -   Add dependabot to keep all dependencies up to date.
 -   Implement animations in certain elements like the projects and reviews carousel.
 -   Find a way to show descriptions on every tag in `experience` and `education` components. (This is working on bigger screens but on mobile I couldn't find a way to add that information)
