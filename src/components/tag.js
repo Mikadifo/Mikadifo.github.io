@@ -31,7 +31,7 @@ const Tag = ({ left, data }) => {
             <p
                 className={`hidden md:block ${
                     left ? 'md:mr-32 xl:mr-64' : 'md:ml-32 xl:ml-64'
-                } text-p opacity-75 font-league-spartan tag-description`}
+                } text-p opacity-75 font-league-spartan tag-description text-blue-dark dark:text-white`}
             >
                 {data.description}
             </p>
