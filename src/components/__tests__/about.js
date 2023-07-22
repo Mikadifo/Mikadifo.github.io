@@ -12,10 +12,10 @@ describe('About', () => {
         expect(about).toBeInTheDocument();
         expect(about).toHaveTextContent('About me');
         expect(about).toHaveTextContent(
-            'I am a passionate front-end software developer, with more than 3 years of experience.',
+            'As an experienced front-end software developer and freelancer, my journey spans over 3 years in web development. Driven by curiosity, I thrive on exploring and mastering emerging technologies.',
         );
         expect(about).toHaveTextContent(
-            'I love exploring new ideas and learning new technologies.',
+            'My dedication to delivering innovative solutions fuels my passion for building extraordinary software. Always seeking new challenges and knowledge to stay ahead in this fast growing industry.',
         );
     });
 });
