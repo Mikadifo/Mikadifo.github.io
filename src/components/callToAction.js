@@ -13,9 +13,11 @@ const CallToAction = () => {
             <h2 className="text-center text-h3-sm lg:text-h3-md xl:text-h3-lg mb-4 -order-1">
                 Hey, I'm Mikadifo
             </h2>
-            <a href="#contact-form" className="flex justify-center">
-                <Button>Contact me</Button>
-            </a>
+            <span className="flex justify-center">
+                <Button link to="#contact-form">
+                    Contact me
+                </Button>
+            </span>
         </div>
     );
 };

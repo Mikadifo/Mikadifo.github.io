@@ -1,6 +1,5 @@
 import React from 'react';
 import Button from './../components/button';
-import { Link } from 'gatsby';
 import Layout from '../components/layout';
 
 const NotFoundPage = () => {
@@ -13,9 +12,9 @@ const NotFoundPage = () => {
                 <p className="text-p font-league-spartan mb-6">
                     Sorry 😔, we couldn’t find what you were looking for.
                 </p>
-                <Link to="/">
-                    <Button>Go home</Button>
-                </Link>
+                <Button link to="/">
+                    Go home
+                </Button>
             </main>
         </Layout>
     );
