@@ -23,7 +23,7 @@ const Projects = () => {
     `);
 
     return (
-        <div className="text-blue-dark dark:text-white mt-10">
+        <div className="text-blue-dark dark:text-white mt-20 md:mt-24 lg:mt-48">
             <h3 className="text-center text-h3-sm lg:text-h3-md xl:text-h3-lg mb-4 lg:mb-8 font-kufam font-bold">
                 Projects
             </h3>
