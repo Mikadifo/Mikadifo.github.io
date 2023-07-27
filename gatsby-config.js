@@ -13,7 +13,11 @@ module.exports = {
         siteUrl: `https://www.mikadifo.com`,
     },
     plugins: [
-        'gatsby-plugin-postcss',
+        `gatsby-plugin-image`,
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-postcss`,
+        `gatsby-transformer-json`,
+        `gatsby-plugin-sharp`,
         {
             resolve: 'gatsby-source-filesystem',
             options: {
@@ -22,7 +26,14 @@ module.exports = {
                 ignore: [`**/\.*`],
             },
         },
-        'gatsby-transformer-json',
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: `images`,
+                path: `${__dirname}/src/images`,
+                ignore: [`**/\.*`],
+            },
+        },
         {
             resolve: 'gatsby-plugin-manifest',
             options: {
