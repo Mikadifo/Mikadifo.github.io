@@ -14,6 +14,11 @@ const mockUseStaticQuery = {
                     description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.\nStet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.`,
                     source: `https://www.github.com`,
                     URL: `https://www.test.com`,
+                    image: {
+                        src_: {
+                            publicURL: './../images/example.png',
+                        },
+                    },
                 },
             },
         ],
@@ -43,6 +48,7 @@ describe('Projects', () => {
         const projects = render(<Projects />).container;
         const title = projects.getElementsByTagName('h4')[0];
         const description = projects.getElementsByTagName('p');
+        const image = projects.getElementsByTagName('img')[0];
         const links = projects.getElementsByTagName('a');
         const testNode = mockUseStaticQuery.allProjectsJson.edges[0].node;
         const testDescriptions = testNode.description.split('\n');
@@ -52,9 +58,9 @@ describe('Projects', () => {
             expect(description[i]).toBeInTheDocument();
             expect(description[i]).toHaveTextContent(p);
         });
-        expect(description[testDescriptions.length]).toHaveTextContent(
-            `Technologies used: ${testNode.technologies.join(' | ')}`,
-        );
+        expect(image).toBeInTheDocument();
+        expect(image).toHaveAttribute('alt', 'Project Example');
+        expect(image).toHaveAttribute('src', './../images/example.png');
         //index 0 -> Source Link
         //index 1 -> URL link
         for (let i; i < links.length; i++) {
