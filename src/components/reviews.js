@@ -24,7 +24,7 @@ const Reviews = () => {
     return (
         <div className="text-blue-dark dark:text-white mt-20 md:mt-24 lg:mt-48">
             <h3 className="text-h3-sm lg:text-h3-md xl:text-h3-lg font-bold font-kufam text-center mb-6 lg:mb-10">
-                Reviews
+                Testimonials
             </h3>
             <CarouselControls
                 elements={allReviewsJson}

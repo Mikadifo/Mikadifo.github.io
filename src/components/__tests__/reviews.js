@@ -22,7 +22,7 @@ const mockUseStaticQuery = {
 
 import Reviews from '../reviews';
 
-describe('Reviews', () => {
+describe('Testimonials', () => {
     beforeEach(() => {
         useStaticQuery.mockImplementation(() => mockUseStaticQuery);
     });
@@ -35,7 +35,7 @@ describe('Reviews', () => {
     it('renders correctly', () => {
         const reviews = render(<Reviews />).container;
         expect(reviews).toBeInTheDocument();
-        expect(reviews).toHaveTextContent('Reviews');
+        expect(reviews).toHaveTextContent('Testimonials');
     });
 
     it('renders review card correctly', () => {
