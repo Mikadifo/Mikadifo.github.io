@@ -31,7 +31,7 @@ const Projects = () => {
             <h3 className="text-center text-h3-sm lg:text-h3-md xl:text-h3-lg mb-4 lg:mb-8 font-kufam font-bold mt-20 md:mt-24 lg:mt-48">
                 Projects
             </h3>
-            <div className="flex flex-col gap-12 lg:gap-20">
+            <div className="flex flex-wrap place-content-evenly gap-12 lg:gap-20">
                 {allProjectsJson.edges.map(({ node }) => (
                     <ProjectCard project={node} key={node.id} />
                 ))}
