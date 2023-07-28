@@ -44,6 +44,7 @@ module.exports = {
             white: '#F5F6FF',
             primary: '#0515FF',
             secondary: '#0473FF',
+            curves: '#2E66E2',
             error: '#EE1B41',
             success: '#21AD0A',
         },
