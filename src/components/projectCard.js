@@ -38,6 +38,7 @@ const ProjectCard = ({ project }) => {
                     target="_blank"
                     rel="noreferrer"
                     className={project.source ? 'hover:opacity-80' : 'hidden'}
+                    aria-label="Project Source Code Link"
                 >
                     <BsGithub className="w-8 h-8 md:w-7 md:h-7 lg:w-8 lg:h-8" />
                 </a>
@@ -45,7 +46,7 @@ const ProjectCard = ({ project }) => {
                     href={project.URL}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-h6-md lg:text-h6-lg font-bold font-kufam bg-secondary py-2 px-6 rounded-lg hover:opacity-75 text-white"
+                    className="text-h6-md lg:text-h6-lg font-bold font-kufam bg-primary py-2 px-6 rounded-lg hover:opacity-75 text-white"
                 >
                     See website
                 </a>
