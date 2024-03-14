@@ -1,15 +1,22 @@
 [
     {
+        "institution": "Students Who Code",
+        "role": "Full Stack Developer Intern",
+        "date": "March 2024 - Present",
+        "description": "Students Who Code has been an excellent opportunity to learn and work as a team. During the internship, I was aligned with the company's mission to teach how to code to young people before college.",
+        "link": "https://www.linkedin.com/in/mikadifo/"
+    },
+    {
         "institution": "Freelancer",
         "role": "Front End Developer",
-        "date": "2022 - Now",
+        "date": "Apr 2022 - Apr 2023",
         "description": "As a freelancer I've been learning how to manage deadlines and how to communicate with clients. This is a great opportunity to explore a lot of new ideas from different people, and see how their projects come to light.",
         "link": "https://www.linkedin.com/in/mikadifo/"
     },
     {
         "institution": "LibélulaSoft",
         "role": "Full Stack Developer",
-        "date": "2021 - 2022",
+        "date": "Jul 2021 - Jan 2022",
         "description": "Working on LibelulaSoft has been one of the best experiences and opportunities I ever had. Here I've learned to work on teams and to manage tasks and the time I spend on them. It also was a great moment to make new friends and have fun.",
         "link": "https://www.libelulasoft.com/"
     }

@@ -33,8 +33,8 @@ const CarouselControls = ({ elements, renderElement }) => {
                                 i <= 0
                                     ? 'rounded-bl-lg'
                                     : i >= elements.totalCount - 1
-                                    ? 'rounded-tr-lg'
-                                    : DEFAULT_CONTROL_STYLE
+                                      ? 'rounded-tr-lg'
+                                      : DEFAULT_CONTROL_STYLE
                             } bg-blue-dark dark:bg-white w-9 h-6 ${
                                 i === currentElement
                                     ? 'opacity-50'
