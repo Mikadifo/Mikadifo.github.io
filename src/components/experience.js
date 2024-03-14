@@ -5,7 +5,7 @@ import Tag from './tag';
 const Experience = () => {
     const { allExperienceJson } = useStaticQuery(graphql`
         query ExperienceQuery {
-            allExperienceJson(sort: { date: DESC }) {
+            allExperienceJson {
                 edges {
                     node {
                         id
