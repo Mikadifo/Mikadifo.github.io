@@ -11,8 +11,8 @@ const About = () => {
                     About me
                 </h3>
                 <p className="font-league-spartan text-p max-w-2xl">
-                    As an experienced front-end software developer and
-                    freelancer, my journey spans over 3 years in web
+                    As an experienced full stack software developer and
+                    freelancer, my journey spans over 4 years in web
                     development. Driven by curiosity, I thrive on exploring and
                     mastering emerging technologies.
                 </p>

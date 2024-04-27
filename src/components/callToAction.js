@@ -8,10 +8,10 @@ const CallToAction = () => {
             id="home"
         >
             <h1 className="text-center text-h2-sm lg:text-h2-md xl:text-h2-lg opacity-75 mb-8 font-bold">
-                Front End Developer
+                Web Developer
             </h1>
             <h2 className="text-center text-h3-sm lg:text-h3-md xl:text-h3-lg mb-4 -order-1">
-                Hey, I'm Mikadifo
+                Hey, I'm Michael
             </h2>
             <span className="flex justify-center">
                 <Button link to="#contact-form">
