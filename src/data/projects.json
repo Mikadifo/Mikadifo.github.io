@@ -1,8 +1,18 @@
 [
     {
+        "name": "MoneyMoon",
+        "description": "MoneyMoon is a web based application that allows you to keep track of your financial debts and transactions. You can algo create groups of transactions to better understand how your money is organized in your account.",
+        "technologies": ["Astro", "MongoDB", "TailwindCSS"],
+        "URL": "https://github.com/mikadifo/MoneyMoon",
+        "source": "https://github.com/mikadifo/MoneyMoon",
+        "image": {
+            "src ": "./../images/moneymoon.png"
+        }
+    },
+    {
         "name": "Marcfashion",
         "description": "Marcfashion is an Ecuadorian tailor shop that jumped into the technology world.\nWith their new landing page they are finally able to expand their goals and improve their business.",
-        "technologies": ["ReactJS", "Firebase", "Bootstrap"],
+        "technologies": ["ReactJS", "Firebase", "CSS", "Jest"],
         "URL": "https://www.marc-fashion.com/",
         "source": "",
         "image": {
