@@ -13,7 +13,7 @@
         "name": "Marcfashion",
         "description": "Marcfashion is an Ecuadorian tailor shop that jumped into the technology world.\nWith their new landing page they are finally able to expand their goals and improve their business.",
         "technologies": ["ReactJS", "Firebase", "CSS", "Jest"],
-        "URL": "https://www.marc-fashion.com/",
+        "URL": "https://sastreriamarcfashion.com/",
         "source": "",
         "image": {
             "src ": "./../images/marcfashion.png"
