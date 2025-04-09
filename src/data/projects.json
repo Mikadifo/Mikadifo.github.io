@@ -20,13 +20,13 @@
         }
     },
     {
-        "name": "Centeravid",
-        "description": "Centeravid is clinic that helps adult and young men with addiction problems.\nThey’ve expanded their help to more people thanks to a new landing page.",
+        "name": "Psy. Ismael Sarmiento",
+        "description": "A landing page and personal portfolio for Psy. Ismael Sarmiento, a psychologist based in Cuenca, Ecuador.\nIsmael goal is to reach more people and be able to help them improve their mental health.",
         "technologies": ["ReactJS", "Firebase", "Bootstrap"],
-        "URL": "https://centeravid.com/",
+        "URL": "https://ismaelsarmiento.com/",
         "source": "",
         "image": {
-            "src ": "./../images/centeravid.png"
+            "src ": "./../images/ismael.png"
         }
     }
 ]
