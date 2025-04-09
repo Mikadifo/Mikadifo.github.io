@@ -46,7 +46,7 @@ const ProjectCard = ({ project }) => {
                     href={project.URL}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-h6-md lg:text-h6-lg font-bold font-kufam bg-primary py-2 px-6 rounded-lg hover:opacity-75 text-white"
+                    className={`text-h6-md lg:text-h6-lg font-bold font-kufam bg-primary py-2 px-6 rounded-lg hover:opacity-75 text-white" ${project.URL ? '' : 'hidden'}`}
                 >
                     See website
                 </a>
