@@ -1,6 +1,7 @@
-import Hero from "~/components/Hero";
 import type { Route } from "./+types/home";
+import Hero from "~/components/Hero";
 import About from "~/components/About";
+import WaveDivider from "./../assets/dividers/waveDivider.svg?react";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -17,6 +18,7 @@ export default function Home() {
     <>
       <Hero />
       <About />
+      <WaveDivider className="w-full h-auto" />
     </>
   );
 }
