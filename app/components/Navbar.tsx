@@ -5,7 +5,7 @@ import InstagramIcon from "./../assets/icons/instagramIcon.svg?react";
 
 export default function Navbar() {
   return (
-    <div className="w-screen border-b border-[rgba(6,4,45,0.12)] py-6">
+    <div className="w-screen border-b border-[rgba(6,4,45,0.12)] py-6 sticky top-0 bg-light">
       <div className="flex justify-between w-[928px] mx-auto">
         <FullLogo />
         <div className="flex gap-8">
