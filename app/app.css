@@ -45,6 +45,10 @@
     background-color: #f5f6ff;
   }
 
+  .bg-light-05 {
+    background-color: rgba(245, 246, 255, 0.05);
+  }
+
   .font-kufam {
     font-family: kufam, "Inter";
   }
