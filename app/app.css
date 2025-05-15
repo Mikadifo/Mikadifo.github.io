@@ -33,15 +33,19 @@
     background-color: #06042d;
   }
 
+  .bg-dark-10 {
+    background-color: rgba(6, 4, 45, 0.1);
+  }
+
   .bg-light {
     background-color: #f5f6ff;
   }
+
+  .font-kufam {
+    font-family: kufam, "Inter";
+  }
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  background-color: ##f5f6ff;
-  color: #06042d;
+html {
+  background-color: #f5f6ff;
 }
