@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="mt-[200px] mb-[300px]">
+    <div className="mt-44 mb-52">
       <h1 className="mb-8 font-kufam font-bold text-[56px] text-dark">
         Website Designer & Developer
       </h1>
@@ -16,7 +16,7 @@ export default function Hero() {
           Get in Touch
         </a>
         <a
-          href="#contact"
+          href="#projects"
           className="text-dark text-2xl font-bold w-72 bg-dark-10 text-center py-4 rounded-[18px] leading-[100%]"
         >
           Portfolio
