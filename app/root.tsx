@@ -9,6 +9,7 @@ import {
 import type { Route } from "./+types/root";
 import "./app.css";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -32,6 +33,7 @@ export default function App() {
     <>
       <Navbar />
       <Outlet />
+      <Footer />
     </>
   );
 }
