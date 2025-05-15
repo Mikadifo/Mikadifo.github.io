@@ -37,6 +37,10 @@
     background-color: rgba(6, 4, 45, 0.1);
   }
 
+  .bg-dark-04 {
+    background-color: rgba(6, 4, 45, 0.04);
+  }
+
   .bg-light {
     background-color: #f5f6ff;
   }

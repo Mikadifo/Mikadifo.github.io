@@ -1,5 +1,6 @@
 import Hero from "~/components/Hero";
 import type { Route } from "./+types/home";
+import About from "~/components/About";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -13,8 +14,9 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Home() {
   return (
-    <div className="w-[928px] mx-auto">
+    <>
       <Hero />
-    </div>
+      <About />
+    </>
   );
 }
