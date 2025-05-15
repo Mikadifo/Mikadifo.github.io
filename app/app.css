@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "kufam";
+  src: url("/fonts/kufam.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 200 1000;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "leagueSpartan";
+  src: url("/fonts/LeagueSpartan.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 200 1000;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: leagueSpartan, "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer utilities {
+  .text-dark {
+    color: #06042d;
+  }
+
+  .text-white {
+    color: #f5f6ff;
+  }
+
+  .bg-dark {
+    background-color: #06042d;
+  }
+
+  .bg-light {
+    background-color: #f5f6ff;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
