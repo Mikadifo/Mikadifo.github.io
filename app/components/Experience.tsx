@@ -1,3 +1,4 @@
+import { getYearsAndMonths } from "~/utils/date";
 import CalendarIcon from "./../assets/icons/calendarIcon.svg?react";
 
 type ExperienceProps = {
@@ -42,13 +43,13 @@ export default function Experience({ title, data }: ExperienceProps) {
               </div>
 
               <div className="flex gap-3 w-[212px]">
-                <CalendarIcon />
+                <CalendarIcon className="mt-1.5" />
                 <div className="flex flex-col text-xl font-normal">
                   <span>
                     {item.start} - {item.end}
                   </span>
                   <span className="opacity-50 mt-[-4px]">
-                    {"x years n months"}
+                    {getYearsAndMonths(item.start, item.end)}
                   </span>
                 </div>
               </div>
