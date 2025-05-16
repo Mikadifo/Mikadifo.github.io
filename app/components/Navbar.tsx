@@ -14,7 +14,13 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       setShrinkRatio(
-        mapValue(window.scrollY, 0, SCROLL_LIMIT, 1, MIN_HEIGHT_RATIO),
+        mapValue(
+          Math.round(window.scrollY),
+          0,
+          SCROLL_LIMIT,
+          1,
+          MIN_HEIGHT_RATIO,
+        ),
       );
     };
 
