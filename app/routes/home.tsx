@@ -7,6 +7,7 @@ import Experience from "~/components/Experience";
 import experienceData from "./../data/experience";
 import Portfolio from "~/components/Portfolio";
 import educationData from "~/data/education";
+import Reviews from "~/components/Reviews";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -28,6 +29,7 @@ export default function Home() {
       <Portfolio />
       <Experience title="How I Got Started" data={educationData} />
       <RoundedDivider className="w-full h-auto" />
+      <Reviews />
     </>
   );
 }

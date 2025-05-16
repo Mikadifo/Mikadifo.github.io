@@ -29,6 +29,14 @@
     color: #f5f6ff;
   }
 
+  .bg-blue {
+    background-color: #0473ff;
+  }
+
+  .bg-blue-04 {
+    background-color: rgba(5, 21, 255, 0.04);
+  }
+
   .bg-dark {
     background-color: #06042d;
   }
