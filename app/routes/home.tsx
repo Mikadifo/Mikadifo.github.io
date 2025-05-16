@@ -28,7 +28,7 @@ export default function Home() {
       <Experience title="Experience" data={experienceData} />
       <Portfolio />
       <Experience title="How I Got Started" data={educationData} />
-      <RoundedDivider className="w-full h-auto" />
+      <RoundedDivider className="w-full h-auto bg-dark" />
       <Reviews />
     </>
   );
