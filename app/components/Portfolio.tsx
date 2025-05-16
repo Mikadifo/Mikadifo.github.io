@@ -46,7 +46,7 @@ export default function Portfolio() {
       </div>
       <button
         type="button"
-        className="text-dark text-2xl font-bold px-[72px] bg-dark-10 text-center py-4 rounded-[18px] leading-[100%] w-72 self-center hover:bg-[rgba(6,4,45,0.17)] cursor-pointer"
+        className="text-dark text-2xl font-bold px-[72px] bg-dark-10 text-center py-4 rounded-[18px] leading-[100%] w-72 self-center hover:bg-[rgba(6,4,45,0.2)] hover:text-[rgba(6,4,45,0.85)] cursor-pointer"
       >
         Show More
       </button>

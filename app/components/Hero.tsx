@@ -18,7 +18,7 @@ export default function Hero() {
 
         <a
           href="#projects"
-          className="text-dark text-2xl font-bold w-72 bg-dark-10 text-center py-4 rounded-[18px] leading-[100%] hover:bg-[rgba(6,4,45,0.2)]"
+          className="text-dark text-2xl font-bold w-72 bg-dark-10 text-center py-4 rounded-[18px] leading-[100%] hover:bg-[rgba(6,4,45,0.2)] hover:text-[rgba(6,4,45,0.85)]"
         >
           Portfolio
         </a>
