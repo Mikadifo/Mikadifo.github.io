@@ -44,7 +44,7 @@ export default function Contact() {
           </label>
         </div>
 
-        <button className="text-white text-2xl font-bold w-72 bg-dark text-center py-4 rounded-[18px] leading-[100%] transition-colors duration-500 hover:bg-gradient-to-r hover:from-[#0515FF] hover:to-[#0473FF] self-center cursor-pointer">
+        <button className="cta-button text-white text-2xl font-bold w-72 bg-dark text-center py-4 rounded-[18px] leading-[100%] self-center cursor-pointer">
           Let's Talk
         </button>
       </form>

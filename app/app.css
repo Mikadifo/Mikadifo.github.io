@@ -66,3 +66,11 @@ html {
   background-color: #f5f6ff;
   scroll-behavior: smooth;
 }
+
+.cta-button {
+  transition: background-color 0.7s;
+}
+
+.cta-button:hover {
+  background: linear-gradient(90deg, #0515ff, transparent) #0473ff;
+}

@@ -11,14 +11,14 @@ export default function Hero() {
       <div className="flex gap-8">
         <a
           href="#contact"
-          className="text-white text-2xl font-bold w-72 bg-dark text-center py-4 rounded-[18px] leading-[100%] transition-colors duration-500 hover:bg-gradient-to-r hover:from-[#0515FF] hover:to-[#0473FF]"
+          className="cta-button text-white text-2xl font-bold w-72 bg-dark text-center py-4 rounded-[18px] leading-[100%]"
         >
           Get in Touch
         </a>
 
         <a
           href="#projects"
-          className="text-dark text-2xl font-bold w-72 bg-dark-10 text-center py-4 rounded-[18px] leading-[100%] hover:bg-[rgba(6,4,45,0.17)]"
+          className="text-dark text-2xl font-bold w-72 bg-dark-10 text-center py-4 rounded-[18px] leading-[100%] hover:bg-[rgba(6,4,45,0.2)]"
         >
           Portfolio
         </a>
