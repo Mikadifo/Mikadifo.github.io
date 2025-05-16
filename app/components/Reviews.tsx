@@ -46,6 +46,7 @@ export default function Reviews() {
 
           {reviews.map((review, index) => (
             <div
+              key={review.id}
               className={`flex flex-col gap-8 px-8 py-6 bg-blue-04 rounded-xl text-dark w-[928px] shadow-md ${
                 index === currentReview ? "" : "hidden"
               }`}
