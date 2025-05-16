@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="w-[928px] mx-auto py-[192px] text-2xl">
+    <div className="w-[928px] mx-auto py-[192px] text-2xl" id="contact">
       <h3 className="mb-16 text-dark font-bold font-kufam text-5xl">
         Get in Touch
       </h3>
@@ -20,24 +20,12 @@ export default function Contact() {
           </label>
 
           <label htmlFor="email">
-            <b>Your name:</b>
+            <b>Your email:</b>
             <input
               type="email"
               id="email"
               name="email"
               placeholder="jane@example.com"
-              className="block py-4 px-6 bg-dark-04 rounded-xl w-full mt-4"
-              required
-            />
-          </label>
-
-          <label htmlFor="subject">
-            <b>Subject:</b>
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              placeholder="Web app for a startup"
               className="block py-4 px-6 bg-dark-04 rounded-xl w-full mt-4"
               required
             />

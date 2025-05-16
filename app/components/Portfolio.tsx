@@ -12,7 +12,10 @@ export interface Project {
 
 export default function Portfolio() {
   return (
-    <div className="w-[928px] mx-auto py-[192px] text-dark flex flex-col leading-none">
+    <div
+      className="w-[928px] mx-auto py-[192px] text-dark flex flex-col leading-none"
+      id="projects"
+    >
       <h3 className="text-5xl font-bold font-kufam mb-16">What I've Built</h3>
       <div className="flex flex-wrap gap-10 mb-16">
         {projects.map((project) => (

@@ -64,4 +64,5 @@
 
 html {
   background-color: #f5f6ff;
+  scroll-behavior: smooth;
 }
