@@ -13,7 +13,7 @@ export interface Project {
 export default function Portfolio() {
   return (
     <div
-      className="w-[928px] mx-auto py-[192px] text-dark flex flex-col leading-none"
+      className="w-[928px] mx-auto py-48 text-dark flex flex-col leading-none"
       id="projects"
     >
       <h3 className="text-5xl font-bold font-kufam mb-16">What I've Built</h3>

@@ -30,7 +30,7 @@ export default function Reviews() {
   };
 
   return (
-    <div className="py-[192px] bg-dark-04">
+    <div className="py-48 bg-dark-04">
       <h3 className="mb-16 text-dark font-bold font-kufam text-5xl w-[928px] mx-auto">
         What Clients Say
       </h3>

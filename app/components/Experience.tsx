@@ -17,7 +17,7 @@ export interface ExperienceCard {
 
 export default function Experience({ title, data }: ExperienceProps) {
   return (
-    <div className="bg-dark mt-[-1px] py-[192px]">
+    <div className="bg-dark mt-[-1px] py-48">
       <div className="w-[928px] mx-auto">
         <h3 className="text-5xl font-bold font-kufam text-white mb-16">
           {title}

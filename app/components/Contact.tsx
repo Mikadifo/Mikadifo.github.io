@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="w-[928px] mx-auto py-[192px] text-2xl" id="contact">
+    <div className="w-[928px] mx-auto pt-48 pb-24 text-2xl" id="contact">
       <h3 className="mb-16 text-dark font-bold font-kufam text-5xl">
         Get in Touch
       </h3>
