@@ -36,7 +36,7 @@ export default function Reviews() {
       </h3>
 
       <div className="mx-auto flex items-center flex-col">
-        <div className="flex gap-12 items-center">
+        <div className="flex gap-12 items-center relative">
           <button
             className="w-20 h-20 hover:bg-[rgba(6,4,45,0.03)] rounded-full flex items-center justify-center hover:cursor-pointer"
             onClick={handlePrevious}
@@ -44,25 +44,29 @@ export default function Reviews() {
             <ArrowIcon className="opacity-75 rotate-180 ms-[-6px]" />
           </button>
 
-          {reviews.map((review, index) => (
-            <div
-              key={review.id}
-              className={`flex flex-col gap-8 px-8 py-6 bg-blue-04 rounded-xl text-dark w-[928px] shadow-md ${
-                index === currentReview ? "" : "hidden"
-              }`}
-            >
-              <QuoteIcon className="opacity-10" />
-              <p className="text-2xl font-normal leading-[36px]">
-                {review.content}
-              </p>
-              <div className="flex flex-col font-bold">
-                <span className="text-center text-xl">{review.author}</span>
-                <span className="text-center text-lg opacity-50">
-                  {review.role}
-                </span>
+          <div className="flex w-[928px] h-[376px] top-0 left-0 relative overflow-hidden">
+            {reviews.map((review, index) => (
+              <div
+                key={review.id}
+                className={`absolute transition-all duration-500 ease-in-out flex flex-col gap-8 px-8 py-6 bg-blue-04 rounded-xl text-dark w-[928px] shadow-md ${
+                  index === currentReview
+                    ? "scale-100 translate-x-0 rotate-0"
+                    : "scale-85 translate-x-full rotate-8"
+                }`}
+              >
+                <QuoteIcon className="opacity-10" />
+                <p className="text-2xl font-normal leading-[36px]">
+                  {review.content}
+                </p>
+                <div className="flex flex-col font-bold">
+                  <span className="text-center text-xl">{review.author}</span>
+                  <span className="text-center text-lg opacity-50">
+                    {review.role}
+                  </span>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
 
           <button
             className="w-20 h-20 hover:bg-[rgba(6,4,45,0.03)] rounded-full flex items-center justify-center cursor-pointer"
