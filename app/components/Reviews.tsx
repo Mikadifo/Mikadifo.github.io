@@ -44,7 +44,7 @@ export default function Reviews() {
             <ArrowIcon className="opacity-75 rotate-180 ms-[-6px]" />
           </button>
 
-          <div className="flex w-[928px] h-[376px] top-0 left-0 relative overflow-hidden">
+          <div className="flex w-[928px] h-[380px] top-0 left-0 relative overflow-hidden rounded-xl">
             {reviews.map((review, index) => (
               <div
                 key={review.id}
@@ -82,7 +82,9 @@ export default function Reviews() {
               key={review.id}
               type="button"
               className={`w-4 h-4 rounded-full cursor-pointer ${
-                index === currentReview ? "bg-blue" : "bg-dark opacity-25"
+                index === currentReview
+                  ? "bg-blue"
+                  : "bg-dark opacity-25 hover:opacity-15"
               }`}
               onClick={() => setCurrentReview(index)}
             />
