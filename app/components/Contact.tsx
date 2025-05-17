@@ -8,7 +8,7 @@ type Response = {
 };
 
 const apiUrl = import.meta.env.VITE_API_URL;
-const apiToken = import.meta.env.API_TOKEN;
+const apiToken = import.meta.env.VITE_API_TOKEN;
 const captchaKey = import.meta.env.VITE_CAPTCHA_KEY;
 
 export default function Contact() {
