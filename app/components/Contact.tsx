@@ -1,5 +1,5 @@
 import type React from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import DOMPurify from "dompurify";
 
 type Response = {
@@ -7,14 +7,37 @@ type Response = {
   error?: string;
 };
 
+const apiUrl = import.meta.env.VITE_API_URL;
+const apiToken = import.meta.env.VITE_API_TOKEN;
+const captchaKey = import.meta.env.VITE_CAPTCHA_KEY;
+
 export default function Contact() {
   const [loading, setLoading] = useState<boolean>(false);
   const [data, setData] = useState<Response | null>(null);
+  const [captchaToken, setCaptchaToken] = useState<string>("");
+  const [hasMounted, setHasMounted] = useState(false);
+
+  useEffect(() => {
+    setHasMounted(true);
+    (window as any).recaptchaCallback = (token: string) => {
+      setCaptchaToken(token);
+    };
+  }, []);
+
+  if (!hasMounted) {
+    return null;
+  }
 
   const handleSendEmail = async (evt: React.FormEvent<HTMLFormElement>) => {
     setData(null);
     setLoading(true);
     evt.preventDefault();
+
+    if (!captchaToken) {
+      setData({ error: "Please complete captcha" });
+      setLoading(false);
+      return;
+    }
 
     const form = evt.currentTarget;
     const spam = form.elements.namedItem("_gotcha") as HTMLInputElement;
@@ -56,14 +79,12 @@ export default function Contact() {
       return;
     }
 
-    const apiUrl = import.meta.env.VITE_API_URL;
-    const apiToken = import.meta.env.VITE_API_TOKEN;
-
     const res = await fetch(apiUrl, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         "x-form-token": apiToken,
+        "captcha-token": captchaToken,
       },
       body: JSON.stringify({
         name: nameValue,
@@ -143,9 +164,22 @@ export default function Contact() {
         >
           {loading ? "Sending Email..." : "Let's Talk"}
         </button>
+
+        <div
+          className="g-recaptcha flex self-center"
+          data-sitekey={captchaKey}
+          data-callback="recaptchaCallback"
+        ></div>
+
         <span className="text-red text-center">{data?.error}</span>
         <span className="text-green text-center">{data?.data}</span>
       </form>
+
+      <script
+        src="https://www.google.com/recaptcha/api.js"
+        async
+        defer
+      ></script>
     </div>
   );
 }
