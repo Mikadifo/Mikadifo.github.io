@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "kufam";
+  src: url("/fonts/kufam.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 200 1000;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "leagueSpartan";
+  src: url("/fonts/LeagueSpartan.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 200 1000;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: leagueSpartan, "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer utilities {
+  .text-red {
+    color: #ee1b41;
+  }
+
+  .text-green {
+    color: #21ad0a;
+  }
+
+  .text-dark {
+    color: #06042d;
+  }
+
+  .text-white {
+    color: #f5f6ff;
+  }
+
+  .bg-blue {
+    background-color: #0473ff;
+  }
+
+  .bg-blue-04 {
+    background-color: #e2e4f7;
+  }
+
+  .bg-dark {
+    background-color: #06042d;
+  }
+
+  .bg-dark-10 {
+    background-color: rgba(6, 4, 45, 0.1);
+  }
+
+  .bg-dark-04 {
+    background-color: rgba(6, 4, 45, 0.04);
+  }
+
+  .bg-light {
+    background-color: #f5f6ff;
+  }
+
+  .bg-light-05 {
+    background-color: rgba(245, 246, 255, 0.05);
+  }
+
+  .font-kufam {
+    font-family: kufam, "Inter";
+  }
+}
+
+html {
+  background-color: #f5f6ff;
+  scroll-behavior: smooth;
+}
+
+.cta-button {
+  transition: background-color 0.7s;
+}
+
+.cta-button:hover {
+  background: linear-gradient(90deg, #0515ff, transparent) #0473ff;
+}
