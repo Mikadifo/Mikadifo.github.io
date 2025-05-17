@@ -3,7 +3,6 @@
   "version": "0.3.0",
   "private": true,
   "type": "module",
-  "homepage": "https://Mikadifo.github.io/",
   "author": "Mikadifo",
   "keywords": [
     "mikadifo",
@@ -15,7 +14,7 @@
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build/client"
   },
   "dependencies": {
     "@react-router/node": "^7.5.3",
