@@ -21,6 +21,14 @@
 }
 
 @layer utilities {
+  .text-red {
+    color: #ee1b41;
+  }
+
+  .text-green {
+    color: #21ad0a;
+  }
+
   .text-dark {
     color: #06042d;
   }
