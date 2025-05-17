@@ -57,11 +57,13 @@ export default function Contact() {
     }
 
     const apiUrl = import.meta.env.VITE_API_URL;
+    const apiToken = import.meta.env.VITE_API_TOKEN;
 
     const res = await fetch(apiUrl, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        "x-form-token": apiToken,
       },
       body: JSON.stringify({
         name: nameValue,
