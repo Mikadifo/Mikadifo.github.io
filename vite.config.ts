@@ -5,6 +5,13 @@ import tsconfigPaths from "vite-tsconfig-paths";
 import svgr from "vite-plugin-svgr";
 
 export default defineConfig({
-  base: "/Mikadifo.github.io/",
   plugins: [tailwindcss(), reactRouter(), tsconfigPaths(), svgr()],
+  build: {
+    cssCodeSplit: true,
+    rollupOptions: {
+      output: {
+        assetFileNames: `assets/[name].[ext]`,
+      },
+    },
+  },
 });
