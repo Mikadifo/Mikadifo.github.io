@@ -108,16 +108,19 @@ export default function Contact() {
   };
 
   return (
-    <div className="w-[928px] mx-auto pt-48 pb-24 text-2xl" id="contact">
-      <h3 className="mb-16 text-dark font-bold font-kufam text-5xl">
+    <div
+      className="lg:w-[928px] mx-auto pt-32 lg:pt-48 pb-16 lg:pb-24 text-xl lg:text-2xl px-8 lg:px-0"
+      id="contact"
+    >
+      <h3 className="mb-8 lg:mb-16 text-dark font-bold font-kufam text-4xl lg:text-5xl">
         Get in Touch
       </h3>
 
       <form
         onSubmit={handleSendEmail}
-        className="flex flex-col bg-white rounded-xl drop-shadow-sm p-16"
+        className="flex flex-col bg-white rounded-xl drop-shadow-sm p-8 lg:p-16"
       >
-        <div className="text-dark flex flex-col gap-10">
+        <div className="text-dark flex flex-col gap-8 lg:gap-10">
           <label htmlFor="name">
             <b>Your name:</b>
             <input
@@ -156,8 +159,9 @@ export default function Contact() {
 
           <input type="hidden" name="_gotcha" className="hidden" />
         </div>
+
         <button
-          className={`text-white text-2xl font-bold w-72 bg-dark text-center py-4 rounded-[18px] leading-[100%] self-center cursor-pointer disabled:opacity-20 disabled:cursor-not-allowed my-16 ${
+          className={`text-white text-xl lg:text-2xl font-bold w-64 lg:w-72 bg-dark text-center py-4 rounded-[18px] leading-[100%] self-center cursor-pointer disabled:opacity-20 disabled:cursor-not-allowed my-16 ${
             loading ? "" : "cta-button"
           }`}
           disabled={loading}
