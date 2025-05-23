@@ -10,7 +10,7 @@ export default [
     img: movement,
     heading: "Movement Vault",
     subheading: "Software Engineer Intern",
-    start: "2025-03-01",
+    start: "2025/03/01",
     end: "Present",
   },
   {
@@ -18,7 +18,7 @@ export default [
     img: mikadifo,
     heading: "Freelance",
     subheading: "Front End Developer",
-    start: "2022-04-01",
+    start: "2022/04/01",
     end: "Present",
   },
   {
@@ -26,15 +26,15 @@ export default [
     img: swc,
     heading: "Students Who Code",
     subheading: "Software Engineer Intern",
-    start: "2024-03-01",
-    end: "2024-04-01",
+    start: "2024/03/01",
+    end: "2024/04/01",
   },
   {
     id: "libelula",
     img: libelula,
     heading: "Libélula Soft",
     subheading: "Full Stack Software Developer",
-    start: "2021-07-01",
-    end: "2022-01-01",
+    start: "2021/07/01",
+    end: "2022/01/01",
   },
 ] as ExperienceCard[];

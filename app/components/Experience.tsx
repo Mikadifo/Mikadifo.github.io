@@ -27,7 +27,7 @@ export default function Experience({ title, data }: ExperienceProps) {
           {data.map((item) => (
             <div
               key={item.id}
-              className="flex justify-between bg-light-05 px-5 py-5 sm:px-6 sm:py-6 rounded-xl flex-col sm:flex-row"
+              className="flex justify-between bg-light-05 px-4 py-4 sm:px-6 sm:py-6 rounded-xl flex-col sm:flex-row"
             >
               <div className="flex">
                 <img
@@ -47,9 +47,9 @@ export default function Experience({ title, data }: ExperienceProps) {
               </div>
 
               <div className="flex gap-2 lg:gap-3 sm:w-[177px] lg:w-[212px] mt-4 sm:mt-0 items-center sm:items-start">
-                <CalendarIcon className="sm:mt-[1.4px] lg:mt-1.5 w-5 lg:w-auto" />
+                <CalendarIcon className="sm:mt-[1.4px] lg:mt-1.5 w-3 sm:w-5 lg:w-auto" />
 
-                <div className="flex flex-row sm:flex-col text-base lg:text-xl font-normal justify-between sm:justify-start w-full sm:w-auto">
+                <div className="flex flex-row sm:flex-col text-sm sm:text-base lg:text-xl font-normal justify-between sm:justify-start w-full sm:w-auto">
                   <span>
                     {getShortFormat(item.start)} - {getShortFormat(item.end)}
                   </span>
