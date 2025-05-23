@@ -17,7 +17,7 @@ export interface ExperienceCard {
 
 export default function Experience({ title, data }: ExperienceProps) {
   return (
-    <div className="bg-dark mt-[-1px] py-32 lg:py-48 px-8 lg:px-0">
+    <div className="bg-dark py-32 lg:py-48 px-8 lg:px-0">
       <div className="lg:w-[928px] mx-auto">
         <h3 className="text-4xl lg:text-5xl font-bold font-kufam text-white mb-8 lg:mb-16">
           {title}
@@ -45,7 +45,7 @@ export default function Experience({ title, data }: ExperienceProps) {
                 </div>
               </div>
 
-              <div className="flex gap-2 lg:gap-3 w-[170px] lg:w-[212px]">
+              <div className="flex gap-2 lg:gap-3 w-[177px] lg:w-[212px]">
                 <CalendarIcon className="mt-[1.4px] lg:mt-1.5 w-5 lg:w-auto" />
 
                 <div className="flex flex-col text-base lg:text-xl font-normal">

@@ -25,11 +25,11 @@ export default function Home() {
     <>
       <Hero />
       <About />
-      <WaveDivider className="w-full h-auto" />
+      <WaveDivider className="w-full h-auto bg-dark fill-[#ebecf7]" />
       <Experience title="Experience" data={experienceData} />
       <Portfolio />
       <Experience title="How I Got Started" data={educationData} />
-      <RoundedDivider className="w-full h-auto bg-dark" />
+      <RoundedDivider className="w-full h-auto fill-[#06042D] bg-[#ebecf7]" />
       <Reviews />
       <Contact />
     </>
