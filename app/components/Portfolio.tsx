@@ -20,12 +20,12 @@ export default function Portfolio() {
         What I've Built
       </h3>
 
-      <div className="flex flex-wrap gap-6 lg:gap-10 mb-16">
+      <div className="flex flex-wrap gap-6 lg:gap-10 mb-16 justify-center">
         {projects.map((project) => (
           <a
             href="#TODO"
             key={project.id}
-            className="bg-white p-4 lg:p-6 rounded-xl drop-shadow-sm min-w-[300px] w-[calc(50%-24px)] lg:w-[444px] group hover:drop-shadow-xl transition-all duration-700"
+            className="bg-white p-4 lg:p-6 rounded-xl drop-shadow-sm max-w-[396px] w-[calc(50%-12px)] lg:w-[444px] group hover:drop-shadow-xl transition-all duration-700"
           >
             <img
               src={project.img}
