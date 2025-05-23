@@ -10,6 +10,19 @@ const SCROLL_LIMIT = 256;
 
 export default function Navbar() {
   const [shrinkRatio, setShrinkRatio] = useState(1);
+  const [clientWidth, setClientWidth] = useState(
+    document.documentElement.clientWidth,
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      setClientWidth(document.documentElement.clientWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,7 +40,7 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
-  });
+  }, []);
 
   return (
     <nav
@@ -36,10 +49,12 @@ export default function Navbar() {
         padding: `${shrinkRatio * 24}px 0 ${shrinkRatio * 24}px 0`,
       }}
     >
-      <div className="flex justify-between w-full px-4 lg:px-0 lg:w-[928px] mx-auto">
+      <div className="flex justify-between w-full px-8 lg:px-0 lg:w-[928px] mx-auto">
         <FullLogo
           className="w-auto"
-          style={{ height: `${56 * shrinkRatio}px` }}
+          style={{
+            height: `${(clientWidth < 1024 ? 40 : 56) * shrinkRatio}px`,
+          }}
         />
 
         <div
@@ -56,7 +71,9 @@ export default function Navbar() {
           >
             <GithubIcon
               className="w-auto"
-              style={{ height: `${48 * shrinkRatio}px` }}
+              style={{
+                height: `${(clientWidth < 1024 ? 40 : 48) * shrinkRatio}px`,
+              }}
             />
           </a>
           <a
@@ -66,8 +83,10 @@ export default function Navbar() {
             className="hover:opacity-80"
           >
             <LinkedInIcon
+              style={{
+                height: `${(clientWidth < 1024 ? 40 : 48) * shrinkRatio}px`,
+              }}
               className="w-auto"
-              style={{ height: `${48 * shrinkRatio}px` }}
             />
           </a>
           <a
@@ -78,7 +97,9 @@ export default function Navbar() {
           >
             <InstagramIcon
               className="w-auto"
-              style={{ height: `${48 * shrinkRatio}px` }}
+              style={{
+                height: `${(clientWidth < 1024 ? 40 : 48) * shrinkRatio}px`,
+              }}
             />
           </a>
         </div>
