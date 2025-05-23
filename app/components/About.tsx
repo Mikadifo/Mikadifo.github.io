@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="bg-dark-04 py-32 lg:py-48 px-8 lg:px-0">
+    <div className="bg-dark-04 py-20 sm:py-32 lg:py-48 px-4 sm:px-8 lg:px-0">
       <div className="lg:w-[928px] mx-auto">
         <h3 className="mb-8 lg:mb-16 text-dark font-bold font-kufam text-4xl lg:text-5xl">
           About Me
