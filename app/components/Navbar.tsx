@@ -36,7 +36,7 @@ export default function Navbar() {
         padding: `${shrinkRatio * 24}px 0 ${shrinkRatio * 24}px 0`,
       }}
     >
-      <div className="flex justify-between w-[928px] mx-auto">
+      <div className="flex justify-between w-full px-4 lg:px-0 lg:w-[928px] mx-auto">
         <FullLogo
           className="w-auto"
           style={{ height: `${56 * shrinkRatio}px` }}
