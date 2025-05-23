@@ -13,19 +13,19 @@ export interface Project {
 export default function Portfolio() {
   return (
     <div
-      className="lg:w-[928px] mx-auto py-32 lg:py-48 text-dark flex flex-col leading-none px-8 lg:px-0"
+      className="lg:w-[928px] mx-auto py-20 sm:py-32 lg:py-48 text-dark flex flex-col leading-none px-4 sm:px-8 lg:px-0"
       id="projects"
     >
       <h3 className="text-4xl lg:text-5xl font-bold font-kufam mb-8 lg:mb-16">
         What I've Built
       </h3>
 
-      <div className="flex flex-wrap gap-6 lg:gap-10 mb-16 justify-center">
+      <div className="flex flex-wrap gap-6 lg:gap-10 mb-12 sm:mb-16 justify-center">
         {projects.map((project) => (
           <a
             href="#TODO"
             key={project.id}
-            className="bg-white p-4 lg:p-6 rounded-xl drop-shadow-sm max-w-[396px] w-[calc(50%-12px)] lg:w-[444px] group hover:drop-shadow-xl transition-all duration-700"
+            className="bg-white p-4 lg:p-6 rounded-xl drop-shadow-sm max-w-[396px] w-full sm:w-[calc(50%-12px)] lg:w-[444px] group hover:drop-shadow-xl transition-all duration-700"
           >
             <img
               src={project.img}
@@ -44,7 +44,7 @@ export default function Portfolio() {
                 </span>
               </div>
 
-              <ArrowIcon className="self-center opacity-0 group-hover:opacity-10 transition-opacity duration-700 h-[32px] lg:h-auto" />
+              <ArrowIcon className="self-center opacity-10 md:opacity-0 group-hover:md:opacity-10 transition-opacity duration-700 h-[32px] lg:h-auto" />
             </div>
           </a>
         ))}
