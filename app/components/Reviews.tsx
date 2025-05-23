@@ -44,11 +44,11 @@ export default function Reviews() {
             <ArrowIcon className="opacity-75 rotate-180 ms-[-6px]" />
           </button>
 
-          <div className="flex w-[928px] h-[380px] top-0 left-0 relative overflow-hidden rounded-xl">
+          <div className="flex 2xl:w-[928px] w-[672px] 2xl:h-[380px] h-[415px] top-0 left-0 relative overflow-hidden rounded-xl">
             {reviews.map((review, index) => (
               <div
                 key={review.id}
-                className={`absolute transition-all duration-500 ease-in-out flex flex-col gap-8 px-8 py-6 bg-blue-04 rounded-xl text-dark w-[928px] shadow-md ${
+                className={`absolute transition-all duration-500 ease-in-out flex flex-col gap-8 px-8 py-6 bg-blue-04 rounded-xl text-dark shadow-md ${
                   index === currentReview
                     ? "scale-100 translate-x-0 rotate-0"
                     : "scale-85 translate-x-full rotate-8"
