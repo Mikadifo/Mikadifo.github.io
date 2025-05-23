@@ -6,6 +6,9 @@ import svgr from "vite-plugin-svgr";
 
 export default defineConfig({
   plugins: [tailwindcss(), reactRouter(), tsconfigPaths(), svgr()],
+  server: {
+    open: true,
+  },
   build: {
     cssCodeSplit: true,
     rollupOptions: {
