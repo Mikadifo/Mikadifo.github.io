@@ -115,7 +115,7 @@ export default function Contact() {
 
       <form
         onSubmit={handleSendEmail}
-        className="flex flex-col bg-white rounded-xl drop-shadow-sm p-16 gap-16"
+        className="flex flex-col bg-white rounded-xl drop-shadow-sm p-16"
       >
         <div className="text-dark flex flex-col gap-10">
           <label htmlFor="name">
@@ -157,7 +157,7 @@ export default function Contact() {
           <input type="hidden" name="_gotcha" className="hidden" />
         </div>
         <button
-          className={`text-white text-2xl font-bold w-72 bg-dark text-center py-4 rounded-[18px] leading-[100%] self-center cursor-pointer disabled:opacity-20 disabled:cursor-not-allowed ${
+          className={`text-white text-2xl font-bold w-72 bg-dark text-center py-4 rounded-[18px] leading-[100%] self-center cursor-pointer disabled:opacity-20 disabled:cursor-not-allowed my-16 ${
             loading ? "" : "cta-button"
           }`}
           disabled={loading}
@@ -171,8 +171,10 @@ export default function Contact() {
           data-callback="recaptchaCallback"
         ></div>
 
-        <span className="text-red text-center">{data?.error}</span>
-        <span className="text-green text-center">{data?.data}</span>
+        <div>
+          <span className="text-red text-center">{data?.error}</span>
+          <span className="text-green text-center">{data?.data}</span>
+        </div>
       </form>
 
       <script
