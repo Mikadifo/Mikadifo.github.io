@@ -4,7 +4,7 @@ export default function Hero() {
       <h1 className="mb-6 lg:mb-8 font-kufam font-bold text-[40px] lg:text-[56px] text-dark">
         Website Designer & Developer
       </h1>
-      <h2 className="mb-14 lg:mb-16 text-dark opacity-75 font-normal text-[32px] lg:text-5xl leading-[38.4px]">
+      <h2 className="mb-14 lg:mb-16 text-dark opacity-75 font-normal text-[32px] lg:text-5xl leading-[38.4px] lg:leading-[57.6px]">
         Helping startups and solo founders launch beautiful websites and web
         apps
       </h2>
