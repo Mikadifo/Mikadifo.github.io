@@ -4,6 +4,7 @@ import Home from "./pages/home";
 import Footer from "./layouts/Footer";
 import Projects from "./pages/projects";
 import CallToAction from "./layouts/CallToAction";
+import NotFound from "./pages/notFound";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
             </>
           }
         />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
 
       <Footer />

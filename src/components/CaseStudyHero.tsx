@@ -3,10 +3,22 @@ import CloseIcon from "./../assets/icons/closeIcon.svg?react";
 import type { Project } from "./Portfolio";
 
 interface CaseStudyHeroProps {
-  project: Project;
+  project?: Project;
 }
 
-export default function CaseStudyHero({ project }: CaseStudyHeroProps) {
+const undefinedProject = {
+  id: "undefined",
+  img: "",
+  title: "Project Not Found",
+  type: "",
+  date: "",
+  brief:
+    "It looks like the project you're looking for has been moved, renamed, or never existed in the first place. Maybe it slipped out with the wind?",
+};
+
+export default function CaseStudyHero({
+  project = undefinedProject,
+}: CaseStudyHeroProps) {
   const navigate = useNavigate();
 
   return (
