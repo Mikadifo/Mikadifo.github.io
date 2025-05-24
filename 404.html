@@ -1,18 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <title>Redirecting…</title>
-    <script type="text/javascript">
-      const pathname = window.location.pathname;
-      const search = window.location.search;
-      const hash = window.location.hash;
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Redirecting...</title>
+    <script charset="utf-8">
+      let path =
+        window.location.pathname +
+        window.location.search +
+        window.location.hash;
 
-      const redirectPath = "/" + pathname + search + hash;
-      window.location.replace(redirectPath);
+      window.location.replace("/#" + path);
     </script>
   </head>
   <body>
-    <p>Redirecting…</p>
+    Redirecting...
   </body>
 </html>
