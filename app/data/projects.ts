@@ -3,6 +3,7 @@ import pennypath from "./../assets/imgs/pennypath.webp";
 import ismael from "./../assets/imgs/ismael.webp";
 import marcfashion from "./../assets/imgs/marcfashion.webp";
 import moneymoon from "./../assets/imgs/moneymoon.webp";
+import PennyPath from "~/caseStudies/PennyPath";
 
 export default [
   {
@@ -13,6 +14,7 @@ export default [
     date: "May 2025",
     brief:
       "PennyPath is a web app that offers smart and personalized AI suggestions based on an estimated budget, location and category.",
+    component: PennyPath,
   },
   {
     id: "ismael_sarmiento",

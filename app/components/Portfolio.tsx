@@ -1,5 +1,6 @@
 import projects from "./../data/projects";
 import ArrowIcon from "./../assets/icons/arrowIcon.svg?react";
+import { Link } from "react-router";
 
 export interface Project {
   id: string;
@@ -8,6 +9,7 @@ export interface Project {
   type: string;
   date: string;
   brief: string;
+  component?: React.FunctionComponent;
 }
 
 export default function Portfolio() {
@@ -22,8 +24,8 @@ export default function Portfolio() {
 
       <div className="flex flex-wrap gap-6 lg:gap-10 justify-center">
         {projects.map((project) => (
-          <a
-            href="#TODO"
+          <Link
+            to={project.id}
             key={project.id}
             className="bg-white p-4 lg:p-6 rounded-xl drop-shadow-sm max-w-[396px] w-full sm:w-[calc(50%-12px)] lg:w-[444px] group hover:drop-shadow-xl transition-all duration-700"
           >
@@ -46,7 +48,7 @@ export default function Portfolio() {
 
               <ArrowIcon className="self-center opacity-10 md:opacity-0 group-hover:md:opacity-10 transition-opacity duration-700 h-[32px] lg:h-auto" />
             </div>
-          </a>
+          </Link>
         ))}
       </div>
 
