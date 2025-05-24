@@ -32,3 +32,14 @@ export const getYearsAndMonths = (start: string, end: string): string => {
 
   return differenceString;
 };
+
+export const getShortFormat = (date: string): string => {
+  if (date === "Present") {
+    return "Present";
+  }
+
+  return new Date(date).toLocaleString("en-US", {
+    year: "numeric",
+    month: "short",
+  });
+};

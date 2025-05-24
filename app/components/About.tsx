@@ -1,11 +1,12 @@
 export default function About() {
   return (
-    <div className="bg-dark-04 py-48">
-      <div className="w-[928px] mx-auto">
-        <h3 className="mb-16 text-dark font-bold font-kufam text-5xl">
+    <div className="bg-dark-04 py-20 sm:py-32 lg:py-48 px-4 sm:px-8 lg:px-0">
+      <div className="lg:w-[928px] mx-auto">
+        <h3 className="mb-8 lg:mb-16 text-dark font-bold font-kufam text-4xl lg:text-5xl">
           About Me
         </h3>
-        <p className="text-2xl font-normal text-dark leading-[36px]">
+
+        <p className="text-xl lg:text-2xl font-normal text-dark leading-[30px] lg:leading-[36px]">
           Hi there! I’m a software engineer with over 3 years of experience. As
           a freelance front end developer I help small businesses and solo
           founders reach more customers by building custom landing pages and web
