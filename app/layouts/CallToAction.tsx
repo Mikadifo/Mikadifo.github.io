@@ -5,7 +5,7 @@ export default function Portfolio() {
     <>
       <Outlet />
 
-      <div className="mt-24 lg:mt-40 mb-12 sm:mb-16 lg:mb-24 bg-dark-04 px-4 sm:px-8 lg:px-0">
+      <div className="mt-12 sm:mt-24 lg:mt-40 mb-12 sm:mb-16 lg:mb-24 bg-dark-04 px-4 sm:px-8 lg:px-0">
         <div className="lg:w-[928px] mx-auto py-16 sm:py-20 lg:py-24">
           <h1 className="mb-6 lg:mb-8 font-kufam font-bold text-3xl sm:text-[40px] lg:text-[56px] text-dark">
             Let’s Work Together
