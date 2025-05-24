@@ -8,7 +8,7 @@ interface CaseStudyHeroProps {
 
 export default function CaseStudyHero({ project }: CaseStudyHeroProps) {
   return (
-    <div className="flex flex-col mb-20 gap-10">
+    <div className="flex flex-col gap-10">
       <div className="flex flex-col gap-2 leading-none">
         <div className="flex justify-between items-center">
           <h1 className="font-bold font-kufam text-[56px]">{project.title}</h1>
