@@ -14,7 +14,6 @@ export default [
     date: "May 2025",
     brief:
       "PennyPath is a web app that offers smart and personalized AI suggestions based on an estimated budget, location and category.",
-    component: PennyPath,
   },
   {
     id: "ismael_sarmiento",
