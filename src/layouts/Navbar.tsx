@@ -3,8 +3,8 @@ import GithubIcon from "./../assets/icons/githubIcon.svg?react";
 import LinkedInIcon from "./../assets/icons/linkedInIcon.svg?react";
 import InstagramIcon from "./../assets/icons/instagramIcon.svg?react";
 import { useEffect, useState } from "react";
-import { mapValue } from "~/utils/math";
-import { Link } from "react-router";
+import { mapValue } from "./../utils/math";
+import { useLocation } from "react-router";
 
 const MIN_HEIGHT_RATIO = 0.64;
 const SCROLL_LIMIT = 256;
@@ -14,6 +14,19 @@ export default function Navbar() {
   const [clientWidth, setClientWidth] = useState(
     document.documentElement.clientWidth,
   );
+  const location = useLocation();
+
+  useEffect(() => {
+    const hash = window.location.hash;
+
+    if (hash.startsWith("#/")) {
+      window.history.replaceState(
+        null,
+        "",
+        location.pathname ? location.pathname : "/",
+      );
+    }
+  }, [location]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -81,14 +94,18 @@ export default function Navbar() {
       }}
     >
       <div className="flex justify-between w-full px-4 sm:px-8 lg:px-0 lg:w-[928px] mx-auto">
-        <Link to="/">
+        <button
+          type="button"
+          className="cursor-pointer"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
           <FullLogo
             className="w-auto"
             style={{
               height: getLogoHeight(),
             }}
           />
-        </Link>
+        </button>
 
         <div
           className="flex"

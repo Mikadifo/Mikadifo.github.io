@@ -1,4 +1,4 @@
-import { getYearsAndMonths, getShortFormat } from "~/utils/date";
+import { getYearsAndMonths, getShortFormat } from "./../utils/date";
 import CalendarIcon from "./../assets/icons/calendarIcon.svg?react";
 
 type ExperienceProps = {

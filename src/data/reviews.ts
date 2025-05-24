@@ -1,4 +1,4 @@
-import type { Review } from "~/components/Reviews";
+import type { Review } from "./../components/Reviews";
 
 export default [
   {

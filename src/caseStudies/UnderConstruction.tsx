@@ -1,4 +1,4 @@
-import AnimatedCreativeIllustration from "~/components/AnimatedCreativeIllustration";
+import AnimatedCreativeIllustration from "./../components/AnimatedCreativeIllustration";
 
 export default function UnderConstruction() {
   return (

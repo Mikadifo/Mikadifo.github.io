@@ -25,7 +25,7 @@ export default function Portfolio() {
       <div className="flex flex-wrap gap-6 lg:gap-10 justify-center">
         {projects.map((project) => (
           <Link
-            to={project.id}
+            to={"projects/" + project.id}
             key={project.id}
             className="bg-white p-4 lg:p-6 rounded-xl drop-shadow-sm max-w-[396px] w-full sm:w-[calc(50%-12px)] lg:w-[444px] group hover:drop-shadow-xl transition-all duration-700"
           >

@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router";
-import UnderConstruction from "~/caseStudies/UnderConstruction";
-import CaseStudyHero from "~/components/CaseStudyHero";
-import projects from "~/data/projects";
+import UnderConstruction from "./../caseStudies/UnderConstruction";
+import CaseStudyHero from "./../components/CaseStudyHero";
+import projects from "../data/projects";
 
 export default function Projects() {
   const { projectId } = useParams();
   const project = projects.find((project) => project.id === projectId);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   if (project) {
     return (

@@ -1,4 +1,4 @@
-import { Link, Outlet, useNavigate } from "react-router";
+import { Outlet, useNavigate } from "react-router";
 
 export default function Portfolio() {
   const navigate = useNavigate();
@@ -20,13 +20,12 @@ export default function Portfolio() {
           <div className="flex gap-5 sm:gap-8 flex-col sm:flex-row">
             <button
               onClick={() => {
-                navigate("/#contact");
+                navigate("/");
                 setTimeout(() => {
-                  window.scrollTo({
-                    top: document.body.scrollHeight - 1000,
-                    behavior: "smooth",
-                  });
-                }, 100);
+                  document
+                    .getElementById("contact")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }, 300);
               }}
               type="button"
               className="cta-button text-white text-lg sm:text-xl lg:text-2xl font-bold w-full sm:w-64 lg:w-72 bg-dark text-center py-4 rounded-[18px] leading-[100%] cursor-pointer"
@@ -34,12 +33,20 @@ export default function Portfolio() {
               Get in Touch
             </button>
 
-            <Link
-              to="/#projects"
-              className="text-dark text-lg sm:text-xl lg:text-2xl font-bold w-full sm:w-64 lg:w-72 bg-dark-10 text-center py-4 rounded-[18px] leading-[100%] hover:bg-[rgba(6,4,45,0.2)] hover:text-[rgba(6,4,45,0.85)]"
+            <button
+              type="button"
+              onClick={() => {
+                navigate("/");
+                setTimeout(() => {
+                  document
+                    .getElementById("projects")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }, 300);
+              }}
+              className="text-dark text-lg sm:text-xl lg:text-2xl font-bold w-full sm:w-64 lg:w-72 bg-dark-10 text-center py-4 rounded-[18px] leading-[100%] hover:bg-[rgba(6,4,45,0.2)] hover:text-[rgba(6,4,45,0.85)] cursor-pointer"
             >
               Portfolio
-            </Link>
+            </button>
           </div>
         </div>
       </div>
