@@ -16,6 +16,16 @@
   font-display: swap;
 }
 
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 @theme {
   --font-sans: leagueSpartan, "Inter", ui-sans-serif, system-ui, sans-serif;
 }
@@ -35,6 +45,10 @@
 
   .text-white {
     color: #f5f6ff;
+  }
+
+  .text-blue {
+    color: #0473ff;
   }
 
   .bg-blue {
@@ -67,6 +81,22 @@
 
   .font-kufam {
     font-family: kufam, "Inter";
+  }
+
+  .float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .float-delay-2 {
+    animation-delay: 2s;
+  }
+
+  .float-delay-400 {
+    animation-delay: 0.4s;
+  }
+
+  .float-delay-600 {
+    animation-delay: 0.6s;
   }
 }
 

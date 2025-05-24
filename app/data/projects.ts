@@ -3,6 +3,7 @@ import pennypath from "./../assets/imgs/pennypath.webp";
 import ismael from "./../assets/imgs/ismael.webp";
 import marcfashion from "./../assets/imgs/marcfashion.webp";
 import moneymoon from "./../assets/imgs/moneymoon.webp";
+import PennyPath from "~/caseStudies/PennyPath";
 
 export default [
   {
