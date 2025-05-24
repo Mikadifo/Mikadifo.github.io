@@ -15,7 +15,7 @@ export default function CaseStudyHero({ project }: CaseStudyHeroProps) {
             {project.title}
           </h1>
           <Link to="/#projects">
-            <CloseIcon className="w-4 h-4 sm:w-6 sm:h-6 lg:w-8 lg:h-8 opacity-75" />
+            <CloseIcon className="w-4 h-4 sm:w-6 sm:h-6 lg:w-8 lg:h-8 opacity-75 transition-all duration-300 hover:rotate-12 hover:opacity-60" />
           </Link>
         </div>
 
