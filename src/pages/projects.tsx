@@ -12,25 +12,20 @@ export default function Projects() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
-  if (project) {
-    return (
-      <div className="flex flex-col gap-14 sm:gap-20 mt-10 sm:mt-20 lg:w-[928px] mx-auto px-4 sm:px-8 lg:px-0">
-        <CaseStudyHero project={project} />
+  return (
+    <div className="flex flex-col gap-14 sm:gap-20 mt-10 sm:mt-20 lg:w-[928px] mx-auto px-4 sm:px-8 lg:px-0">
+      <CaseStudyHero project={project} />
+      <div className="h-[2px] w-full bg-dark rounded-full opacity-10" />
 
-        <div className="h-[2px] w-full bg-dark rounded-full opacity-10" />
-
-        {project.component ? (
+      {project ? (
+        project.component ? (
           React.createElement(project.component)
         ) : (
           <UnderConstruction />
-        )}
-      </div>
-    );
-  }
-
-  return (
-    <div>
-      <h1>Project not found</h1>
+        )
+      ) : (
+        ""
+      )}
     </div>
   );
 }
