@@ -5,10 +5,10 @@ export default function Portfolio() {
     <>
       <Outlet />
 
-      <div className="mt-40 mb-24 bg-dark-04">
-        <div className="w-[928px] mx-auto py-24">
+      <div className="mt-24 lg:mt-40 mb-12 sm:mb-16 lg:mb-24 bg-dark-04 px-4 sm:px-8 lg:px-0">
+        <div className="lg:w-[928px] mx-auto py-16 sm:py-20 lg:py-24">
           <h1 className="mb-6 lg:mb-8 font-kufam font-bold text-3xl sm:text-[40px] lg:text-[56px] text-dark">
-            Interested in a Collaboration?
+            Let’s Work Together
           </h1>
           <p className="mb-14 lg:mb-16 text-dark opacity-75 font-normal text-[28px] sm:text-[32px] lg:text-5xl leading-[33.6px] sm:leading-[38.4px] lg:leading-[57.6px]">
             I help startups and solo founders launch beautiful websites and web
