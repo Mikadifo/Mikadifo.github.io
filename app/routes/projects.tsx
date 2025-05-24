@@ -10,7 +10,7 @@ export default function Projects() {
 
   if (project) {
     return (
-      <div className="flex flex-col gap-20 mt-20 w-[928px] mx-auto">
+      <div className="flex flex-col gap-20 mt-20 lg:w-[928px] mx-auto px-4 sm:px-8 lg:px-0">
         <CaseStudyHero project={project} />
 
         <div className="h-[2px] w-full bg-dark rounded-full opacity-10" />
