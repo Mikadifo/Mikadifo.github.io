@@ -20,7 +20,7 @@ export default function Portfolio() {
         What I've Built
       </h3>
 
-      <div className="flex flex-wrap gap-6 lg:gap-10 mb-12 sm:mb-16 justify-center">
+      <div className="flex flex-wrap gap-6 lg:gap-10 justify-center">
         {projects.map((project) => (
           <a
             href="#TODO"
@@ -50,12 +50,16 @@ export default function Portfolio() {
         ))}
       </div>
 
-      <button
-        type="button"
-        className="text-dark text-xl lg:text-2xl font-bold px-[72px] bg-dark-10 text-center py-4 rounded-[18px] leading-[100%] w-64 lg:w-72 self-center hover:bg-[rgba(6,4,45,0.2)] hover:text-[rgba(6,4,45,0.85)] cursor-pointer"
-      >
-        Show More
-      </button>
+      {projects.length > 4 ? (
+        <button
+          type="button"
+          className="text-dark text-xl lg:text-2xl font-bold px-[72px] bg-dark-10 text-center py-4 rounded-[18px] leading-[100%] w-64 lg:w-72 self-center hover:bg-[rgba(6,4,45,0.2)] hover:text-[rgba(6,4,45,0.85)] cursor-pointer mt-12 sm:mt-16"
+        >
+          Show More
+        </button>
+      ) : (
+        ""
+      )}
     </div>
   );
 }
