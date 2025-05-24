@@ -1,6 +1,8 @@
-import { Outlet } from "react-router";
+import { Link, Outlet, useNavigate } from "react-router";
 
 export default function Portfolio() {
+  const navigate = useNavigate();
+
   return (
     <>
       <Outlet />
@@ -16,19 +18,28 @@ export default function Portfolio() {
           </p>
 
           <div className="flex gap-5 sm:gap-8 flex-col sm:flex-row">
-            <a
-              href="#contact"
-              className="cta-button text-white text-lg sm:text-xl lg:text-2xl font-bold w-full sm:w-64 lg:w-72 bg-dark text-center py-4 rounded-[18px] leading-[100%]"
+            <button
+              onClick={() => {
+                navigate("/#contact");
+                setTimeout(() => {
+                  window.scrollTo({
+                    top: document.body.scrollHeight - 1000,
+                    behavior: "smooth",
+                  });
+                }, 100);
+              }}
+              type="button"
+              className="cta-button text-white text-lg sm:text-xl lg:text-2xl font-bold w-full sm:w-64 lg:w-72 bg-dark text-center py-4 rounded-[18px] leading-[100%] cursor-pointer"
             >
               Get in Touch
-            </a>
+            </button>
 
-            <a
-              href="#projects"
+            <Link
+              to="/#projects"
               className="text-dark text-lg sm:text-xl lg:text-2xl font-bold w-full sm:w-64 lg:w-72 bg-dark-10 text-center py-4 rounded-[18px] leading-[100%] hover:bg-[rgba(6,4,45,0.2)] hover:text-[rgba(6,4,45,0.85)]"
             >
               Portfolio
-            </a>
+            </Link>
           </div>
         </div>
       </div>
