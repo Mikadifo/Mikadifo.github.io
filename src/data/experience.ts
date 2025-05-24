@@ -1,4 +1,4 @@
-import type { ExperienceCard } from "~/components/Experience";
+import type { ExperienceCard } from "./../components/Experience";
 import movement from "./../assets/imgs/movement.webp";
 import mikadifo from "./../assets/imgs/mikadifo.webp";
 import swc from "./../assets/imgs/swc.webp";

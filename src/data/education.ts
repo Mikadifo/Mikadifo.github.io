@@ -1,4 +1,4 @@
-import type { ExperienceCard } from "~/components/Experience";
+import type { ExperienceCard } from "./../components/Experience";
 import hunter from "./../assets/imgs/hunter.webp";
 import codepath from "./../assets/imgs/codepath.webp";
 import tecazuay from "./../assets/imgs/tecazuay.webp";

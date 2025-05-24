@@ -1,12 +1,14 @@
-import CloseIcon from "~/assets/icons/closeIcon.svg?react";
+import { useNavigate } from "react-router";
+import CloseIcon from "./../assets/icons/closeIcon.svg?react";
 import type { Project } from "./Portfolio";
-import { Link } from "react-router";
 
 interface CaseStudyHeroProps {
   project: Project;
 }
 
 export default function CaseStudyHero({ project }: CaseStudyHeroProps) {
+  const navigate = useNavigate();
+
   return (
     <div className="flex flex-col gap-6 sm:gap-10">
       <div className="flex flex-col gap-0 lg:gap-2 leading-none">
@@ -14,9 +16,20 @@ export default function CaseStudyHero({ project }: CaseStudyHeroProps) {
           <h1 className="font-bold font-kufam text-3xl sm:text-[40px] lg:text-[56px]">
             {project.title}
           </h1>
-          <Link to="/#projects">
-            <CloseIcon className="w-4 h-4 sm:w-6 sm:h-6 lg:w-8 lg:h-8 opacity-75 transition-all duration-300 hover:rotate-12 hover:opacity-60" />
-          </Link>
+          <button
+            type="button"
+            onClick={() => {
+              navigate("/");
+              setTimeout(() => {
+                document
+                  .getElementById("projects")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }, 300);
+            }}
+            className="cursor-pointer opacity-75 transition-all duration-300 hover:rotate-12 hover:opacity-60"
+          >
+            <CloseIcon className="w-4 h-4 sm:w-6 sm:h-6 lg:w-8 lg:h-8" />
+          </button>
         </div>
 
         <span className="font-normal text-xl sm:text-2xl md:text-3xl lg:text-[32px] text-blue">

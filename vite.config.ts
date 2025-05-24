@@ -1,20 +1,9 @@
-import { reactRouter } from "@react-router/dev/vite";
-import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vite";
-import tsconfigPaths from "vite-tsconfig-paths";
+import react from "@vitejs/plugin-react-swc";
+import tailwindcss from "@tailwindcss/vite";
 import svgr from "vite-plugin-svgr";
 
+// https://vite.dev/config/
 export default defineConfig({
-  plugins: [tailwindcss(), reactRouter(), tsconfigPaths(), svgr()],
-  server: {
-    open: true,
-  },
-  build: {
-    cssCodeSplit: true,
-    rollupOptions: {
-      output: {
-        assetFileNames: `assets/[name].[ext]`,
-      },
-    },
-  },
+  plugins: [react(), tailwindcss(), svgr()],
 });
