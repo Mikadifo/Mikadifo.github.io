@@ -18,7 +18,7 @@ export default function VisualIdentity() {
         color.
       </P>
 
-      <div className="flex gap-10 my-8 flex-wrap">
+      <div className="flex gap-6 md:gap-10 my-8 flex-wrap justify-center">
         <ColorCard label="Primary" hex="#FDBD1D" labelDark />
         <ColorCard
           label="Gradient"

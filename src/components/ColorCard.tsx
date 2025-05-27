@@ -55,12 +55,12 @@ export default function ColorCard({
   };
 
   return (
-    <div className="w-[153.6px]">
+    <div className="w-32 md:w-[153.6px]">
       <div
         onMouseMove={gradient.length > 0 ? handleMouseMove : undefined}
         onMouseLeave={gradient.length > 0 ? handleMouseExit : undefined}
         onClick={gradient.length > 0 ? () => setMoving(!moving) : undefined}
-        className={`relative size-[153.6px] font-normal text-2xl p-3 flex items-end justify-center rounded-xl ${labelDark ? "text-dark" : "text-white"} ${bordered ? "border-1 border-dark-25" : ""} ${gradient.length > 0 ? "cursor-none" : ""}`}
+        className={`relative size-32 md:size-[153.6px] font-normal text-xl md:text-2xl p-3 flex items-end justify-center rounded-xl ${labelDark ? "text-dark" : "text-white"} ${bordered ? "border-1 border-dark-25" : ""} ${gradient.length > 0 ? "cursor-none" : ""}`}
         style={{ ...background }}
       >
         {gradient.length > 0 ? (
@@ -71,7 +71,7 @@ export default function ColorCard({
         {label}
       </div>
 
-      <div className="text-xl font-normal py-2 px-5 w-full bg-dark-04 text-dark-75 rounded-xl mt-2 flex justify-center">
+      <div className="text-lg md:text-xl font-normal py-1 md:py-2 px-3 md:px-5 w-full bg-dark-04 text-dark-75 rounded-xl mt-2 flex justify-center">
         {gradient.length > 0 ? gradientHex || "Pick Color" : hex}
       </div>
     </div>
