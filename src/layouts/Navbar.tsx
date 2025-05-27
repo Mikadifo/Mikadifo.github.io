@@ -120,7 +120,7 @@ export default function Navbar() {
             className="hover:opacity-80"
           >
             <GithubIcon
-              className="w-auto"
+              className="w-auto fill-[#06042D]"
               style={{
                 height: getIconHeight(),
               }}
