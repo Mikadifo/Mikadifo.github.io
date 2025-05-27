@@ -19,9 +19,13 @@ export default function TechStack() {
       </P>
 
       <div className="flex gap-3 sm:gap-4 md:gap-8 mb-10 mt-3 flex-wrap">
-        <Tag label="Flask" img={FlaskLogo} />
-        <Tag label="GeminiAPI" img={GeminiLogo} />
-        <Tag label="Render" img={RenderLogo} />
+        <Tag
+          label="Flask"
+          img={FlaskLogo}
+          href="https://flask.palletsprojects.com/en/stable/"
+        />
+        <Tag label="GeminiAPI" img={GeminiLogo} href="https://ai.google.dev/" />
+        <Tag label="Render" img={RenderLogo} href="https://render.com/" />
       </div>
 
       <P>
@@ -31,10 +35,18 @@ export default function TechStack() {
       </P>
 
       <div className="flex gap-3 sm:gap-4 md:gap-8 mt-3 flex-wrap">
-        <Tag label="React" img={ReactLogo} />
-        <Tag label="Tailwind" img={TailwindLogo} />
-        <Tag label="Figma" img={FigmaLogo} />
-        <Tag label="Firebase" img={FirebaseLogo} />
+        <Tag label="React" img={ReactLogo} href="https://react.dev/" />
+        <Tag
+          label="Tailwind"
+          img={TailwindLogo}
+          href="https://tailwindcss.com/"
+        />
+        <Tag label="Figma" img={FigmaLogo} href="https://www.figma.com/" />
+        <Tag
+          label="Firebase"
+          img={FirebaseLogo}
+          href="https://firebase.google.com/"
+        />
       </div>
     </div>
   );

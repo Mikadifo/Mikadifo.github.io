@@ -1,4 +1,5 @@
 import Features from "./Features";
+import FinalDesign from "./FinalDesign";
 import HowItStarted from "./HowItStarted";
 import Team from "./Team";
 import TechStack from "./TechStack";
@@ -12,6 +13,7 @@ export default function PennyPath() {
       <TechStack />
       <VisualIdentity />
       <Features />
+      <FinalDesign />
     </div>
   );
 }
