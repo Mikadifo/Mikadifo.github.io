@@ -13,7 +13,7 @@ export default function FinalDesign() {
         deadline, so we left out many features that we wanted to include as well
         as some small design and code details. The live demo may not work in the
         future, so this is the final design of the app. You can also build it
-        yourself since we provided the GitHub repositories too.
+        yourself using the provided GitHub repositories.
       </P>
 
       <div className="flex gap-3 sm:gap-4 md:gap-8 mb-10 mt-3 flex-wrap">

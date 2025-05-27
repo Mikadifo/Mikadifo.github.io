@@ -8,8 +8,8 @@ export default function VisualIdentity() {
       <H2>Visual Identity</H2>
       <P>
         We wanted Pennypath to feel modern, clear and primarily easy to use. Our
-        first step was find a color palette that connected to the application
-        theme, which was finance and flexibility. This is way we chose yellow as
+        first step was to find a color palette that connected to the application
+        theme, which was finance and flexibility. This is why we chose yellow as
         our primary color, to represent money in the form of a coin. For the
         accent color we chose a navy blue, and a variation of this color was
         used to create a matching gradient, which represents flexibility in our
@@ -41,7 +41,7 @@ export default function VisualIdentity() {
       <P>
         Next was to design a logo that would capture the purpose of the project.
         Since we only had 48 hours to complete and submit the application, we
-        decided to have ChatGPT generate multiple logos for us. We combined
+        decided to have ChatGPT generate multiple reference logos. We combined
         these logo concepts to design something fast but effective. Finally, we
         selected a friendly yet modern font to match our target audience which
         was young people.
