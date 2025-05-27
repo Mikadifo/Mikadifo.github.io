@@ -22,7 +22,7 @@ export default function Features() {
         <img src={pennyPathInputs} alt="PennyPath Home Webpage User Inputs" />
 
         <P>
-          Once we had all the user information we needed, we pass those
+          Once we had all the user information we needed, we passed those
           parameters to GeminiAI to generate 3 meaningful spending suggestions
           based on the given inputs. Again, to keep the application flexible, we
           added two more options. The first to generate more suggestions based
@@ -44,7 +44,7 @@ export default function Features() {
         <P>
           We decided to do an early deployment when the application was working
           but it still didn’t have all the features we wanted to. This was done
-          to make sure we had something to submit the final day of the
+          to make sure we had something to submit in the final day of the
           Hackathon. This also allowed us to work on one feature at a time, and
           deploy new versions as we go.
         </P>
