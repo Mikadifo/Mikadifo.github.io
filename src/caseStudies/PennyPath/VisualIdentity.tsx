@@ -1,6 +1,6 @@
 import ColorCard from "../../components/ColorCard";
 import { H2, P } from "../ResponsiveTags";
-import pennyPathAssets from "./../../assets/imgs/pennyPathAssets.png";
+import pennyPathBrand from "./imgs/pennyPathBrand.webp";
 
 export default function VisualIdentity() {
   return (
@@ -48,7 +48,7 @@ export default function VisualIdentity() {
       </P>
 
       <img
-        src={pennyPathAssets}
+        src={pennyPathBrand}
         alt="Penny Path Logos and Font"
         className="mt-8"
       />
