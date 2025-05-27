@@ -1,6 +1,7 @@
 import { H2, P } from "../ResponsiveTags";
 import pennyPathDemo from "./imgs/pennyPathDemo.webp";
 import GitHubIcon from "./../../assets/icons/githubIcon.svg?react";
+import LinkIcon from "./../../assets/icons/linkIcon.svg?react";
 import Tag from "../../components/Tag";
 
 export default function FinalDesign() {
@@ -28,7 +29,7 @@ export default function FinalDesign() {
         />
         <Tag
           label="View Live Project"
-          img={GitHubIcon}
+          img={LinkIcon}
           href="https://pennypath-bd3cd.web.app/"
         />
       </div>
