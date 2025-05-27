@@ -55,6 +55,10 @@
     color: #06042d;
   }
 
+  .text-dark-75 {
+    color: #414162;
+  }
+
   .text-white {
     color: #f5f6ff;
   }
@@ -89,6 +93,10 @@
 
   .bg-light-05 {
     background-color: rgba(245, 246, 255, 0.05);
+  }
+
+  .border-dark-25 {
+    border-color: #b9b9ca;
   }
 
   .font-kufam {

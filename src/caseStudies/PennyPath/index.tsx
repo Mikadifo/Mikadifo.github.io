@@ -1,6 +1,7 @@
 import HowItStarted from "./HowItStarted";
 import Team from "./Team";
 import TechStack from "./TechStack";
+import VisualIdentity from "./VisualIdentity";
 
 export default function PennyPath() {
   return (
@@ -8,6 +9,7 @@ export default function PennyPath() {
       <Team />
       <HowItStarted />
       <TechStack />
+      <VisualIdentity />
     </div>
   );
 }
