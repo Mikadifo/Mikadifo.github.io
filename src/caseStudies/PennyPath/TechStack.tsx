@@ -7,11 +7,14 @@ import ReactLogo from "../../assets/icons/reactLogo.svg?react";
 import TailwindLogo from "../../assets/icons/tailwindLogo.svg?react";
 import FigmaLogo from "../../assets/icons/figmaLogo.svg?react";
 import FirebaseLogo from "../../assets/icons/firebaseLogo.svg?react";
+import type { Ref } from "react";
 
-export default function TechStack() {
+export default function TechStack({ ref }: { ref?: Ref<HTMLDivElement> }) {
   return (
     <div>
-      <H2>Tech Stack & Tools</H2>
+      <div ref={ref}>
+        <H2>Tech Stack & Tools</H2>
+      </div>
       <P>
         To build Pennypath, we first needed to create an API to communicate
         between the web app and GeminiAI, so we decided to use Flask to create

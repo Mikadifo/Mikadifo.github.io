@@ -2,11 +2,14 @@ import michaelAvatar from "../../assets/imgs/michaelAvatar.webp";
 import ludwinAvatar from "../../assets/imgs/ludwinAvatar.webp";
 import UserIcon from "../../assets/icons/userIcon.svg?react";
 import { H2, P } from "./../ResponsiveTags";
+import type { Ref } from "react";
 
-export default function Team() {
+export default function Team({ ref }: { ref?: Ref<HTMLDivElement> }) {
   return (
     <div>
-      <H2>About The Team</H2>
+      <div ref={ref}>
+        <H2>About The Team</H2>
+      </div>
       <P>
         This projects would not have been possible without these amazing
         teammates. Having four people in the team helped us focus on specific

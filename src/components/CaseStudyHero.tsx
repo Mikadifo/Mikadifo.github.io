@@ -22,7 +22,7 @@ export default function CaseStudyHero({
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col gap-6 sm:gap-10">
+    <div className="flex flex-col gap-6 sm:gap-10 relative">
       <div className="flex flex-col gap-0 lg:gap-2 leading-none">
         <div className="flex justify-between items-center">
           <h1 className="font-bold font-kufam text-3xl sm:text-[40px] lg:text-[56px]">

@@ -1,9 +1,12 @@
+import type { Ref } from "react";
 import { H2, P } from "../ResponsiveTags";
 
-export default function HowItStarted() {
+export default function HowItStarted({ ref }: { ref?: Ref<HTMLDivElement> }) {
   return (
     <div>
-      <H2>How It Started</H2>
+      <div ref={ref}>
+        <H2>How It Started</H2>
+      </div>
       <P>
         Pennypath was born out of an idea to provide fast, personalized and
         accessible suggestions for spending within a budget. We came up with the

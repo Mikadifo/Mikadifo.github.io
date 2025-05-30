@@ -2,10 +2,11 @@ import { H2, P } from "../ResponsiveTags";
 import pennyPathInputs from "./imgs/pennyPathInputs.webp";
 import pennyPathSuggestions from "./imgs/pennyPathSuggestions.webp";
 import pennyPathErrors from "./imgs/pennyPathErrors.webp";
+import type { Ref } from "react";
 
-export default function Features() {
+export default function Features({ ref }: { ref?: Ref<HTMLDivElement> }) {
   return (
-    <div>
+    <div ref={ref}>
       <H2>Features & How It Works</H2>
 
       <div className="flex flex-col gap-8">

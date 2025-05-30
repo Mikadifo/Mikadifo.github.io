@@ -1,10 +1,11 @@
+import type { Ref } from "react";
 import ColorCard from "../../components/ColorCard";
 import { H2, P } from "../ResponsiveTags";
 import pennyPathBrand from "./imgs/pennyPathBrand.webp";
 
-export default function VisualIdentity() {
+export default function VisualIdentity({ ref }: { ref?: Ref<HTMLDivElement> }) {
   return (
-    <div>
+    <div ref={ref}>
       <H2>Visual Identity</H2>
       <P>
         We wanted Pennypath to feel modern, clear and primarily easy to use. Our

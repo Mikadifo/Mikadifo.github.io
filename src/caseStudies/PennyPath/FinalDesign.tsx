@@ -3,10 +3,11 @@ import pennyPathDemo from "./imgs/pennyPathDemo.webp";
 import GitHubIcon from "./../../assets/icons/githubIcon.svg?react";
 import LinkIcon from "./../../assets/icons/linkIcon.svg?react";
 import Tag from "../../components/Tag";
+import type { Ref } from "react";
 
-export default function FinalDesign() {
+export default function FinalDesign({ ref }: { ref?: Ref<HTMLDivElement> }) {
   return (
-    <div>
+    <div ref={ref}>
       <H2>Final Design & Live Demo</H2>
       <P>
         This was a very challenging project, mainly because of such a tight
