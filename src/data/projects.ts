@@ -5,6 +5,7 @@ import marcfashion from "./../assets/imgs/marcfashion.webp";
 import moneymoon from "./../assets/imgs/moneymoon.webp";
 import reelr from "./../assets/imgs/reelr.webp";
 import PennyPath from "../caseStudies/PennyPath/index";
+import Reelr from "../caseStudies/Reelr/index";
 
 export default [
   {
@@ -43,6 +44,7 @@ export default [
     date: "November 2025",
     brief:
       "Reelr is a web app that helps you keep track of movies you love and would watch again, movies that you want to watch or movies that you didn’t like as much. You’ll be able to rate movies from 1 to 5, create custom lists, and even publicly share your lists/movies with friends.",
+    component: Reelr,
   },
   {
     id: "marcfashion",
