@@ -3,6 +3,7 @@ import pennypath from "./../assets/imgs/pennypath.webp";
 import ismael from "./../assets/imgs/ismael.webp";
 import marcfashion from "./../assets/imgs/marcfashion.webp";
 import moneymoon from "./../assets/imgs/moneymoon.webp";
+import reelr from "./../assets/imgs/reelr.webp";
 import PennyPath from "../caseStudies/PennyPath/index";
 
 export default [
@@ -33,6 +34,15 @@ export default [
     date: "April 2024",
     brief:
       "MoneyMoon is a personal financial tracker that allows you to take control of your money. It helps you to create groups of transactions to have a more organized money management.",
+  },
+  {
+    id: "Reelr",
+    img: reelr,
+    title: "Reelr",
+    type: "Side Project",
+    date: "November 2025",
+    brief:
+      "Reelr is a web app that helps you keep track of movies you love and would watch again, movies that you want to watch or movies that you didn’t like as much. You’ll be able to rate movies from 1 to 5, create custom lists, and even publicly share your lists/movies with friends.",
   },
   {
     id: "marcfashion",
