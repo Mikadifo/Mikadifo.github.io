@@ -1,6 +1,7 @@
 import projects from "./../data/projects";
 import ArrowIcon from "./../assets/icons/arrowIcon.svg?react";
 import { Link } from "react-router";
+import { useState } from "react";
 
 export interface Project {
   id: string;
@@ -13,6 +14,18 @@ export interface Project {
 }
 
 export default function Portfolio() {
+  const [displayedProjects, setDisplayedProjects] = useState(
+    projects.slice(0, 4),
+  );
+
+  const handleDisplayProjects = () => {
+    if (displayedProjects.length > 4) {
+      setDisplayedProjects(projects.slice(0, 4));
+    } else {
+      setDisplayedProjects(projects);
+    }
+  };
+
   return (
     <div
       className="lg:w-[928px] mx-auto py-20 sm:py-32 lg:py-48 text-dark flex flex-col leading-none px-4 sm:px-8 lg:px-0"
@@ -23,7 +36,7 @@ export default function Portfolio() {
       </h3>
 
       <div className="flex flex-wrap gap-6 lg:gap-10 justify-center">
-        {projects.map((project) => (
+        {displayedProjects.map((project) => (
           <Link
             to={"projects/" + project.id}
             key={project.id}
@@ -56,8 +69,9 @@ export default function Portfolio() {
         <button
           type="button"
           className="text-dark text-xl lg:text-2xl font-bold px-[72px] bg-dark-10 text-center py-4 rounded-[18px] leading-[100%] w-64 lg:w-72 self-center hover:bg-[rgba(6,4,45,0.2)] hover:text-[rgba(6,4,45,0.85)] cursor-pointer mt-12 sm:mt-16"
+          onClick={handleDisplayProjects}
         >
-          Show More
+          {displayedProjects.length > 4 ? "Show Less" : "Show More"}
         </button>
       ) : (
         ""
