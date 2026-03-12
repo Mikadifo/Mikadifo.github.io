@@ -1,7 +1,7 @@
 import projects from "./../data/projects";
 import ArrowIcon from "./../assets/icons/arrowIcon.svg?react";
 import { Link } from "react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export interface Project {
   id: string;
@@ -11,18 +11,42 @@ export interface Project {
   date: string;
   brief: string;
   component?: React.FunctionComponent;
+  tab: string;
 }
 
+export type ProjectType = "software" | "hardware" | "ui";
+const projectTypes = [
+  {
+    label: "Software",
+    id: "software",
+  },
+  {
+    label: "Hardware",
+    id: "hardware",
+  },
+  {
+    label: "UI Designs",
+    id: "ui",
+  },
+];
+
 export default function Portfolio() {
-  const [displayedProjects, setDisplayedProjects] = useState(
-    projects.slice(0, 4),
-  );
+  const [projectType, setProjectType] = useState<ProjectType>("software");
+  const [displayedProjects, setDisplayedProjects] = useState<Project[]>([]);
+
+  useEffect(() => {
+    setDisplayedProjects(
+      projects.filter((p) => p.tab === projectType).slice(0, 4),
+    );
+  }, [projectType, setDisplayedProjects]);
 
   const handleDisplayProjects = () => {
     if (displayedProjects.length > 4) {
-      setDisplayedProjects(projects.slice(0, 4));
+      setDisplayedProjects(
+        projects.filter((p) => p.tab === projectType).slice(0, 4),
+      );
     } else {
-      setDisplayedProjects(projects);
+      setDisplayedProjects(projects.filter((p) => p.tab === projectType));
     }
   };
 
@@ -35,12 +59,29 @@ export default function Portfolio() {
         What I've Built
       </h3>
 
+      <div className="flex gap-8 text-2xl mb-8 text-dark-75">
+        {projectTypes.map(({ id, label }) => (
+          <div key={id}>
+            <button
+              type="button"
+              onClick={() => setProjectType(id as ProjectType)}
+              className={`cursor-pointer ${projectType === id ? "text-blue" : "hover:opacity-75"}`}
+            >
+              {label}
+            </button>
+            <div
+              className={`h-0.5 rounded-full ${projectType === id ? "bg-blue" : "bg-transparent"}`}
+            />
+          </div>
+        ))}
+      </div>
+
       <div className="flex flex-wrap gap-6 lg:gap-10 justify-center">
         {displayedProjects.map((project) => (
           <Link
             to={"projects/" + project.id}
             key={project.id}
-            className="bg-white p-4 lg:p-6 rounded-xl drop-shadow-sm max-w-[396px] w-full sm:w-[calc(50%-12px)] lg:w-[444px] group hover:drop-shadow-xl transition-all duration-700"
+            className="bg-white p-4 lg:p-6 rounded-xl drop-shadow-sm w-full sm:w-[calc(50%-12px)] lg:w-[444px] group hover:drop-shadow-xl transition-all duration-700"
           >
             <img
               src={project.img}
@@ -65,7 +106,7 @@ export default function Portfolio() {
         ))}
       </div>
 
-      {projects.length > 4 ? (
+      {projects.filter((p) => p.tab === projectType).length > 4 ? (
         <button
           type="button"
           className="text-dark text-xl lg:text-2xl font-bold px-[72px] bg-dark-10 text-center py-4 rounded-[18px] leading-[100%] w-64 lg:w-72 self-center hover:bg-[rgba(6,4,45,0.2)] hover:text-[rgba(6,4,45,0.85)] cursor-pointer mt-12 sm:mt-16"
