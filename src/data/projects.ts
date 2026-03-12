@@ -4,6 +4,10 @@ import ismael from "./../assets/imgs/ismael.webp";
 import marcfashion from "./../assets/imgs/marcfashion.webp";
 import moneymoon from "./../assets/imgs/moneymoon.webp";
 import reelr from "./../assets/imgs/reelr.webp";
+import eightBitComputer from "./../assets/imgs/8bitComputerDisplay.webp";
+import blehm10 from "./../assets/imgs/blehm10Display.webp";
+import designConcepts from "./../assets/imgs/designConcepts.webp";
+import lumenRedesign from "./../assets/imgs/lumenRedesign.webp";
 import PennyPath from "../caseStudies/PennyPath/index";
 import Reelr from "../caseStudies/Reelr/index";
 
@@ -59,5 +63,44 @@ export default [
     brief:
       "Marcfashion is a taylor shop based in Ecuador that creates personalized, modern and hight-quality suits for their clients.",
     tab: "software",
+  },
+  {
+    id: "8bit",
+    img: eightBitComputer,
+    title: "8-bit Computer",
+    type: "Side Project",
+    date: "July 2025",
+    brief: "A Ben Eater 8-bit computer",
+    tab: "hardware",
+  },
+  {
+    id: "blehm10",
+    img: blehm10,
+    title: "blehm10",
+    type: "Side Project",
+    date: "July 2025",
+    brief:
+      "A BLE (Bluetooth Low Energy) interface that allows you to send commands to your blehm10 module or other ble devices.",
+    tab: "hardware",
+  },
+  {
+    id: "designConcepts",
+    img: designConcepts,
+    title: "Design Concepts",
+    type: "UI Challenge",
+    date: "Ongoing",
+    brief:
+      "A series of design challenges I've done so far to practice my UI skils.",
+    tab: "ui",
+  },
+  {
+    id: "lumenRedesign",
+    img: lumenRedesign,
+    title: "Lumen Redesign",
+    type: "Redesign Concept",
+    date: "January 2023",
+    brief:
+      "A unofficial redesign of a learning platform I used in the past during my first college years.",
+    tab: "ui",
   },
 ] as Project[];
