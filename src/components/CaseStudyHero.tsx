@@ -14,6 +14,7 @@ const undefinedProject = {
   date: "",
   brief:
     "It looks like the project you're looking for has been moved, renamed, or never existed in the first place. Maybe it slipped out with the wind?",
+  tab: "",
 };
 
 export default function CaseStudyHero({
