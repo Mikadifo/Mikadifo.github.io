@@ -6,6 +6,14 @@ export function H2({ children }: { children: React.ReactNode }) {
   );
 }
 
+export function H3({ children }: { children: React.ReactNode }) {
+  return (
+    <h3 className="font-bold text-xl sm:text-2xl md:text-3xl font-kufam mb-4">
+      {children}
+    </h3>
+  );
+}
+
 export function P({ children }: { children: React.ReactNode }) {
   return (
     <p className="font-light text-2xl sm:text-[28px] md:text-[32px] leading-[36px] sm:leading-[42px] md:leading-[45px]">

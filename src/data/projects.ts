@@ -10,6 +10,7 @@ import designConcepts from "./../assets/imgs/designConcepts.webp";
 import lumenRedesign from "./../assets/imgs/lumenRedesign.webp";
 import PennyPath from "../caseStudies/PennyPath/index";
 import Reelr from "../caseStudies/Reelr/index";
+import Lumen from "../caseStudies/Lumen";
 
 export default [
   {
@@ -100,7 +101,8 @@ export default [
     type: "Redesign Concept",
     date: "January 2023",
     brief:
-      "A unofficial redesign of a learning platform I used in the past during my first college years.",
+      "An unofficial UI redesign of an app I used frequently in college. The goal of this project was to identify pain points, rethink interaction patterns, and practice applying user-centered design principles to create a more intuitive and efficient product.",
     tab: "ui",
+    component: Lumen,
   },
 ] as Project[];
