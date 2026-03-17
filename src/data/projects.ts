@@ -8,11 +8,22 @@ import eightBitComputer from "./../assets/imgs/8bitComputerDisplay.webp";
 import blehm10 from "./../assets/imgs/blehm10Display.webp";
 import designConcepts from "./../assets/imgs/designConcepts.webp";
 import lumenRedesign from "./../assets/imgs/lumenRedesign.webp";
+import cognidy from "./../assets/imgs/cognidy.webp";
 import PennyPath from "../caseStudies/PennyPath/index";
 import Reelr from "../caseStudies/Reelr/index";
 import Lumen from "../caseStudies/Lumen";
 
 export default [
+  {
+    id: "cognidy",
+    img: cognidy,
+    title: "Cognidy",
+    type: "Side Project",
+    date: "December 2025",
+    brief:
+      "Cognidy is a student helper app that helps users create, organize, and learn notes. Promotes critical thinking so a user can actually learn and retain what they are studying.",
+    tab: "software",
+  },
   {
     id: "penny_path",
     img: pennypath,
@@ -25,13 +36,14 @@ export default [
     tab: "software",
   },
   {
-    id: "ismael_sarmiento",
-    img: ismael,
-    title: "Ismael Sarmiento",
-    type: "Website & Business Card",
-    date: "February 2025",
+    id: "Reelr",
+    img: reelr,
+    title: "Reelr",
+    type: "Side Project",
+    date: "November 2025",
     brief:
-      "A landing/personal portfolio web for Dr. Ismael Sarmiento, a psychologist based in Cuenca, Ecuador.",
+      "Reelr is a web app that helps you keep track of movies you love and would watch again, movies that you want to watch or movies that you didn’t like as much. You’ll be able to rate movies from 1 to 5, create custom lists, and even publicly share your lists/movies with friends.",
+    component: Reelr,
     tab: "software",
   },
   {
@@ -45,14 +57,13 @@ export default [
     tab: "software",
   },
   {
-    id: "Reelr",
-    img: reelr,
-    title: "Reelr",
-    type: "Side Project",
-    date: "November 2025",
+    id: "ismael_sarmiento",
+    img: ismael,
+    title: "Ismael Sarmiento",
+    type: "Website & Business Card",
+    date: "February 2025",
     brief:
-      "Reelr is a web app that helps you keep track of movies you love and would watch again, movies that you want to watch or movies that you didn’t like as much. You’ll be able to rate movies from 1 to 5, create custom lists, and even publicly share your lists/movies with friends.",
-    component: Reelr,
+      "A landing/personal portfolio web for Dr. Ismael Sarmiento, a psychologist based in Cuenca, Ecuador.",
     tab: "software",
   },
   {
