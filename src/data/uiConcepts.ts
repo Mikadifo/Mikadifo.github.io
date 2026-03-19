@@ -6,7 +6,7 @@ import appIconPreview from "./../caseStudies/DesignConcepts/imgs/appIconPreview.
 import appSettings from "./../caseStudies/DesignConcepts/imgs/appSettings.webp";
 import appSettingsPreview from "./../caseStudies/DesignConcepts/imgs/appSettingsPreview.webp";
 import fitnessUI from "./../caseStudies/DesignConcepts/imgs/fitnessUI.webp";
-import fitnessUIPreview from "./../caseStudies/DesignConcepts/imgs/shareButtonPreview.webp";
+import fitnessUIPreview from "./../caseStudies/DesignConcepts/imgs/fitnessUIPreview.webp";
 import foodCountdown from "./../caseStudies/DesignConcepts/imgs/foodCountdown.webp";
 import foodCountdownPreview from "./../caseStudies/DesignConcepts/imgs/foodCountdownPreview.webp";
 import machineUI from "./../caseStudies/DesignConcepts/imgs/machineUI.webp";
