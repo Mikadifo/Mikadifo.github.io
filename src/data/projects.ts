@@ -12,6 +12,7 @@ import cognidy from "./../assets/imgs/cognidy.webp";
 import PennyPath from "../caseStudies/PennyPath/index";
 import Reelr from "../caseStudies/Reelr/index";
 import Lumen from "../caseStudies/Lumen";
+import DesignConcepts from "../caseStudies/DesignConcepts";
 
 export default [
   {
@@ -102,8 +103,9 @@ export default [
     type: "UI Challenge",
     date: "Ongoing",
     brief:
-      "A series of design challenges I've done so far to practice my UI skils.",
+      "A curated collection of my design explorations, featuring a range of visual styles, UI challenges, and creative solutions. This also includes selected work from Daily UI.",
     tab: "ui",
+    component: DesignConcepts,
   },
   {
     id: "lumenRedesign",
