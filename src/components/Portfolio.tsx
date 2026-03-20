@@ -50,6 +50,19 @@ export default function Portfolio() {
     }
   };
 
+  useEffect(() => {
+    const sessionProjectType = window.sessionStorage.getItem(
+      "project-type",
+    ) as ProjectType;
+
+    if (!sessionProjectType) {
+      window.sessionStorage.setItem("project-type", "software");
+      return;
+    }
+
+    setProjectType(sessionProjectType);
+  }, []);
+
   return (
     <div
       className="lg:w-[928px] mx-auto py-20 sm:py-32 lg:py-48 text-dark flex flex-col leading-none px-4 sm:px-8 lg:px-0"
@@ -64,7 +77,10 @@ export default function Portfolio() {
           <div key={id}>
             <button
               type="button"
-              onClick={() => setProjectType(id as ProjectType)}
+              onClick={() => {
+                setProjectType(id as ProjectType);
+                window.sessionStorage.setItem("project-type", id);
+              }}
               className={`cursor-pointer ${projectType === id ? "text-blue" : "hover:opacity-75"}`}
             >
               {label}
