@@ -5,6 +5,8 @@ import appIcon from "./../caseStudies/DesignConcepts/imgs/appIcon.webp";
 import appIconPreview from "./../caseStudies/DesignConcepts/imgs/appIconPreview.webp";
 import appSettings from "./../caseStudies/DesignConcepts/imgs/appSettings.webp";
 import appSettingsPreview from "./../caseStudies/DesignConcepts/imgs/appSettingsPreview.webp";
+import notification from "./../caseStudies/DesignConcepts/imgs/notification.webp";
+import notificationPreview from "./../caseStudies/DesignConcepts/imgs/notificationPreview.webp";
 import fitnessUI from "./../caseStudies/DesignConcepts/imgs/fitnessUI.webp";
 import fitnessUIPreview from "./../caseStudies/DesignConcepts/imgs/fitnessUIPreview.webp";
 import foodCountdown from "./../caseStudies/DesignConcepts/imgs/foodCountdown.webp";
@@ -48,6 +50,13 @@ export default [
         url: "https://unsplash.com/photos/photo-of-flamingo-on-water-wTPp323zAEw",
       },
     ],
+  },
+  {
+    id: "notification",
+    title: "Notification",
+    preview: notificationPreview,
+    img: notification,
+    credits: [],
   },
   {
     id: "app-icon",
