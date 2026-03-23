@@ -25,8 +25,31 @@ import pressPage from "./../caseStudies/DesignConcepts/imgs/pressPage.webp";
 import pressPagePreview from "./../caseStudies/DesignConcepts/imgs/pressPagePreview.webp";
 import profileUI from "./../caseStudies/DesignConcepts/imgs/profileUI.webp";
 import profilePagePreview from "./../caseStudies/DesignConcepts/imgs/profilePagePreview.webp";
+import jobListing from "./../caseStudies/DesignConcepts/imgs/jobListing.webp";
+import jobListingPreview from "./../caseStudies/DesignConcepts/imgs/jobListingPreview.webp";
+import gameLaunch from "./../caseStudies/DesignConcepts/imgs/gameLaunch.webp";
+import gameLaunchPreview from "./../caseStudies/DesignConcepts/imgs/gameLaunchPreview.webp";
 
 export default [
+  {
+    id: "gameLaunch",
+    title: "Game Launch",
+    preview: gameLaunchPreview,
+    img: gameLaunch,
+    credits: [
+      {
+        id: "c1",
+        url: "https://unsplash.com/photos/a-black-object-with-a-bright-spot-in-the-middle-of-it-TeNcNaQEF-I",
+      },
+    ],
+  },
+  {
+    id: "jobListing",
+    title: "Job Listing",
+    preview: jobListingPreview,
+    img: jobListing,
+    credits: [],
+  },
   {
     id: "share-button",
     title: "Share Button",
