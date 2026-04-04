@@ -29,8 +29,17 @@ import jobListing from "./../caseStudies/DesignConcepts/imgs/jobListing.webp";
 import jobListingPreview from "./../caseStudies/DesignConcepts/imgs/jobListingPreview.webp";
 import gameLaunch from "./../caseStudies/DesignConcepts/imgs/gameLaunch.webp";
 import gameLaunchPreview from "./../caseStudies/DesignConcepts/imgs/gameLaunchPreview.webp";
+import activityFeed from "./../caseStudies/DesignConcepts/imgs/activityFeed.webp";
+import activityFeedPreview from "./../caseStudies/DesignConcepts/imgs/activityFeedPreview.webp";
 
 export default [
+  {
+    id: "activityFeed",
+    title: "Activity Feed",
+    preview: activityFeedPreview,
+    img: activityFeed,
+    credits: [],
+  },
   {
     id: "gameLaunch",
     title: "Game Launch",
