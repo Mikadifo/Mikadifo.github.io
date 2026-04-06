@@ -31,8 +31,17 @@ import gameLaunch from "./../caseStudies/DesignConcepts/imgs/gameLaunch.webp";
 import gameLaunchPreview from "./../caseStudies/DesignConcepts/imgs/gameLaunchPreview.webp";
 import activityFeed from "./../caseStudies/DesignConcepts/imgs/activityFeed.webp";
 import activityFeedPreview from "./../caseStudies/DesignConcepts/imgs/activityFeedPreview.webp";
+import downloadButton from "./../caseStudies/DesignConcepts/imgs/downloadButton.webp";
+import downloadButtonPreview from "./../caseStudies/DesignConcepts/imgs/downloadButtonPreview.webp";
 
 export default [
+  {
+    id: "downloadButton",
+    title: "Download Button",
+    preview: downloadButtonPreview,
+    img: downloadButton,
+    credits: [],
+  },
   {
     id: "activityFeed",
     title: "Activity Feed",
